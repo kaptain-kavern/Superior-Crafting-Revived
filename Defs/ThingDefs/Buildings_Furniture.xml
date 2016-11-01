@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
 
-  <ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
+<ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
     <comps>
       <li>
         <compClass>CompQuality</compClass>
@@ -12,9 +12,9 @@
     <tradeTags>
       <li>Furniture</li>
     </tradeTags>
-  </ThingDef>
+</ThingDef>
   
-  <ThingDef Name="HighQualityFurnitureBase" ParentName="BuildingBase" Abstract="True">
+<ThingDef Name="HighQualityFurnitureBase" ParentName="BuildingBase" Abstract="True">
     <comps>
       <li>
         <compClass>CompQuality</compClass>
@@ -30,48 +30,47 @@
     </inspectorTabs>
     <DesignationCategory>Furniture</DesignationCategory>
     <minifiedDef>MinifiedFurniture</minifiedDef>
-  </ThingDef>
+</ThingDef>
 
 
-	<!--============================== Beds ==============================-->
+<!--============================== Beds ==============================-->
 
-  
-	<ThingDef ParentName="BuildingBase">
-		<defName>SleepingSpot</defName>
-		<label>sleeping spot</label>
-		<Description>Designates a spot on the ground where people should sleep. Not comfortable.
-Rest effectiveness: 60%</Description>
-		<ThingClass>Building_Bed</ThingClass>
-		<graphicData>
-			<texPath>Things/Building/Furniture/Bed/SleepSpot</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,4)</drawSize>
-		</graphicData>
-		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
-		<statBases>
-			<WorkToMake>0</WorkToMake>
-			<Comfort>0.4</Comfort>
-			<BedRestEffectiveness>0.60</BedRestEffectiveness>
-		</statBases>
-		<useHitPoints>False</useHitPoints>
-		<Size>(1,2)</Size>
-		<DesignationCategory>Furniture</DesignationCategory>
-		<Passability>Standable</Passability>
-		<DrawGUIOverlay>True</DrawGUIOverlay>
-		<building>
-			<Bed_ShowSleeperBody>True</Bed_ShowSleeperBody>
-			<Bed_HealTickInterval>3200</Bed_HealTickInterval>
-			<sowTag>SupportPlantsOnly</sowTag>
-			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-		</building>
-	</ThingDef>
+<ThingDef ParentName="BuildingBase">
+    <defName>SleepingSpot</defName>
+    <label>sleeping spot</label>
+    <Description>Designates a spot on the ground where people should sleep. Not comfortable.
+    Rest effectiveness: 60%</Description>
+    <ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/SleepSpot</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+    </graphicData>
+    <AltitudeLayer>FloorEmplacement</AltitudeLayer>
+    <statBases>
+      <WorkToMake>0</WorkToMake>
+      <Comfort>0.4</Comfort>
+      <BedRestEffectiveness>0.60</BedRestEffectiveness>
+    </statBases>
+    <useHitPoints>False</useHitPoints>
+    <Size>(1,2)</Size>
+    <DesignationCategory>Furniture</DesignationCategory>
+    <Passability>Standable</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+    <building>
+      <Bed_ShowSleeperBody>True</Bed_ShowSleeperBody>
+      <Bed_HealTickInterval>3000</Bed_HealTickInterval>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+    </building>
+    <designationHotkey>Misc1</designationHotkey>
+</ThingDef>
 
-
-	<ThingDef ParentName="FurnitureBase">
+<ThingDef ParentName="FurnitureBase">
 		<defName>Bed</defName>
 		<label>hide bed</label>
 		<Description>A simple bed made of wood logs and animal hides.
-Rest effectiveness: 80%</Description>
+     Rest effectiveness: 80%</Description>
 		<ThingClass>Building_Bed</ThingClass>
 		<graphicData>
 			<texPath>Things/Building/SCFurniture/Beds/HideBed</texPath>
@@ -110,14 +109,14 @@ Rest effectiveness: 80%</Description>
 		<DesignationCategory>Furniture</DesignationCategory>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
-	</ThingDef>
+</ThingDef>
 	
 	
-	<ThingDef ParentName="FurnitureBase">
+<ThingDef ParentName="FurnitureBase">
 		<defName>RoyalBed</defName>
 		<label>cloth bed</label>
 		<Description>A cloth mattress and sheets on a wood frame for resting.
-Rest effectiveness: 100%</Description>
+     Rest effectiveness: 100%</Description>
 		<ThingClass>Building_Bed</ThingClass>
 		<graphicData>
 			<texPath>Things/Building/SCFurniture/Beds/ClothBed</texPath>
@@ -165,14 +164,14 @@ Rest effectiveness: 100%</Description>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
 		<researchPrerequisites><li>CraftingI</li></researchPrerequisites>
-	</ThingDef>
+</ThingDef>
 	
 	
-	<ThingDef ParentName="HighQualityFurnitureBase">
+<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>ComfyBed</defName>
 		<label>comfy bed</label>
 		<Description>A cozy mattress and sheets on a metal frame for resting.
-Rest effectiveness: 125%</Description>
+     Rest effectiveness: 125%</Description>
 		<ThingClass>Building_Bed</ThingClass>
 		<graphicData>
 			<texPath>Things/Building/SCFurniture/Beds/ComfyBed</texPath>
@@ -220,14 +219,14 @@ Rest effectiveness: 125%</Description>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
 		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
-	</ThingDef>
+</ThingDef>
 	
 	
-	<ThingDef ParentName="HighQualityFurnitureBase">
+<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>PodBed</defName>
 		<label>pod bed</label>
 		<Description>A futuristic bed with a high beauty rating.  Built to provide the maximum comfort level.
-Rest effectiveness: 125%</Description>
+     Rest effectiveness: 125%</Description>
 		<ThingClass>Building_Bed</ThingClass>
 		<graphicData>
 			<texPath>Things/Building/SCFurniture/Beds/PodBed</texPath>
@@ -276,14 +275,14 @@ Rest effectiveness: 125%</Description>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
 		<researchPrerequisites><li>Machining</li></researchPrerequisites>
-	</ThingDef>
+</ThingDef>
 
 
-	<ThingDef ParentName="FurnitureBase">
+<ThingDef ParentName="FurnitureBase">
 		<defName>HospitalBed</defName>
 		<label>hospital bed</label>
 		<Description>A healing pod, perfect for healing up wounded colonists and prisoners.  Not very comfortable, but heals very fast!
-Rest effectiveness: 85%</Description>
+     Rest effectiveness: 85%</Description>
 		<ThingClass>Building_Bed</ThingClass>
 		<graphicData>
 			<texPath>Things/Building/SCFurniture/Beds/MedBed</texPath>
@@ -331,13 +330,13 @@ Rest effectiveness: 85%</Description>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
 		<researchPrerequisites><li><li>Chemlab</li></li></researchPrerequisites>
-	</ThingDef>
+</ThingDef>
 
 
-	<!--======================= Basic domestic furniture ==============================-->
+<!--======================= Basic domestic furniture ==============================-->
 
 
-	<ThingDef ParentName="FurnitureBase">
+<ThingDef ParentName="FurnitureBase">
 		<defName>Stool</defName>
 		<label>stool</label>
 		<graphicData>
@@ -378,53 +377,53 @@ Rest effectiveness: 85%</Description>
 		<building>
 			<isSittable>true</isSittable>
 		</building>
-	</ThingDef>
+</ThingDef>
+	
+<ThingDef ParentName="HighQualityFurnitureBase">
+    <defName>DiningChair</defName>
+    <label>Comfy Chair</label>
+    <graphicData>
+      <texPath>Things/Building/SCFurniture/Chairs/ComfyChair</texPath>
+      <graphicClass>Graphic_Single</graphicClass>      
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+        <rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+        <rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+        <rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <WorkToMake>750</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>9</Beauty>
+      <Comfort>0.70</Comfort>
+    </statBases>
+    <description>A comfy chair people can sit on.</description>
+    <size>(1,1)</size>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <costList>
+    	<WoodPlank>10</WoodPlank>
+    </costList>	    
+    <pathCost>30</pathCost>    
+    <fillPercent>0.35</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+</ThingDef>
+
 	
 	
-	<ThingDef ParentName="HighQualityFurnitureBase">
-		<defName>DiningChair</defName>
-		<label>Comfy Chair</label>
-		<graphicData>
-			<texPath>Things/Building/SCFurniture/Chairs/ComfyChair</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shadowData>
-				<volume>(0.3, 0.6, 0.3)</volume>
-			</shadowData>
-			<damageData>
-				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
-		        <rectS>(0.25,0.234375,0.5,0.28125)</rectS>
-		        <rectE>(0.28125,0.25,0.453125,0.25)</rectE>
-		        <rectW>(0.28125,0.25,0.453125,0.25)</rectW>
-		    </damageData>
-	  	</graphicData>
-	  	<altitudeLayer>Building</altitudeLayer>
-		<statBases>
-			<MaxHitPoints>60</MaxHitPoints>
-			<WorkToMake>750</WorkToMake>
-			<Flammability>1.0</Flammability>
-			<Beauty>9</Beauty>
-			<Comfort>0.7</Comfort>
-		</statBases>
-		<description>A comfy chair people can sit on.</description>
-		<size>(1,1)</size>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<costStuffCount>20</costStuffCount>
-		<costList>
-			<WoodPlank>10</WoodPlank>
-		</costList>		
-		<pathCost>30</pathCost>
-		<designationCategory>Furniture</designationCategory>
-		<building>
-			<isSittable>true</isSittable>
-		</building>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
-	</ThingDef>
-	
-	
-	<ThingDef ParentName="HighQualityFurnitureBase">
+<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>TableLong</defName>
 		<label>Pod Chair</label>
 		<graphicData>
@@ -464,10 +463,10 @@ Rest effectiveness: 85%</Description>
 		</building>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<researchPrerequisites><li>Machining</li></researchPrerequisites>
-	</ThingDef>
+</ThingDef>
 
 
-	<ThingDef ParentName="FurnitureBase">
+<ThingDef ParentName="FurnitureBase">
 		<defName>TableShort</defName>
 		<label>dragable table</label>
 		<graphicData>
@@ -512,12 +511,12 @@ Rest effectiveness: 85%</Description>
 			<li><compClass>CompGatherSpot</compClass></li>
 			<li><compClass>CompQuality</compClass></li>
 		</comps>
-	</ThingDef>
+</ThingDef>
 
 
-	<!-- ======================== Lighting ======================= -->	
+<!-- ======================== Lighting ======================= -->	
 
-  <ThingDef Abstract="True" Name="LampBase" ParentName="BuildingBase">
+<ThingDef Abstract="True" Name="LampBase" ParentName="BuildingBase">
     <thingClass>Building</thingClass>
     <category>Building</category>
     <minifiedDef>MinifiedFurniture</minifiedDef>
@@ -551,14 +550,14 @@ Rest effectiveness: 85%</Description>
     <researchPrerequisites><li>
       <li>PowerI</li>
     </li></researchPrerequisites>
-  </ThingDef>
+</ThingDef>
 
-  <ThingDef Abstract="True" Name="StandingLampBase" ParentName="LampBase">
+<ThingDef Abstract="True" Name="StandingLampBase" ParentName="LampBase">
     <graphicData>
       <texPath>Things/Building/Furniture/LampStanding</texPath>
     </graphicData>
     <costList>
-    	<SteelBar>20</SteelBar>
+    	<SteelBar>10</SteelBar>
     	<Glass>5</Glass>
     </costList>
     <comps>
@@ -568,9 +567,9 @@ Rest effectiveness: 85%</Description>
         <shortCircuitInRain>true</shortCircuitInRain>
       </li>
     </comps>
-  </ThingDef>
+</ThingDef>
   
-  <ThingDef ParentName="StandingLampBase" >
+<ThingDef ParentName="StandingLampBase" >
     <defName>StandingLamp</defName>
     <label>standing lamp</label>
     <description>Standing lamp that lights an area.</description>
@@ -581,9 +580,9 @@ Rest effectiveness: 85%</Description>
         <glowColor>(217,217,208,0)</glowColor>
       </li>
     </comps>
-  </ThingDef>
+</ThingDef>
 
-  <ThingDef ParentName="StandingLampBase">
+<ThingDef ParentName="StandingLampBase">
     <defName>StandingLamp_Red</defName>
     <label>standing lamp (red)</label>
     <description>Standing lamp that lights an area in red.</description>
@@ -593,10 +592,10 @@ Rest effectiveness: 85%</Description>
         <glowColor>(217,0,0,0)</glowColor>
       </li>
     </comps>
-    <researchPrerequisites><li><li>ColoredLights</li></li></researchPrerequisites>
-  </ThingDef>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+</ThingDef>
 
-  <ThingDef ParentName="StandingLampBase">
+<ThingDef ParentName="StandingLampBase">
     <defName>StandingLamp_Green</defName>
     <label>standing lamp (green)</label>
     <description>Standing lamp that lights an area in green.</description>
@@ -606,10 +605,10 @@ Rest effectiveness: 85%</Description>
         <glowColor>(0,217,0,0)</glowColor>
       </li>
     </comps>
-    <researchPrerequisites><li><li>ColoredLights</li></li></researchPrerequisites>
-  </ThingDef>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+</ThingDef>
 
-  <ThingDef ParentName="StandingLampBase">
+<ThingDef ParentName="StandingLampBase">
     <defName>StandingLamp_Blue</defName>
     <label>standing lamp (blue)</label>
     <description>Standing lamp that lights an area in blue.</description>
@@ -619,122 +618,21 @@ Rest effectiveness: 85%</Description>
         <glowColor>(0,0,217,0)</glowColor>
       </li>
     </comps>
-    <researchPrerequisites><li><li>ColoredLights</li></li></researchPrerequisites>
-  </ThingDef>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+</ThingDef>
 
-	<!--============================== Storage ==============================-->
+<!--============================== Decoration ==============================-->
 
-
-	<ThingDef ParentName="FurnitureBase">
-		<defName>EquipmentRack</defName>
-		<label>equipment rack</label>
-		<thingClass>Building_Storage</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Furniture/EquipmentRack</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(4,3)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.4</fillPercent>
-		<castEdgeShadows>true</castEdgeShadows>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
-		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
-		<statBases>
-			<MaxHitPoints>60</MaxHitPoints>
-			<WorkToMake>750</WorkToMake>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<description>Haulers carry equipment here for storage.</description>
-		<size>(2,1)</size>
-		<building>
-			<preventDeterioration>true</preventDeterioration>
-			<fixedStorageSettings>
-				<filter>
-					<categories>
-						<li>Weapons</li>
-						<li>Apparel</li>
-					</categories>
-				</filter>
-			</fixedStorageSettings>
-			<defaultStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<categories>
-						<li>Weapons</li>
-					</categories>
-				</filter>
-			</defaultStorageSettings>
-		</building>
-		<surfaceType>Item</surfaceType>
-		<inspectorTabs>
-			<li>ITab_Storage</li>
-		</inspectorTabs>
-		<designationCategory>Furniture</designationCategory>
-		<staticSunShadowHeight>0.5</staticSunShadowHeight>
-	</ThingDef>
-  
-  
-	<!--============================== Decoration ==============================-->
-  
-  
-	<ThingDef ParentName="FurnitureBase">
-		<defName>PlantPot</defName>
-		<label>plant pot</label>
-		<thingClass>Building_PlantGrower</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Furniture/PlantPot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-      <shadowData>
-        <volume>(0.3, 0.6, 0.3)</volume>
-      </shadowData>
-      <damageData>
-        <rect>(0.2,0.2,0.6,0.6)</rect>
-      </damageData>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.20</fillPercent>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>330</WorkToMake>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
-		</stuffCategories>
-		<costStuffCount>15</costStuffCount>		
-		<description>Plant decorative flowers here to improve the mood of people nearby.</description>
-		<size>(1,1)</size>
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-    </comps>
-		<fertility>1.0</fertility>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<building>
-			<defaultPlantToGrow>PlantDaylily</defaultPlantToGrow>
-			<plantsDestroyWithMe>true</plantsDestroyWithMe>
-			<sowTag>Decorative</sowTag>
-		</building>
-		<rotatable>false</rotatable>
-	</ThingDef>
-	
-	<ThingDef ParentName="FurnitureBase">
+<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>ClutterCabinet</defName>
 		<label>cabinet</label>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/SCDecor/Cabinet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-      <shadowData>
-        <volume>(0.3, 0.6, 0.3)</volume>
-      </shadowData>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -754,9 +652,9 @@ Rest effectiveness: 85%</Description>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
 		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
-	</ThingDef>
+</ThingDef>
 	
-	<ThingDef ParentName="FurnitureBase">
+<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>ClutterDesk</defName>
 		<label>desk</label>
 		<thingClass>Building</thingClass>
@@ -786,9 +684,9 @@ Rest effectiveness: 85%</Description>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
 		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
-	</ThingDef>
-	
-	<ThingDef ParentName="FurnitureBase">
+</ThingDef>
+
+<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>ClutterLocker</defName>
 		<label>locker</label>
 		<thingClass>Building</thingClass>
@@ -817,9 +715,9 @@ Rest effectiveness: 85%</Description>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
 		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
-	</ThingDef>
+</ThingDef>
 	
-	<ThingDef ParentName="FurnitureBase">
+<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>ClutterShelf</defName>
 		<label>shelf</label>
 		<thingClass>Building</thingClass>
@@ -848,7 +746,7 @@ Rest effectiveness: 85%</Description>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
 		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
-	</ThingDef>
+</ThingDef>
 
   
 </Buildings>
