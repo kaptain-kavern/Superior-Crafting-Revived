@@ -1003,7 +1003,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>HydroponicsBasin</defName>
 		<label>hydroponics basin</label>
-		<thingClass>SuperiorCrafting.HydroponicsBasin</thingClass>
+		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
 			<texPath>Things/Building/SCProduction/Hydroponics_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1025,6 +1025,7 @@
 			<WorkToMake>1500</WorkToMake>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1.0</Flammability>
+			<Cleanliness>-3</Cleanliness>
 		</statBases>
 		<description>For growing food. Hydroponics basins grow plants quickly. The basin requires power to work, provides their own light source, but plants will die if power is cut.</description>
 		<costList>
@@ -1033,9 +1034,6 @@
 			<Mulch>20</Mulch>
 		</costList>
 		<surfaceType>Item</surfaceType>
-		<inspectorTabs>
-			<li>ITab_Growing</li>
-		</inspectorTabs>
 		<fertility>4.0</fertility>
 		<building>
 			<ignoreNeedsPower>false</ignoreNeedsPower>
@@ -1049,19 +1047,15 @@
 		<selectable>true</selectable>
 		<neverMultiSelect>true</neverMultiSelect>
 		<comps>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<transmitsPower>true</transmitsPower>
 				<startElectricalFires>true</startElectricalFires>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
 				<basePowerConsumption>25</basePowerConsumption>
 			</li>
-			<li>
-				<compClass>CompGlower</compClass>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Glower">
 				<overlightRadius>7.0</overlightRadius>
 				<glowRadius>2</glowRadius>
 				<glowColor>(370,370,370,0)</glowColor>
