@@ -2,7 +2,7 @@
 <ThingDefs>
 
 
-	<ThingDef Name="BaseGun" Abstract="True">
+	<ThingDef Name="BaseGunTurret" Abstract="True">
 		<category>Item</category>
 		<thingClass>ThingWithComps</thingClass>
 		<equipmentType>Primary</equipmentType>
@@ -51,13 +51,13 @@
 		</smeltProducts>
 	</ThingDef>
 
-	<ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+	<ThingDef Name="BaseHumanGunTurret" ParentName="BaseGunTurret" Abstract="True">
 		<weaponTags>
 			<li>Gun</li>
 		</weaponTags>
 	</ThingDef>
 
-	<ThingDef Name="BaseBullet" Abstract="True">
+	<ThingDef Name="BaseBulletTurret" Abstract="True">
 		<category>Projectile</category>
 		<tickerType>Normal</tickerType>
 		<altitudeLayer>Projectile</altitudeLayer>
@@ -74,7 +74,7 @@
 	<!-- ================ turret guns ============== -->
 
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBulletTurret">
 		<defName>Bullet_TurretImprovised</defName>
 		<label>improvised turret bullet</label>
 		<graphicData>
@@ -88,7 +88,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanGun">
+	<ThingDef ParentName="BaseHumanGunTurret">
 		<defName>Gun_TurretImprovised</defName>
 		<label>turret gun</label>
 		<graphicData>
@@ -127,7 +127,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBulletTurret">
 		<defName>Bullet_Minigun</defName>
 		<label>minigun bullet</label>
 		<graphicData>
@@ -141,7 +141,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseHumanGun">
+	<ThingDef ParentName="BaseHumanGunTurret">
 		<defName>Gun_TurretGatling</defName>
 		<label>gatling turret gun</label>
 		<graphicData>
@@ -180,7 +180,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBulletTurret">
 		<defName>Bullet_PumpShotgun</defName>
 		<label>shotgun blast</label>
 		<graphicData>
@@ -194,7 +194,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseHumanGun">
+	<ThingDef ParentName="BaseHumanGunTurret">
 		<defName>Gun_TurretShotgun</defName>
 		<label>shotgun turret gun</label>
 		<graphicData>
@@ -231,7 +231,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBulletTurret">
 		<defName>Bullet_SniperRifle</defName>
 		<label>sniper rifle bullet</label>
 		<graphicData>
@@ -245,7 +245,7 @@
 		</projectile>
 	</ThingDef>
   
-	<ThingDef ParentName="BaseHumanGun">
+	<ThingDef ParentName="BaseHumanGunTurret">
 		<defName>Gun_TurretSniper</defName>
 		<label>sniper turret gun</label>
 		<graphicData>
