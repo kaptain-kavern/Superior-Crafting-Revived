@@ -1,10 +1,112 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
 
+<ThingDef ParentName="BenchBase">
+    <defName>SimpleResearchBench</defName>
+    <label>simple research bench</label>
+    <description>A simple bench with writing implements and low-tech scientific tools. Researchers work here to discover new things.</description>
+    <thingClass>Building_ResearchBench</thingClass>
+    <size>(3,1)</size>     
+    <costList>
+    	<SteelBar>10</SteelBar>
+    	<WoodPlank>50</WoodPlank>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/SCMisc/ResearchBench3x1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <ResearchSpeedFactor>0.6</ResearchSpeedFactor>
+    </statBases>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <surfaceType>Item</surfaceType>
+</ThingDef>
+  
+<ThingDef ParentName="BenchBase">
+    <defName>HiTechResearchBench</defName>
+    <label>hi-tech research bench</label>
+    <description>A high-tech bench with computers and electronic measurement equipment. Research is sped up by the high-tech tools. Requires power.</description>
+    <thingClass>Building_ResearchBench</thingClass>
+    <size>(5,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <costList>
+      <SteelBar>100</SteelBar>
+      <Component>10</Component>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/Production/ResearchBenchHiTech</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(7,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <ResearchSpeedFactor>1.0</ResearchSpeedFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+        <startElectricalFires>true</startElectricalFires>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>MultiAnalyzer</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <surfaceType>Item</surfaceType>
+    <designationHotKey>Misc4</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+</ThingDef>	
+
 	<!--=============== Basic Work tables (No research required) ====================-->
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableSawmillHand</defName>
 		<label>hand sawmill</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -46,7 +148,7 @@
 	</ThingDef>
 
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableStonecutter</DefName>
 		<label>craftsman's table</label>
 		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
@@ -88,7 +190,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableFurnace</defName>
 		<label>smelting furnace</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -142,7 +244,7 @@
 	<!--=============== Advanced Work tables ====================-->
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableMachining</DefName>
 		<label>powered crafting table</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -201,7 +303,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>ElectricSmelter</DefName>
 		<label>electric smelter</label>
 		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
@@ -258,7 +360,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableGlassworks</DefName>
 		<label>Glassworks</label>
 		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
@@ -312,7 +414,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableSmithing</DefName>
 		<label>smithing table</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -365,7 +467,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableLoom</DefName>
 		<label>tailor's loom</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -410,7 +512,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableTailor</DefName>
 		<label>tailor's workbench</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -449,7 +551,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableSculpting</DefName>
 		<label>sculptor's table</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -488,7 +590,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableButcher</DefName>
 		<label>food prep table</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -531,7 +633,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableGrill</DefName>
 		<label>simple grill</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -578,7 +680,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<defName>CookStove</defName>
 		<label>cook stove</label>
 		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
@@ -636,7 +738,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>Brewery</DefName>
 		<label>brewery</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -679,7 +781,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableChemlab</defName>
 		<label>chemlab</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -734,7 +836,7 @@
 		<researchPrerequisites><li>Chemlab</li></researchPrerequisites>
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableOrganvat</defName>
 		<label>organ vat</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -792,7 +894,7 @@
 		<researchPrerequisites><li>Cryptosleep</li></researchPrerequisites>
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<defName>TableBionics</defName>
 		<label>bionic crafting table</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -848,7 +950,7 @@
 		<researchPrerequisites><li>CraftingIV</li></researchPrerequisites>
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBase">
 		<DefName>TableComposter</DefName>
 		<label>composter</label>
 		<ThingClass>Building_WorkTable</ThingClass>
