@@ -218,6 +218,9 @@ Rest effectiveness: 85%</Description>
 			<WorkToMake>2500</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<BedRestEffectiveness>0.85</BedRestEffectiveness>
+			<Comfort>0.6</Comfort>
+			<MedicalTreatmentQualityFactor>1.04</MedicalTreatmentQualityFactor>
+			<ImmunityGainSpeedFactor>1.144</ImmunityGainSpeedFactor>
 		</statBases>
 		<Size>(1,2)</Size>
 		<costList>
@@ -227,8 +230,7 @@ Rest effectiveness: 85%</Description>
 		</costList>
 		<building>
 			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
-			<Bed_HealTickInterval>1200</Bed_HealTickInterval>
-			<bed_medicalBonusFactor>1.04</bed_medicalBonusFactor>
+			<Bed_HealTickInterval>1200</Bed_HealTickInterval>			
 			<bed_defaultMedical>true</bed_defaultMedical>
 		</building>
 		<fillPercent>0.4</fillPercent>
@@ -239,7 +241,7 @@ Rest effectiveness: 85%</Description>
 		<DesignationCategory>Furniture</DesignationCategory>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
-		<researchPrerequisites>Chemlab</researchPrerequisites>
+		<researchPrerequisites><li>Chemlab</li></researchPrerequisites>
 	</ThingDef>
 
 
