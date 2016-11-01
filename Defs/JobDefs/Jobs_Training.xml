@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+
+	<JobDef>
+		<defName>GoToAndWaitForeverCPR</defName>
+		<driverClass>SuperiorCrafting.JobDriver_CPRdummy</driverClass>
+		<reportString>Going to pump the dummy.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>GoToAndWaitForeverHD</defName>
+		<driverClass>SuperiorCrafting.JobDriver_Holodeck</driverClass>
+		<reportString>Going to talk to the hologram.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>GoToAndWaitForeverPB</defName>
+		<driverClass>SuperiorCrafting.JobDriver_PunchingBag</driverClass>
+		<reportString>Going to punch the bag.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>GoToAndWaitForeverSR</defName>
+		<driverClass>SuperiorCrafting.JobDriver_ShootingRange</driverClass>
+		<reportString>Going to practice shooting.</reportString>
+	</JobDef>
+	
+</JobDefs>

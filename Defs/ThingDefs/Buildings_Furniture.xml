@@ -1,0 +1,923 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+
+	<!--============================== Beds ==============================-->
+
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>SleepingSpot</defName>
+		<label>sleeping spot</label>
+		<Description>Designates a spot on the ground where people should sleep. Not comfortable.
+Rest effectiveness: 60%</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bed/SleepSpot</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
+		<statBases>
+			<WorkToMake>0</WorkToMake>
+			<Comfort>0.4</Comfort>
+			<BedRestEffectiveness>0.60</BedRestEffectiveness>
+		</statBases>
+		<useHitPoints>False</useHitPoints>
+		<Size>(1,2)</Size>
+		<DesignationCategory>Furniture</DesignationCategory>
+		<Passability>Standable</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<building>
+			<Bed_ShowSleeperBody>True</Bed_ShowSleeperBody>
+			<Bed_HealTickInterval>3200</Bed_HealTickInterval>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+		</building>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Bed</defName>
+		<label>hide bed</label>
+		<Description>A simple bed made of wood logs and animal hides.
+Rest effectiveness: 80%</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Beds/HideBed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<WorkToMake>1000</WorkToMake>
+			<Comfort>0.6</Comfort>
+			<BedRestEffectiveness>0.8</BedRestEffectiveness>
+		</statBases>
+		<Size>(1,2)</Size>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>		
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<Bed_HealTickInterval>2400</Bed_HealTickInterval>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<DesignationCategory>Furniture</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>RoyalBed</defName>
+		<label>cloth bed</label>
+		<Description>A cloth mattress and sheets on a wood frame for resting.
+Rest effectiveness: 100%</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Beds/ClothBed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>12</Beauty>
+			<WorkToMake>1000</WorkToMake>
+			<Comfort>0.75</Comfort>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+		</statBases>
+		<Size>(1,2)</Size>
+		<costList>
+			<WoodPlank>30</WoodPlank>
+			<Cloth>10</Cloth>
+		</costList>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<Bed_HealTickInterval>2000</Bed_HealTickInterval>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<DesignationCategory>Furniture</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<researchPrerequisite>CraftingI</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ComfyBed</defName>
+		<label>comfy bed</label>
+		<Description>A cozy mattress and sheets on a metal frame for resting.
+Rest effectiveness: 125%</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Beds/ComfyBed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>16</Beauty>
+			<WorkToMake>1500</WorkToMake>
+			<Comfort>0.85</Comfort>
+			<BedRestEffectiveness>1.25</BedRestEffectiveness>
+		</statBases>
+		<Size>(1,2)</Size>
+		<costList>
+			<SteelBar>40</SteelBar>
+			<Cloth>20</Cloth>
+		</costList>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<Bed_HealTickInterval>2000</Bed_HealTickInterval>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<DesignationCategory>Furniture</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<researchPrerequisite>ElectricSmelting</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>PodBed</defName>
+		<label>pod bed</label>
+		<Description>A futuristic bed with a high beauty rating.  Built to provide the maximum comfort level.
+Rest effectiveness: 125%</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Beds/PodBed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>20</Beauty>
+			<WorkToMake>2500</WorkToMake>
+			<Comfort>0.95</Comfort>
+			<BedRestEffectiveness>1.25</BedRestEffectiveness>
+		</statBases>
+		<Size>(1,2)</Size>
+		<costList>
+			<SteelBar>60</SteelBar>
+			<Cloth>40</Cloth>
+		</costList>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<Bed_HealTickInterval>1800</Bed_HealTickInterval>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<DesignationCategory>Furniture</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>HospitalBed</defName>
+		<label>hospital bed</label>
+		<Description>A healing pod, perfect for healing up wounded colonists and prisoners.  Not very comfortable, but heals very fast!
+Rest effectiveness: 85%</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Beds/MedBed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<BedRestEffectiveness>0.85</BedRestEffectiveness>
+		</statBases>
+		<Size>(1,2)</Size>
+		<costList>
+			<SteelBar>100</SteelBar>
+			<Cloth>40</Cloth>
+			<Medicine>5</Medicine>
+		</costList>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<Bed_HealTickInterval>1200</Bed_HealTickInterval>
+			<bed_medicalBonusFactor>1.04</bed_medicalBonusFactor>
+			<bed_defaultMedical>true</bed_defaultMedical>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<DesignationCategory>Furniture</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<researchPrerequisite>Chemlab</researchPrerequisite>
+	</ThingDef>
+
+
+	<!--======================= Basic domestic furniture ==============================-->
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Stool</defName>
+		<label>stool</label>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Chairs/Stool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToMake>375</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Comfort>0.5</Comfort>
+		</statBases>
+		<description>A basic stool people can sit on.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<pathCost>30</pathCost>
+		<designationCategory>Furniture</designationCategory>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>DiningChair</defName>
+		<label>Comfy Chair</label>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Chairs/ComfyChair</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToMake>750</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>9</Beauty>
+			<Comfort>0.7</Comfort>
+		</statBases>
+		<description>A comfy chair people can sit on.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<WoodPlank>10</WoodPlank>
+		</costList>		
+		<pathCost>30</pathCost>
+		<designationCategory>Furniture</designationCategory>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<researchPrerequisite>ElectricSmelting</researchPrerequisite>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TableLong</defName>
+		<label>Pod Chair</label>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Chairs/PodChair</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1250</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>20</Beauty>
+			<Comfort>0.90</Comfort>
+		</statBases>
+		<description>A futuristic chair people can sit on.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<Cloth>20</Cloth>
+		</costList>		
+		<pathCost>30</pathCost>
+		<designationCategory>Furniture</designationCategory>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>TableShort</defName>
+		<label>dragable table</label>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Tables/Table_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom3</li>
+			</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/SCFurniture/Tables/Table_Icon</uiIconPath>
+		<description>A dragable table.  A place for your colonists to sit and eat.</description>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<surfaceType>Eat</surfaceType>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToMake>500</WorkToMake>
+			<Flammability>1.0</Flammability>
+			<Beauty>6</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<rotatable>false</rotatable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<designationCategory>Furniture</designationCategory>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<!-- ======================== Lighting ======================= -->
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>Armchair</defName>
+		<label>wood torch</label>
+		<description>A temporary light source which burns for a few days.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Lights/WoodTorch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<constructEffect>ConstructDirt</constructEffect>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToMake>250</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<size>(1,1)</size>
+		<costList>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<soundImpactDefault>BulletImpactGround</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>8</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li>
+				<compClass>CompLifespan</compClass>
+				<lifespanTicks>80000</lifespanTicks>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>false</rotatable>
+	</ThingDef>
+	
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>StandingLamp</defName>
+		<label>ceiling lamp</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Lights/CeilingLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+				<offset>(0,0,-0.1)</offset>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>115</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Indoor ceiling lamp that lights an area.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>20</SteelBar>
+			<Glass>5</Glass>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>PowerI</researchPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>StandingLamp_Red</defName>
+		<label>ceiling lamp (red)</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Lights/CeilingLamp_Red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+				<offset>(0,0,-0.1)</offset>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>130</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Indoor ceiling lamp that lights an area in red.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>20</SteelBar>
+			<Glass>5</Glass>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,0,0,0)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>StandingLamp_Green</defName>
+		<label>ceiling lamp (green)</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Lights/CeilingLamp_Green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+				<offset>(0,0,-0.1)</offset>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>130</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Indoor ceiling lamp that lights an area in green.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>20</SteelBar>
+			<Glass>5</Glass>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>12</glowRadius>
+				<glowColor>(0,217,0,0)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>StandingLamp_Blue</defName>
+		<label>ceiling lamp (blue)</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/SCFurniture/Lights/CeilingLamp_Blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+				<offset>(0,0,-0.1)</offset>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>130</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Indoor ceiling lamp that lights an area in blue.</description>
+		<size>(1,1)</size>
+		<costList>
+			<SteelBar>20</SteelBar>
+			<Glass>5</Glass>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li>
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li>
+				<compClass>CompGlower</compClass>
+				<glowRadius>12</glowRadius>
+				<glowColor>(0,0,217,0)</glowColor>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>false</rotatable>
+		<researchPrerequisite>ColoredLights</researchPrerequisite>
+	</ThingDef>
+
+
+	<!--============================== Storage ==============================-->
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>EquipmentRack</defName>
+		<label>equipment rack</label>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/EquipmentRack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToMake>750</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Haulers carry equipment here for storage.</description>
+		<size>(2,1)</size>
+		<building>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationCategory>Furniture</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+	</ThingDef>
+  
+  
+	<!--============================== Decoration ==============================-->
+  
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>PlantPot</defName>
+		<label>plant pot</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/PlantPot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+				<offset>(0,0,-0.1)</offset>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>330</WorkToMake>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<inspectorTabs>
+			<li>ITab_Growing</li>
+		</inspectorTabs>
+		<description>Plant decorative flowers here to improve the mood of people nearby.</description>
+		<size>(1,1)</size>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<fertility>1.0</fertility>
+		<designationCategory>Furniture</designationCategory>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<defaultPlantToGrow>PlantDaylily</defaultPlantToGrow>
+			<plantsDestroyWithMe>true</plantsDestroyWithMe>
+			<sowTag>Decorative</sowTag>
+		</building>
+		<rotatable>false</rotatable>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterCabinet</defName>
+		<label>cabinet</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SCDecor/Cabinet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+				<offset>(0,0,-0.1)</offset>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<costList>
+			<SteelBar>50</SteelBar>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1250</WorkToMake>
+			<Beauty>10</Beauty>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>A decorative cabinet.</description>
+		<size>(1,1)</size>
+		<designationCategory>Furniture</designationCategory>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<researchPrerequisite>ElectricSmelting</researchPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterDesk</defName>
+		<label>desk</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SCDecor/Desk</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+				<offset>(0,0,-0.1)</offset>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<costList>
+			<SteelBar>75</SteelBar>
+		</costList>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>1875</WorkToMake>
+			<Beauty>15</Beauty>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>A decorative desk.</description>
+		<size>(2,1)</size>
+		<designationCategory>Furniture</designationCategory>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<researchPrerequisite>ElectricSmelting</researchPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterLocker</defName>
+		<label>locker</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SCDecor/Locker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+				<offset>(0,0,-0.1)</offset>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<costList>
+			<SteelBar>50</SteelBar>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1250</WorkToMake>
+			<Beauty>10</Beauty>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>A decorative locker.</description>
+		<size>(1,1)</size>
+		<designationCategory>Furniture</designationCategory>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<researchPrerequisite>ElectricSmelting</researchPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ClutterShelf</defName>
+		<label>shelf</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SCDecor/Shelf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowInfo>
+				<basewidth>0.3</basewidth>
+				<baseHeight>0.3</baseHeight>
+				<tallness>0.6</tallness>
+				<offset>(0,0,-0.1)</offset>
+			</shadowInfo>
+		</graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<costList>
+			<SteelBar>50</SteelBar>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1250</WorkToMake>
+			<Beauty>10</Beauty>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>A decorative shelf.</description>
+		<size>(1,1)</size>
+		<designationCategory>Furniture</designationCategory>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<researchPrerequisite>ElectricSmelting</researchPrerequisite>
+	</ThingDef>
+
+  
+</Buildings>
