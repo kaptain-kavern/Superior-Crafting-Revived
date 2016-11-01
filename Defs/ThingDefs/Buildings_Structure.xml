@@ -3,46 +3,43 @@
 	
 	<!--========================= Doors =============================-->
 	
-	<ThingDef ParentName="BuildingBase" Name="DoorBase" Abstract="True">
-		<thingClass>Building_Door</thingClass>
-		<blueprintClass>Blueprint_Door</blueprintClass>
-		<category>Building</category>
-		<blueprintGraphicData>
-			<texPath>Things/Building/Door/Door_Blueprint</texPath>
-		</blueprintGraphicData>
-		<altitudeLayer>DoorMoveable</altitudeLayer>
-		<fillPercent>1</fillPercent>
-		<useHitPoints>true</useHitPoints>
-		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<selectable>true</selectable>
-		<tickerType>Normal</tickerType>
-		<size>(1,1)</size>
-		<rotatable>false</rotatable>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Structure</designationCategory>
-		<holdsRoof>true</holdsRoof>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>true</blockLight>
-		<drawerType>RealtimeOnly</drawerType>
-		<building>
-			<soundDoorOpenPowered>DoorOpenPowered</soundDoorOpenPowered>
-			<soundDoorClosePowered>DoorClosePowered</soundDoorClosePowered>
-			<soundDoorOpenManual>DoorOpenManual</soundDoorOpenManual>
-			<soundDoorCloseManual>DoorCloseManual</soundDoorCloseManual>
-			<ignoreNeedsPower>true</ignoreNeedsPower>
-			<canPlaceOverWall>true</canPlaceOverWall>
-		</building>
-		<comps>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-		</comps>
-	</ThingDef>
+<ThingDef ParentName="BuildingBase" Name="DoorBase" Abstract="True">
+    <thingClass>Building_Door</thingClass>
+    <blueprintClass>Blueprint_Door</blueprintClass>
+    <category>Building</category>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Door/Door_Blueprint</texPath>
+    </blueprintGraphicData>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>true</useHitPoints>    
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+      <soundDoorOpenPowered>DoorOpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>DoorClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>DoorOpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>DoorCloseManual</soundDoorCloseManual>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+</ThingDef>
 
 
 	<ThingDef ParentName="DoorBase">
@@ -58,9 +55,11 @@
 		<graphicData>
 			<texPath>Things/Building/SCDoors/DoorSimple_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<damageData><enabled>false</enabled></damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/SCDoors/DoorSimple_MenuIcon</uiIconPath>
 		<costStuffCount>25</costStuffCount>
+		<designationHotKey>Misc1</designationHotKey>
 	</ThingDef>
 
 	<ThingDef ParentName="DoorBase">
@@ -77,18 +76,20 @@
 		<graphicData>
 			<texPath>Things/Building/SCDoors/Autodoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<damageData><enabled>false</enabled></damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/SCDoors/Autodoor_MenuIcon</uiIconPath>
 		<costList>
 			<SteelBar>25</SteelBar>
+			<Component>1</Component>
 		</costList>
 		<costStuffCount>25</costStuffCount>
 		<comps>
-			<li>
+			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>50</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
 			</li>
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<researchPrerequisites><li>ConstructionII</li></researchPrerequisites>
 	</ThingDef>
@@ -104,18 +105,20 @@
 		<costList>
 			<SteelBar>30</SteelBar>
 			<PlasteelBar>50</PlasteelBar>
+			<Component>1</Component>
 		</costList>
 		<graphicData>
 			<texPath>Things/Building/SCDoors/DoorBlast_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<damageData><enabled>false</enabled></damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/SCDoors/DoorBlast_MenuIcon</uiIconPath>
 		<comps>
-			<li>
+			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>50</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
 			</li>
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<researchPrerequisites><li>ConstructionIII</li></researchPrerequisites>
 	</ThingDef>
@@ -137,6 +140,7 @@
 		<graphicData>
 			<texPath>Things/Building/SCDoors/FenceGate_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<damageData><enabled>false</enabled></damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/SCDoors/FenceGate_MenuIcon</uiIconPath>
 		<holdsRoof>false</holdsRoof>
@@ -269,17 +273,21 @@
 		<CostList>
 			<SteelBar>1</SteelBar>
 		</CostList>
+		<costStuffCount>6</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
-		<Comps>
-			<li>
-				<compClass>CompPowerTransmitter</compClass>
-				<transmitsPower>true</transmitsPower>
-			</li>
-		</Comps>
+	    <comps>
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTransmitter</compClass>
+	        <transmitsPower>true</transmitsPower>
+	      </li>
+	    </comps>
+	    <placeWorkers>
+	    	<li>PlaceWorker_Conduit</li>
+	    </placeWorkers>
 		<researchPrerequisites><li>ConstructionII</li></researchPrerequisites>
 	</ThingDef>
 	
@@ -338,16 +346,15 @@
 		<ignoreNeedsPower>false</ignoreNeedsPower>
 		</building>
 		<Comps>
-			<li>
-				<compClass>CompPowerTrader</compClass>
+			<li Class="CompProperties_Flickable"/>
+			 <li Class="CompProperties_Power">
 				<transmitsPower>true</transmitsPower>
 				<basePowerConsumption>50</basePowerConsumption>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-			<li>
-				<compClass>CompGlower</compClass>
+			<li Class="CompProperties_Glower">
 				<glowRadius>12</glowRadius>
 				<glowColor>(217,217,208,0)</glowColor>
 			</li>
