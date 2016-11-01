@@ -34,10 +34,10 @@
 	<defaultLabelColor>(70,220,30)</defaultLabelColor>
 		<defName>SimpleProstheticArm</defName>
 		<label>simple prosthetic arm</label>
+		<spawnThingOnRemoved>SimpleProstheticArm</spawnThingOnRemoved>
 		<addedPartProps>
 			<isSolid>true</isSolid>
-			<partEfficiency>0.75</partEfficiency>
-			<spawnThingOnRemoved>SimpleProstheticArm</spawnThingOnRemoved>
+			<partEfficiency>0.75</partEfficiency>			
 		</addedPartProps>
 	</HediffDef>
 
@@ -45,10 +45,10 @@
 	<defaultLabelColor>(70,220,30)</defaultLabelColor>
 		<defName>SimpleProstheticLeg</defName>
 		<label>simple prosthetic leg</label>
+		<spawnThingOnRemoved>SimpleProstheticLeg</spawnThingOnRemoved>
 		<addedPartProps>
 			<isSolid>true</isSolid>
-			<partEfficiency>0.75</partEfficiency>
-			<spawnThingOnRemoved>SimpleProstheticLeg</spawnThingOnRemoved>
+			<partEfficiency>0.75</partEfficiency>			
 		</addedPartProps>
 	</HediffDef>
 	
@@ -81,10 +81,10 @@
 				</verbs>
 			</li>
 		</comps>
+		<spawnThingOnRemoved>AdvancedProstheticArm</spawnThingOnRemoved>
 		<addedPartProps>
 			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>
-			<spawnThingOnRemoved>AdvancedProstheticArm</spawnThingOnRemoved>
+			<partEfficiency>1.0</partEfficiency>			
 		</addedPartProps>
 	</HediffDef>
 	
@@ -92,10 +92,10 @@
 		<defName>AdvancedProstheticLeg</defName>
 		<defaultLabelColor>(30,160,220)</defaultLabelColor>
 		<label>advanced prosthetic leg</label>
+		<spawnThingOnRemoved>AdvancedProstheticLeg</spawnThingOnRemoved>
 		<addedPartProps>
 			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>
-			<spawnThingOnRemoved>AdvancedProstheticLeg</spawnThingOnRemoved>
+			<partEfficiency>1.0</partEfficiency>			
 		</addedPartProps>
 	</HediffDef>
 	
@@ -103,10 +103,10 @@
 		<defName>PlasteelDenture</defName>
 		<defaultLabelColor>(30,160,220)</defaultLabelColor>
 		<label>plasteel denture</label>
+		<spawnThingOnRemoved>PlasteelDenture</spawnThingOnRemoved>
 		<addedPartProps>
 			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>
-			<spawnThingOnRemoved>PlasteelDenture</spawnThingOnRemoved>
+			<partEfficiency>1.0</partEfficiency>			
 		</addedPartProps>
 	</HediffDef>
 	
@@ -129,12 +129,12 @@
 				</verbs>
 			</li>
 		</comps>
+		<spawnThingOnRemoved>PowerClaw</spawnThingOnRemoved>
 		<addedPartProps>
 			<isGoodWeapon>true</isGoodWeapon>
 			<isBionic>true</isBionic>
 			<isSolid>true</isSolid>
-			<partEfficiency>0.9</partEfficiency>
-			<spawnThingOnRemoved>PowerClaw</spawnThingOnRemoved>
+			<partEfficiency>0.9</partEfficiency>			
 		</addedPartProps>
 	</HediffDef>
 
@@ -155,12 +155,12 @@
 				</verbs>
 			</li>
 		</comps>
+		<spawnThingOnRemoved>ScytherBlade</spawnThingOnRemoved>
 		<addedPartProps>
 			<isGoodWeapon>true</isGoodWeapon>
 			<isBionic>true</isBionic>
 			<isSolid>true</isSolid>
-			<partEfficiency>0.9</partEfficiency>
-			<spawnThingOnRemoved>ScytherBlade</spawnThingOnRemoved>
+			<partEfficiency>0.9</partEfficiency>			
 		</addedPartProps>
 	</HediffDef>
   
@@ -170,11 +170,11 @@
 	<defaultLabelColor>(220,30,220)</defaultLabelColor>
 		<defName>BionicEye</defName>
 		<label>bionic eye</label>
+		<spawnThingOnRemoved>BionicEye</spawnThingOnRemoved>
 		<addedPartProps>
 			<isBionic>true</isBionic>
 			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>
-			<spawnThingOnRemoved>BionicEye</spawnThingOnRemoved>
+			<partEfficiency>1.0</partEfficiency>			
 		</addedPartProps>
 		<stages>
 			<li>
@@ -192,11 +192,11 @@
 	<defaultLabelColor>(220,30,220)</defaultLabelColor>
 		<defName>BionicEar</defName>
 		<label>bionic ear</label>
+		<spawnThingOnRemoved>BionicEar</spawnThingOnRemoved>
 		<addedPartProps>
 			<isBionic>true</isBionic>
 			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>
-			<spawnThingOnRemoved>BionicEar</spawnThingOnRemoved>
+			<partEfficiency>1.0</partEfficiency>			
 		</addedPartProps>
 		<stages>
 			<li>
@@ -227,11 +227,11 @@
 				</verbs>
 			</li>
 		</comps>
+		<spawnThingOnRemoved>BionicArm</spawnThingOnRemoved>
 		<addedPartProps>
 			<isBionic>true</isBionic>
 			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>
-			<spawnThingOnRemoved>BionicArm</spawnThingOnRemoved>
+			<partEfficiency>1.0</partEfficiency>			
 		</addedPartProps>
 		<stages>
 			<li>
@@ -249,11 +249,11 @@
 	<defaultLabelColor>(220,30,220)</defaultLabelColor>
 		<defName>BionicLeg</defName>
 		<label>bionic leg</label>
+		<spawnThingOnRemoved>BionicLeg</spawnThingOnRemoved>
 		<addedPartProps>
 			<isBionic>true</isBionic>
 			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>
-			<spawnThingOnRemoved>BionicLeg</spawnThingOnRemoved>
+			<partEfficiency>1.0</partEfficiency>			
 		</addedPartProps>
 		<stages>
 			<li>
@@ -271,11 +271,11 @@
 	<defaultLabelColor>(220,30,220)</defaultLabelColor>
 		<defName>BionicSpine</defName>
 		<label>bionic spine</label>
+		<spawnThingOnRemoved>BionicSpine</spawnThingOnRemoved>
 		<addedPartProps>
 			<isBionic>true</isBionic>
 			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>
-			<spawnThingOnRemoved>BionicSpine</spawnThingOnRemoved>
+			<partEfficiency>1.0</partEfficiency>			
 		</addedPartProps>
 		<stages>
 			<li>
@@ -297,11 +297,11 @@
 	<defaultLabelColor>(220,30,220)</defaultLabelColor>
 		<defName>BionicBrain</defName>
 		<label>positronic brain implant</label>
+		<spawnThingOnRemoved>BionicBrain</spawnThingOnRemoved>
 		<addedPartProps>
 			<isBionic>true</isBionic>
 			<isSolid>true</isSolid>
-			<partEfficiency>1.2</partEfficiency>
-			<spawnThingOnRemoved>BionicBrain</spawnThingOnRemoved>
+			<partEfficiency>1.2</partEfficiency>			
 		</addedPartProps>
 	</HediffDef>
 
