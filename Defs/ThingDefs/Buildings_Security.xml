@@ -94,7 +94,7 @@
 		<designationCategory>Security</designationCategory>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<repairEffect>ConstructDirt</repairEffect>
-		<researchPrerequisites>Embrasures</researchPrerequisites>
+		<researchPrerequisites><li>Embrasures</li></researchPrerequisites>
 	</ThingDef>
 	
 
@@ -156,7 +156,7 @@ Burst:	  3</description>
 			<turretBurstCooldownTicks>400</turretBurstCooldownTicks>
 			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGun_Top</turretTopgraphicPath>
 		</building>
-		<researchPrerequisites>SecurityI</researchPrerequisites>
+		<researchPrerequisites><li>SecurityI</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -215,7 +215,7 @@ Burst:	 30</description>
 			<turretBurstCooldownTicks>300</turretBurstCooldownTicks>
 			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunGatling_Top</turretTopgraphicPath>
 		</building>
-		<researchPrerequisites>SpecializedMannedTurrets</researchPrerequisites>
+		<researchPrerequisites><li>SpecializedMannedTurrets</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -274,7 +274,7 @@ Burst:	  1</description>
 			<turretBurstCooldownTicks>240</turretBurstCooldownTicks>
 			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunShotgun_Top</turretTopgraphicPath>
 		</building>
-		<researchPrerequisites>SpecializedMannedTurrets</researchPrerequisites>
+		<researchPrerequisites><li>SpecializedMannedTurrets</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -334,7 +334,7 @@ Burst:	  1</description>
 			<turretburstCooldownTicks>240</turretburstCooldownTicks>
 			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunSniper_Top</turretTopgraphicPath>
 		</building>
-		<researchPrerequisites>SpecializedMannedTurrets</researchPrerequisites>
+		<researchPrerequisites><li>SpecializedMannedTurrets</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -396,7 +396,7 @@ Burst:	  3</description>
 			<turretBurstCooldownTicks>400</turretBurstCooldownTicks>
 			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGun_Top</turretTopgraphicPath>
 		</building>
-		<researchPrerequisites>GunTurretCooling</researchPrerequisites>
+		<researchPrerequisites><li>GunTurretCooling</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -455,7 +455,7 @@ Burst:	 30</description>
 			<turretBurstCooldownTicks>300</turretBurstCooldownTicks>
 			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunGatling_Top</turretTopgraphicPath>
 		</building>
-		<researchPrerequisites>SpecializedAITurrets</researchPrerequisites>
+		<researchPrerequisites><li>SpecializedAITurrets</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -514,7 +514,7 @@ Burst:	  1</description>
 			<turretBurstCooldownTicks>240</turretBurstCooldownTicks>
 			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunShotgun_Top</turretTopgraphicPath>
 		</building>
-		<researchPrerequisites>SpecializedAITurrets</researchPrerequisites>
+		<researchPrerequisites><li>SpecializedAITurrets</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -574,7 +574,7 @@ Burst:	  1</description>
 			<turretBurstCooldownTicks>240</turretBurstCooldownTicks>
 			<turretTopgraphicPath>Things/Building/SCSecurity/SentryGunSniper_Top</turretTopgraphicPath>
 		</building>
-		<researchPrerequisites>SpecializedAITurrets</researchPrerequisites>
+		<researchPrerequisites><li>SpecializedAITurrets</li></researchPrerequisites>
 	</ThingDef>
 
 
@@ -642,7 +642,7 @@ Burst:	  1</description>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<researchPrerequisites>Mortars</researchPrerequisites>
+		<researchPrerequisites><li>Mortars</li></researchPrerequisites>
 	</ThingDef>
 
 
@@ -707,7 +707,7 @@ Burst:	  1</description>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<researchPrerequisites>Mortars</researchPrerequisites>
+		<researchPrerequisites><li>Mortars</li></researchPrerequisites>
 	</ThingDef>
 
 
@@ -771,7 +771,7 @@ Burst:	  1</description>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<researchPrerequisites>Mortars</researchPrerequisites>
+		<researchPrerequisites><li>Mortars</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -846,7 +846,7 @@ Burst:	  1</description>
 		<colourRed>0.0</colourRed>
 		<colourGreen>0.3764705882352941</colourGreen>
 		<colourBlue>0.7294117647058823</colourBlue>
-		<researchPrerequisites>SecurityIV</researchPrerequisites>
+		<researchPrerequisites><li>SecurityIV</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -894,7 +894,7 @@ Burst:	  1</description>
 		<colourRed>0.0</colourRed>
 		<colourGreen>1.0</colourGreen>
 		<colourBlue>0.5</colourBlue>
-		<researchPrerequisites>SecurityIV</researchPrerequisites>
+		<researchPrerequisites><li>SecurityIV</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -981,7 +981,7 @@ Burst:	  1</description>
 				</wickTicks>
 			</li>
 		</comps>
-		<researchPrerequisites>IEDBomb</researchPrerequisites>
+		<researchPrerequisites><li>IEDBomb</li></researchPrerequisites>
 	</ThingDef>
   
 
@@ -1025,7 +1025,7 @@ Burst:	  1</description>
 				</wickTicks>
 			</li>
 		</comps>
-		<researchPrerequisites>IEDIncendiary</researchPrerequisites>
+		<researchPrerequisites><li>IEDIncendiary</li></researchPrerequisites>
 	</ThingDef>
   
 

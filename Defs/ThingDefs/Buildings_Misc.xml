@@ -118,7 +118,7 @@
 			</li>
 		</comps>
 		<staticSunShadowHeight>0.5</staticSunShadowHeight>
-		<researchPrerequisites>Communications</researchPrerequisites>
+		<researchPrerequisites><li>Communications</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -152,7 +152,7 @@
 		<pathCost>30</pathCost>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>false</rotatable>
-		<researchPrerequisites>Communications</researchPrerequisites>
+		<researchPrerequisites><li>Communications</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -199,7 +199,7 @@
 		<designationCategory>Misc</designationCategory>
 		<staticSunShadowHeight>0.75</staticSunShadowHeight>
 		<constructEffect>ConstructMetal</constructEffect>
-		<researchPrerequisites>FoodSynthesizer</researchPrerequisites>
+		<researchPrerequisites><li>FoodSynthesizer</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -259,7 +259,7 @@
 			<li>PlaceWorker_NextToHopperAccepter</li>
 		</placeWorkers>
 		<constructEffect>ConstructMetal</constructEffect>
-		<researchPrerequisites>FoodSynthesizer</researchPrerequisites>
+		<researchPrerequisites><li>FoodSynthesizer</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -319,7 +319,7 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<heatPerTickWhileWorking>0.6</heatPerTickWhileWorking>
 		</building>
-		<researchPrerequisites>Cremation</researchPrerequisites>
+		<researchPrerequisites><li>Cremation</li></researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
@@ -358,7 +358,7 @@
 		</comps>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
 		<rotatable>false</rotatable>
-		<researchPrerequisites>AgricultureIV</researchPrerequisites>
+		<researchPrerequisites><li>AgricultureIV</li></researchPrerequisites>
 	</ThingDef>
   
   
@@ -404,7 +404,7 @@
 		<pathCost>30</pathCost>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>true</rotatable>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 
 
@@ -439,7 +439,7 @@
 		<pathCost>30</pathCost>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>true</rotatable>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -479,7 +479,7 @@
 		<pathCost>30</pathCost>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>true</rotatable>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -521,7 +521,7 @@
 		<pathCost>30</pathCost>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>true</rotatable>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 
   
@@ -566,7 +566,7 @@
 		</comps>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<researchPrerequisites>ShipCryptosleep</researchPrerequisites>
+		<researchPrerequisites><li>ShipCryptosleep</li></researchPrerequisites>
 	</ThingDef>
 
   

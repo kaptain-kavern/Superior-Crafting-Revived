@@ -164,7 +164,7 @@ Rest effectiveness: 100%</Description>
 		<DesignationCategory>Furniture</DesignationCategory>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
-		<researchPrerequisites>CraftingI</researchPrerequisites>
+		<researchPrerequisites><li>CraftingI</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -219,7 +219,7 @@ Rest effectiveness: 125%</Description>
 		<DesignationCategory>Furniture</DesignationCategory>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -275,7 +275,7 @@ Rest effectiveness: 125%</Description>
 		<DesignationCategory>Furniture</DesignationCategory>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
-		<researchPrerequisites>Machining</researchPrerequisites>
+		<researchPrerequisites><li>Machining</li></researchPrerequisites>
 	</ThingDef>
 
 
@@ -330,7 +330,7 @@ Rest effectiveness: 85%</Description>
 		<DesignationCategory>Furniture</DesignationCategory>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
-		<researchPrerequisites><li>Chemlab</li></researchPrerequisites>
+		<researchPrerequisites><li><li>Chemlab</li></li></researchPrerequisites>
 	</ThingDef>
 
 
@@ -420,7 +420,7 @@ Rest effectiveness: 85%</Description>
 		<building>
 			<isSittable>true</isSittable>
 		</building>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -463,7 +463,7 @@ Rest effectiveness: 85%</Description>
 			<isSittable>true</isSittable>
 		</building>
 		<socialPropernessMatters>true</socialPropernessMatters>
-		<researchPrerequisites>Machining</researchPrerequisites>
+		<researchPrerequisites><li>Machining</li></researchPrerequisites>
 	</ThingDef>
 
 
@@ -548,9 +548,9 @@ Rest effectiveness: 85%</Description>
       <WorkToMake>170</WorkToMake>
       <Flammability>1.0</Flammability>
     </statBases>
-    <researchPrerequisites>
+    <researchPrerequisites><li>
       <li>PowerI</li>
-    </researchPrerequisites>
+    </li></researchPrerequisites>
   </ThingDef>
 
   <ThingDef Abstract="True" Name="StandingLampBase" ParentName="LampBase">
@@ -593,7 +593,7 @@ Rest effectiveness: 85%</Description>
         <glowColor>(217,0,0,0)</glowColor>
       </li>
     </comps>
-    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+    <researchPrerequisites><li><li>ColoredLights</li></li></researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="StandingLampBase">
@@ -606,7 +606,7 @@ Rest effectiveness: 85%</Description>
         <glowColor>(0,217,0,0)</glowColor>
       </li>
     </comps>
-    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+    <researchPrerequisites><li><li>ColoredLights</li></li></researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="StandingLampBase">
@@ -619,7 +619,7 @@ Rest effectiveness: 85%</Description>
         <glowColor>(0,0,217,0)</glowColor>
       </li>
     </comps>
-    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+    <researchPrerequisites><li><li>ColoredLights</li></li></researchPrerequisites>
   </ThingDef>
 
 	<!--============================== Storage ==============================-->
@@ -753,7 +753,7 @@ Rest effectiveness: 85%</Description>
 		<designationCategory>Furniture</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="FurnitureBase">
@@ -785,7 +785,7 @@ Rest effectiveness: 85%</Description>
 		<designationCategory>Furniture</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="FurnitureBase">
@@ -816,7 +816,7 @@ Rest effectiveness: 85%</Description>
 		<designationCategory>Furniture</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="FurnitureBase">
@@ -847,7 +847,7 @@ Rest effectiveness: 85%</Description>
 		<designationCategory>Furniture</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
-		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
+		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
 	</ThingDef>
 
   
