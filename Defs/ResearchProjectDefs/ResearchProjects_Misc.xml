@@ -13,14 +13,14 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.AgricultureI</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 	</ResearchProjectDef>
 	
     <ResearchProjectDef>
 		<defName>AgricultureII</defName>
 		<label>Agriculture II</label>
 		<description>Further advancements in agriculture, give your colonists the ability to fertilize the soil.  Unlocks the composter, which allows you to create mulch from wood logs.</description>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<prerequisites>
 			<li>AgricultureI</li>
 			<li>PowerI</li>
@@ -31,7 +31,7 @@
 		<defName>Hydroponics</defName>
 		<label>Agriculture III</label>
 		<description>Increased familiarity with the planets environment unlocks the secret of hydroponic gardening.  This allows your colonists to build the hydroponic table, to allow for indoor gardening.</description>
-		<totalCost>900</totalCost>
+		<baseCost>900</baseCost>
 		<prerequisites>
 			<li>AgricultureII</li>
 		</prerequisites>
@@ -41,7 +41,7 @@
 		<defName>AgricultureIV</defName>
 		<label>Agriculture IV</label>
 		<description>Advanced knowledge of this planets environment gives your colonists the ability to terraform.  This unlocks the terraforming pump, which allows you to create farmable soil anywhere.</description>
-		<totalCost>1200</totalCost>
+		<baseCost>1200</baseCost>
 		<prerequisites>
 			<li>Hydroponics</li>
 		</prerequisites>
@@ -56,7 +56,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.ConstructionI</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -68,7 +68,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.ConstructionII</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<prerequisites>
 			<li>Stonecutting</li>
 			<li>PowerI</li>
@@ -84,7 +84,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.ConstructionIII</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>900</totalCost>
+		<baseCost>900</baseCost>
 		<prerequisites>
 			<li>ConstructionII</li>
 		</prerequisites>
@@ -99,7 +99,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.ConstructionIV</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>1200</totalCost>
+		<baseCost>1200</baseCost>
 		<prerequisites>
 			<li>ConstructionIII</li>
 		</prerequisites>
@@ -114,14 +114,14 @@
 			<specialAction>SuperiorCrafting.SCUpgrades.CraftingI</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 	</ResearchProjectDef>
 	
     <ResearchProjectDef>
 		<defName>ElectricSmelting</defName>
 		<label>Crafting II</label>
 		<description>Further advancements in crafting, unlock the ability to build powered crafting tables.  They are faster, and more effective than their non-powered counterparts.  Also unlocks additional furniture items and training devices your colonists may use.</description>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<prerequisites>
 			<li>CraftingI</li>
 			<li>PowerI</li>
@@ -132,7 +132,7 @@
 		<defName>Machining</defName>
 		<label>Crafting III</label>
 		<description>Continued advancement in crafting, unlocks the ability to build the smithing table.  With this you can create weapons, electronic chips, and weaponized prosthetics.  Also unlocks additional furniture items to beautify your colony.</description>
-		<totalCost>900</totalCost>
+		<baseCost>900</baseCost>
 		<prerequisites>
 			<li>ElectricSmelting</li>
 		</prerequisites>
@@ -142,7 +142,7 @@
 		<defName>CraftingIV</defName>
 		<label>Crafting IV</label>
 		<description>Your injured colonists no longer have to accept the mediocrity of inferior prosthetics.  This final advancement in crafting unlocks the ability to create your own bionic body parts.  You can now be better, stronger, and faster, without having to sell your soul to the trade ships to get them!</description>
-		<totalCost>1200</totalCost>
+		<baseCost>1200</baseCost>
 		<prerequisites>
 			<li>Machining</li>
 		</prerequisites>
@@ -152,7 +152,7 @@
 		<defName>PowerI</defName>
 		<label>Power I</label>
 		<description>Learn the basics of power generation to help your colonists survive in this harsh climate.  This advancement unlocks conduits, lights, the steam generator, and the wind turbine.  Also unlocked are the glassworks, cookstove, and items to assist with temperature control.</description>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 	</ResearchProjectDef>
 	
     <ResearchProjectDef>
@@ -164,7 +164,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.PowerII</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<prerequisites>
 			<li>PowerI</li>
 		</prerequisites>
@@ -179,7 +179,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.PowerIII</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>900</totalCost>
+		<baseCost>900</baseCost>
 		<prerequisites>
 			<li>ElectricSmelting</li>
 			<li>PowerII</li>
@@ -195,7 +195,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.PowerIV</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>1200</totalCost>
+		<baseCost>1200</baseCost>
 		<prerequisites>
 			<li>GeothermalPower</li>
 			<li>Machining</li>
@@ -206,14 +206,14 @@
 		<defName>SecurityI</defName>
 		<label>Security I</label>
 		<description>Not only does it appear that the planets environment is trying to kill you, but hostile creatures and raiders are as well!  Learning the basics of security will allow your colonists to create a manned turret to help fend off these nasty attacks.</description>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
 		<defName>Mortars</defName>
 		<label>Security II</label>
 		<description>Sometimes, the best defence is a strong offense.  Further advancements in security research unlock the ability to build mortars, so you can attack those pesky enemies from afar, as well as increasing the rate of turret fire.</description>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<researchMods>
 			<li>
 				<specialAction>ResearchModsSpecial.GunTurretCooling</specialAction>
@@ -228,7 +228,7 @@
 		<defName>GunTurretCooling</defName>
 		<label>Security III</label>
 		<description>The best way to keep your colonists safe during an attack is to let someone else do the fighting!  This advancement unlocks the ability to build auto turrets that will fight for you, and do not have to be manned.</description>
-		<totalCost>900</totalCost>
+		<baseCost>900</baseCost>
 		<prerequisites>
 			<li>Mortars</li>
 			<li>PowerI</li>
@@ -239,7 +239,7 @@
 		<defName>SecurityIV</defName>
 		<label>Security IV</label>
 		<description>Don't let your colonists fight out in the open!  Continued advancement in security unlocks the ability to create the Sabre force shield and CRAM fortress shield to protect your colonists.</description>
-		<totalCost>1200</totalCost>
+		<baseCost>1200</baseCost>
 		<prerequisites>
 			<li>GunTurretCooling</li>
 		</prerequisites>
@@ -256,7 +256,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.Brewing</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 		<prerequisites>
 			<li>AgricultureI</li>
 		</prerequisites>
@@ -266,7 +266,7 @@
 		<defName>Chemlab</defName>
 		<label>chemlab</label>
 		<description>Minor Discovery:  This allows your colonists to build the Chemlab, which can be used to create medkits, and advanced prosthetic body parts.  This also allows colonists to construct hospital beds which increase the chance of successful medical work.</description>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<prerequisites>
 			<li>HospitalBed</li>
 			<li>PowerI</li>
@@ -277,7 +277,7 @@
 		<defName>ColoredLights</defName>
 		<label>colored lights</label>
 		<description>Minor Discovery:  This allows colonists to construct colored lights, mostly used for decorative purposes.</description>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 		<prerequisites>
 			<li>CraftingI</li>
 			<li>PowerI</li>
@@ -288,7 +288,7 @@
 		<defName>Communications</defName>
 		<label>communications</label>
 		<description>Minor Discovery:  This allows colonists to construct a communications station and trade beacon, so they may interact with other colonies and trade ships.</description>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 		<prerequisites>
 			<li>PowerI</li>
 		</prerequisites>
@@ -299,7 +299,7 @@
 		<defName>Cremation</defName>
 		<label>cremation</label>
 		<description>Minor Discovery:  This allows colonists to build crematoriums, which can vaporize unwanted corpses and apparel.</description>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 		<prerequisites>
 			<li>Stonecutting</li>
 			<li>PowerI</li>
@@ -310,7 +310,7 @@
 		<defName>Embrasures</defName>
 		<label>stone embrasures</label>
 		<description>Minor Discovery:  Don't let your colonists fight out in the open!  This skill unlocks the ability to create stone embrasures that colonists can use for additional protection.</description>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 		<prerequisites>
 			<li>SecurityI</li>
 		</prerequisites>
@@ -320,7 +320,7 @@
 		<defName>CarpetMaking</defName>
 		<label>fabric dye</label>
 		<description>Minor Discovery:  This allows colonists to build plush carpets that increase the quality of their environments.</description>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<prerequisites>
 			<li>ElectricSmelting</li>
 		</prerequisites>
@@ -330,7 +330,7 @@
 		<defName>FoodSynthesizer</defName>
 		<label>food synthesizer</label>
 		<description>Minor Discovery:  This allows colonists to build the food synthesizer.  While not the most tasty of ways to get a meal, the paste is nutritious, and it does free up colonists to do other things.</description>
-		<totalCost>300</totalCost>	
+		<baseCost>300</baseCost>	
 		<prerequisites>
 			<li>CraftingI</li>
 			<li>PowerI</li>
@@ -341,7 +341,7 @@
 		<defName>LightedWalls</defName>
 		<label>lighted walls</label>
 		<description>Minor Discovery:  Dark hallways make for unhappy colonists.  This allows colonists to build conduit filled, lighted walls.</description>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<prerequisites>
 			<li>ConstructionII</li>
 		</prerequisites>
@@ -356,7 +356,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.HospitalBed</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 		<prerequisites>
 			<li>AgricultureI</li>
 		</prerequisites>
@@ -366,7 +366,7 @@
 		<defName>PneumaticPicks</defName>
 		<label>mining</label>
 		<description>Minor Discovery:  Advancement in mining techniques grant miners a 20% increase in effectiveness.</description>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 		<prerequisites>
 			<li>Stonecutting</li>
 			<li>PowerI</li>
@@ -382,7 +382,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.NutrientResynthesisII</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>600</totalCost>	
+		<baseCost>600</baseCost>	
 		<prerequisites>
 			<li>FoodSynthesizer</li>
 		</prerequisites>
@@ -392,7 +392,7 @@
 		<defName>Cryptosleep</defName>
 		<label>organ vats</label>
 		<description>Minor Discovery:  This unlocks the organ vat which can be used to turn human corpses into biomatter, and grow replacement organs.</description>
-		<totalCost>900</totalCost>
+		<baseCost>900</baseCost>
 		<prerequisites>
 			<li>Chemlab</li>
 		</prerequisites>
@@ -407,7 +407,7 @@
 				<specialAction>SuperiorCrafting.SCUpgrades.ProteinReplication</specialAction>
 			</li>
 		</researchMods>
-		<totalCost>900</totalCost>	
+		<baseCost>900</baseCost>	
 		<prerequisites>
 			<li>NutrientResynthesis</li>
 		</prerequisites>
@@ -417,7 +417,7 @@
 		<defName>SpecializedAITurrets</defName>
 		<label>specialized AI turrets</label>
 		<description>Minor Discovery:  This allows colonists to build the gatling, shotgun, and sniper sentry turrets.</description>
-		<totalCost>900</totalCost>
+		<baseCost>900</baseCost>
 		<prerequisites>
 			<li>GunTurretCooling</li>
 			<li>SpecializedMannedTurrets</li>
@@ -428,7 +428,7 @@
 		<defName>SpecializedMannedTurrets</defName>
 		<label>specialized manned turrets</label>
 		<description>Minor Discovery:  This allows colonists to build the gatling, shotgun, and sniper manned turrets.</description>
-		<totalCost>300</totalCost>
+		<baseCost>300</baseCost>
 		<prerequisites>
 			<li>SecurityI</li>
 		</prerequisites>
@@ -438,7 +438,7 @@
 		<defName>IEDBomb</defName>
 		<label>Explosive IEDs</label>
 		<description>Minor Discovery:  Allows colonists to build improvised explosive device-based traps from artillery shells.</description>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<prerequisites>
 			<li>Mortars</li>
 		</prerequisites>
@@ -448,7 +448,7 @@
 		<defName>IEDIncendiary</defName>
 		<label>Incendiary IEDs</label>
 		<description>Minor Discovery:  Allows colonists to build incendiary explosive traps from artillery shells.</description>
-		<totalCost>600</totalCost>
+		<baseCost>600</baseCost>
 		<prerequisites>
 			<li>Mortars</li>
 		</prerequisites>
