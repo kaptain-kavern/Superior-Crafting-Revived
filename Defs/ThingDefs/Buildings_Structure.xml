@@ -347,12 +347,9 @@
 		</building>
 		<Comps>
 			<li Class="CompProperties_Flickable"/>
-			 <li Class="CompProperties_Power">
-				<transmitsPower>true</transmitsPower>
+			 <li Class="CompProperties_Power">				
 				<basePowerConsumption>50</basePowerConsumption>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
+				<shortCircuitInRain>false</shortCircuitInRain>				
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>12</glowRadius>
