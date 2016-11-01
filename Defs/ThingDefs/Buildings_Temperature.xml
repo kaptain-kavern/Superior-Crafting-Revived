@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BuildingBase">
+<ThingDef ParentName="BuildingBase">
     <defName>Campfire</defName>
     <label>campfire</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -83,243 +83,325 @@
       <isMealSource>true</isMealSource>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
-  </ThingDef>
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>PassiveCooler</defName>
+    <label>passive cooler</label>
+    <description>A traditional unpowered cooler that works by water evaporation. Will run out and self-destruct after several days.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Misc/PassiveCooler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>200</WorkToMake>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <WoodPlank>30</WoodPlank>
+    </costList>
+    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>-11</heatPerSecond>
+        <heatPushMinTemperature>15</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifeSpanTicks>300000</lifeSpanTicks>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>PassiveCooler</li>
+    </researchPrerequisites>
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>Heater</defName>
+    <label>heater</label>
+    <thingClass>Building_Heater</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/Heater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.25,0.4,0.7)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <blockWind>true</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <statBases>
+      <WorkToMake>1300</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <description>An electrical device that converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature.</description>
+    <costList>
+      <SteelBar>65</SteelBar>
+      <Component>1</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>21</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,150,100,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc3</designationHotKey>
+    <researchPrerequisites>
+      <li>PowerI</li>
+    </researchPrerequisites>
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+	<defName>IndustrialHeater</defName>
+	<label>industrial heater</label>
+	<thingClass>Building_Heater</thingClass>
+	<graphicData>
+		<texPath>Things/Building/SCTemperature/IndustrialHeater</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		<shadowData>
+			<volume>(1.4, 0.5, 1.4)</volume>
+			<offset>(0,0,-0.1)</offset>
+		</shadowData>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<pathCost>40</pathCost>
+	<castEdgeShadows>false</castEdgeShadows>
+	<rotatable>false</rotatable>
+	<fillPercent>0.4</fillPercent>
+	<statBases>
+		<WorkToMake>1875</WorkToMake>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+	</statBases>
+	<tickerType>Rare</tickerType>
+	<description>An electrical device that converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature.</description>
+	<size>(2,2)</size>
+	<costList>
+		<SteelBar>225</SteelBar>
+	</costList>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<placeWorkers>
+		<li>PlaceWorker_Heater</li>
+	</placeWorkers>
+	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<startElectricalFires>true</startElectricalFires>
+			<basePowerConsumption>250</basePowerConsumption>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_TempControl">
+			<energyPerSecond>125</energyPerSecond>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>5</glowRadius>
+			<glowColor>(255,150,100,0)</glowColor>
+		</li>
+		<li Class="CompProperties_Breakdownable"/>
+	</comps>
+	<designationCategory>Temperature</designationCategory>
+	<researchPrerequisites><li>ConstructionII</li></researchPrerequisites>
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>Cooler</defName>
+    <label>cooler</label>
+    <thingClass>Building_Cooler</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/Cooler</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms during the summer months, or to create a walk-in freezer. </description>
+    <costList>
+      <SteelBar>80</SteelBar>
+      <Component>3</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Cooler</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>-21</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+    <researchPrerequisites>
+      <li>PowerI</li>
+    </researchPrerequisites>
+</ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>Heater</defName>
-		<label>heater</label>
-		<thingClass>Building_Heater</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Misc/TempControl/Heater</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shadowInfo>
-				<basewidth>0.5</basewidth>
-				<baseHeight>0.5</baseHeight>
-				<tallness>1.0</tallness>
-			</shadowInfo>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>40</pathCost>
-		<castEdgeShadows>false</castEdgeShadows>
-		<rotatable>false</rotatable>
-		<fillPercent>0.4</fillPercent>
-		<statBases>
-			<WorkToMake>1875</WorkToMake>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<tickerType>Rare</tickerType>
-		<description>An electrical device that converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature.</description>
-		<size>(1,1)</size>
-		<costList>
-			<SteelBar>75</SteelBar>
-		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<placeWorkers>
-			<li>PlaceWorker_Heater</li>
-		</placeWorkers>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<comps>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
-				<basePowerConsumption>100</basePowerConsumption>
-			</li>
-			<li>
-				<compClass>CompTempControl</compClass>
-				<energyPerSecond>21</energyPerSecond>
-			</li>
-			<li>
-				<compClass>CompGlower</compClass>
-				<glowRadius>3</glowRadius>
-				<glowColor>(255,150,100,0)</glowColor>
-			</li>
-		</comps>
-		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisites><li>PowerI</li></researchPrerequisites>
-	</ThingDef>
-	
-	
-	<ThingDef ParentName="BuildingBase">
-		<defName>IndustrialHeater</defName>
-		<label>industrial heater</label>
-		<thingClass>Building_Heater</thingClass>
-		<graphicData>
-			<texPath>Things/Building/SCTemperature/IndustrialHeater</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<shadowInfo>
-				<basewidth>0.5</basewidth>
-				<baseHeight>0.5</baseHeight>
-				<tallness>1.0</tallness>
-			</shadowInfo>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>40</pathCost>
-		<castEdgeShadows>false</castEdgeShadows>
-		<rotatable>false</rotatable>
-		<fillPercent>0.4</fillPercent>
-		<statBases>
-			<WorkToMake>1875</WorkToMake>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<tickerType>Rare</tickerType>
-		<description>An electrical device that converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature.</description>
-		<size>(2,2)</size>
-		<costList>
-			<SteelBar>225</SteelBar>
-		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<placeWorkers>
-			<li>PlaceWorker_Heater</li>
-		</placeWorkers>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<comps>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
-				<basePowerConsumption>250</basePowerConsumption>
-			</li>
-			<li>
-				<compClass>CompTempControl</compClass>
-				<energyPerSecond>125</energyPerSecond>
-			</li>
-			<li>
-				<compClass>CompGlower</compClass>
-				<glowRadius>4</glowRadius>
-				<glowColor>(255,150,100,0)</glowColor>
-			</li>
-		</comps>
-		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisites><li>ConstructionII</li></researchPrerequisites>
-	</ThingDef>
 
-  
-	<ThingDef ParentName="BuildingBase">
-		<defName>Cooler</defName>
-		<label>cooler</label>
-		<thingClass>Building_Cooler</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Misc/TempControl/Cooler</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1</fillPercent>
-		<statBases>
-			<WorkToMake>2500</WorkToMake>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<tickerType>Rare</tickerType>
-		<description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms during the summer months, or to create a walk-in freezer. </description>
-		<size>(1,1)</size>
-		<costList>
-			<SteelBar>100</SteelBar>
-		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<placeWorkers>
-			<li>PlaceWorker_Cooler</li>
-		</placeWorkers>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<building>
-			<canPlaceOverWall>true</canPlaceOverWall>
-		</building>
-		<comps>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
-				<basePowerConsumption>150</basePowerConsumption>
-			</li>
-			<li>
-				<compClass>CompTempControl</compClass>
-				<energyPerSecond>-21</energyPerSecond>
-			</li>
-		</comps>
-		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisites><li>PowerI</li></researchPrerequisites>
-	</ThingDef>
-	
-	
-	<ThingDef ParentName="BuildingBase">
-		<defName>IndustrialCooler</defName>
-		<label>industrial cooler</label>
-		<thingClass>Building_Cooler</thingClass>
-		<graphicData>
-			<texPath>Things/Building/SCTemperature/IndustrialCooler</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,1)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1</fillPercent>
-		<statBases>
-			<WorkToMake>6250</WorkToMake>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<tickerType>Rare</tickerType>
-		<description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms during the summer months, or to create a walk-in freezer. </description>
-		<size>(3,1)</size>
-		<costList>
-			<SteelBar>250</SteelBar>
-		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<placeWorkers>
-			<li>PlaceWorker_Cooler</li>
-		</placeWorkers>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<building>
-			<canPlaceOverWall>true</canPlaceOverWall>
-		</building>
-		<comps>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
-				<basePowerConsumption>350</basePowerConsumption>
-			</li>
-			<li>
-				<compClass>CompTempControl</compClass>
-				<energyPerSecond>-125</energyPerSecond>
-			</li>
-		</comps>
-		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisites><li>ConstructionII</li></researchPrerequisites>
-	</ThingDef>
-
+<ThingDef ParentName="BuildingBase">
+	<defName>IndustrialCooler</defName>
+	<label>industrial cooler</label>
+	<thingClass>Building_Cooler</thingClass>
+	<graphicData>
+		<texPath>Things/Building/SCTemperature/IndustrialCooler</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(3,1)</drawSize>
+		<damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		</damageData>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>Impassable</passability>
+	<castEdgeShadows>true</castEdgeShadows>
+	<fillPercent>1</fillPercent>
+	<statBases>
+		<WorkToMake>5750</WorkToMake>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+	</statBases>
+	<tickerType>Rare</tickerType>
+	<description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms during the summer months, or to create a walk-in freezer. </description>
+	<size>(3,1)</size>
+	<costList>
+		<SteelBar>200</SteelBar>
+		<Component>5</Component>
+	</costList>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<placeWorkers>
+		<li>PlaceWorker_Cooler</li>
+	</placeWorkers>
+	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	<building>
+		<canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>350</basePowerConsumption>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_TempControl">
+			<energyPerSecond>-125</energyPerSecond>
+		</li>
+		<li Class="CompProperties_Breakdownable"/>
+	</comps>
+	<designationCategory>Temperature</designationCategory>
+	<researchPrerequisites><li>ConstructionII</li></researchPrerequisites>
+</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>Vent</defName>
 		<label>vent</label>
-		<thingClass>Building_VentSC</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Misc/TempControl/Vent</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
+		<thingClass>Building_Vent</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/Vent</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
-		<castEdgeShadows>true</castEdgeShadows>
+    <blockWind>true</blockWind>
 		<fillPercent>1</fillPercent>
-		<statBases>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <statBases>
 			<WorkToMake>400</WorkToMake>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<tickerType>Rare</tickerType>
 		<description>A simple vent for equalizing the temperature between two rooms without allowing people to walk between them.</description>
-		<size>(1,1)</size>
 		<costList>
 			<SteelBar>30</SteelBar>
 		</costList>
@@ -333,7 +415,7 @@
 		</building>
 		<designationCategory>Temperature</designationCategory>
 		<researchPrerequisites><li>PowerI</li></researchPrerequisites>
-	</ThingDef>
-	
-	
+		<designationHotKey>Misc5</designationHotKey>
+  </ThingDef>
+
 </Defs>
