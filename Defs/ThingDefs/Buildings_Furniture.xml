@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
+
+  <ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <DesignationCategory>Furniture</DesignationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef Name="HighQualityFurnitureBase" ParentName="BuildingBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_Furniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <DesignationCategory>Furniture</DesignationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+  </ThingDef>
+
+
 	<!--============================== Beds ==============================-->
 
   
@@ -34,7 +67,7 @@ Rest effectiveness: 60%</Description>
 	</ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>Bed</defName>
 		<label>hide bed</label>
 		<Description>A simple bed made of wood logs and animal hides.
@@ -80,7 +113,7 @@ Rest effectiveness: 80%</Description>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>RoyalBed</defName>
 		<label>cloth bed</label>
 		<Description>A cloth mattress and sheets on a wood frame for resting.
@@ -135,7 +168,7 @@ Rest effectiveness: 100%</Description>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>ComfyBed</defName>
 		<label>comfy bed</label>
 		<Description>A cozy mattress and sheets on a metal frame for resting.
@@ -190,7 +223,7 @@ Rest effectiveness: 125%</Description>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>PodBed</defName>
 		<label>pod bed</label>
 		<Description>A futuristic bed with a high beauty rating.  Built to provide the maximum comfort level.
@@ -246,7 +279,7 @@ Rest effectiveness: 125%</Description>
 	</ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>HospitalBed</defName>
 		<label>hospital bed</label>
 		<Description>A healing pod, perfect for healing up wounded colonists and prisoners.  Not very comfortable, but heals very fast!
@@ -279,6 +312,16 @@ Rest effectiveness: 85%</Description>
 			<Bed_HealTickInterval>1200</Bed_HealTickInterval>			
 			<bed_defaultMedical>true</bed_defaultMedical>
 		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
 		<fillPercent>0.4</fillPercent>
 		<PathCost>60</PathCost>
 		<LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
@@ -294,7 +337,7 @@ Rest effectiveness: 85%</Description>
 	<!--======================= Basic domestic furniture ==============================-->
 
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>Stool</defName>
 		<label>stool</label>
 		<graphicData>
@@ -338,7 +381,7 @@ Rest effectiveness: 85%</Description>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>DiningChair</defName>
 		<label>Comfy Chair</label>
 		<graphicData>
@@ -381,7 +424,7 @@ Rest effectiveness: 85%</Description>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="HighQualityFurnitureBase">
 		<defName>TableLong</defName>
 		<label>Pod Chair</label>
 		<graphicData>
@@ -424,7 +467,7 @@ Rest effectiveness: 85%</Description>
 	</ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>TableShort</defName>
 		<label>dragable table</label>
 		<graphicData>
@@ -582,7 +625,7 @@ Rest effectiveness: 85%</Description>
 	<!--============================== Storage ==============================-->
 
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>EquipmentRack</defName>
 		<label>equipment rack</label>
 		<thingClass>Building_Storage</thingClass>
@@ -639,19 +682,19 @@ Rest effectiveness: 85%</Description>
 	<!--============================== Decoration ==============================-->
   
   
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>PlantPot</defName>
 		<label>plant pot</label>
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PlantPot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-				<offset>(0,0,-0.1)</offset>
-			</shadowInfo>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -666,19 +709,13 @@ Rest effectiveness: 85%</Description>
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
-		<inspectorTabs>
-			<li>ITab_Growing</li>
-		</inspectorTabs>
+		<costStuffCount>15</costStuffCount>		
 		<description>Plant decorative flowers here to improve the mood of people nearby.</description>
 		<size>(1,1)</size>
-		<comps>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-		</comps>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
 		<fertility>1.0</fertility>
-		<designationCategory>Furniture</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<building>
 			<defaultPlantToGrow>PlantDaylily</defaultPlantToGrow>
@@ -688,19 +725,16 @@ Rest effectiveness: 85%</Description>
 		<rotatable>false</rotatable>
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>ClutterCabinet</defName>
 		<label>cabinet</label>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/SCDecor/Cabinet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-				<offset>(0,0,-0.1)</offset>
-			</shadowInfo>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -722,7 +756,7 @@ Rest effectiveness: 85%</Description>
 		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>ClutterDesk</defName>
 		<label>desk</label>
 		<thingClass>Building</thingClass>
@@ -730,12 +764,9 @@ Rest effectiveness: 85%</Description>
 			<texPath>Things/Building/SCDecor/Desk</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,1)</drawSize>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-				<offset>(0,0,-0.1)</offset>
-			</shadowInfo>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -757,19 +788,16 @@ Rest effectiveness: 85%</Description>
 		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>ClutterLocker</defName>
 		<label>locker</label>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/SCDecor/Locker</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-				<offset>(0,0,-0.1)</offset>
-			</shadowInfo>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -791,19 +819,16 @@ Rest effectiveness: 85%</Description>
 		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>ClutterShelf</defName>
 		<label>shelf</label>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/SCDecor/Shelf</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-				<offset>(0,0,-0.1)</offset>
-			</shadowInfo>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
