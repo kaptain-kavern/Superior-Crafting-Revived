@@ -1077,7 +1077,7 @@
 			<texPath>Things/Building/SCMisc/SunLamp1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<altitudeLayer>BuildingTall</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
