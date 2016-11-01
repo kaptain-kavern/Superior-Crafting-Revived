@@ -61,7 +61,7 @@
 		<pathCost>70</pathCost>
 		<passability>PassThroughOnly</passability>
 		<designationCategory>Joy</designationCategory>
-		<researchPrerequisite>CraftingI</researchPrerequisite>
+		<researchPrerequisites>CraftingI</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -100,7 +100,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NeverAdjacentUnstandable</li>
 		</placeWorkers>
-		<researchPrerequisite>CraftingI</researchPrerequisite>
+		<researchPrerequisites>CraftingI</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">

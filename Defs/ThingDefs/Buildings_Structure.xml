@@ -90,7 +90,7 @@
 				<transmitsPower>true</transmitsPower>
 			</li>
 		</comps>
-		<researchPrerequisite>ConstructionII</researchPrerequisite>
+		<researchPrerequisites>ConstructionII</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="DoorBase">
@@ -117,7 +117,7 @@
 				<transmitsPower>true</transmitsPower>
 			</li>
 		</comps>
-		<researchPrerequisite>ConstructionIII</researchPrerequisite>
+		<researchPrerequisites>ConstructionIII</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="DoorBase">
@@ -142,7 +142,7 @@
 		<holdsRoof>false</holdsRoof>
 		<designationCategory>Structure</designationCategory>
 		<staticSunShadowHeight>0.30</staticSunShadowHeight>
-		<researchPrerequisite>AgricultureI</researchPrerequisite>
+		<researchPrerequisites>AgricultureI</researchPrerequisites>
 	</ThingDef>
 
 
@@ -280,7 +280,7 @@
 				<transmitsPower>true</transmitsPower>
 			</li>
 		</Comps>
-		<researchPrerequisite>ConstructionII</researchPrerequisite>
+		<researchPrerequisites>ConstructionII</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -358,7 +358,7 @@
 				<multiplier>3</multiplier>
 			</li>
 		</damageMultipliers>
-		<researchPrerequisite>LightedWalls</researchPrerequisite>
+		<researchPrerequisites>LightedWalls</researchPrerequisites>
 	</ThingDef>
 
 	
@@ -414,7 +414,7 @@
 				<multiplier>3</multiplier>
 			</li>
 		</damageMultipliers>
-		<researchPrerequisite>AgricultureI</researchPrerequisite>
+		<researchPrerequisites>AgricultureI</researchPrerequisites>
 	</ThingDef>
 
 

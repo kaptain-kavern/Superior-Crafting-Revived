@@ -122,7 +122,7 @@
 			</li>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisite>PowerI</researchPrerequisite>
+		<researchPrerequisites>PowerI</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -181,7 +181,7 @@
 			</li>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisite>ConstructionII</researchPrerequisite>
+		<researchPrerequisites>ConstructionII</researchPrerequisites>
 	</ThingDef>
 
   
@@ -229,7 +229,7 @@
 			</li>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisite>PowerI</researchPrerequisite>
+		<researchPrerequisites>PowerI</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -278,7 +278,7 @@
 			</li>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisite>ConstructionII</researchPrerequisite>
+		<researchPrerequisites>ConstructionII</researchPrerequisites>
 	</ThingDef>
 
 
@@ -314,7 +314,7 @@
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
 		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisite>PowerI</researchPrerequisite>
+		<researchPrerequisites>PowerI</researchPrerequisites>
 	</ThingDef>
 	
 	

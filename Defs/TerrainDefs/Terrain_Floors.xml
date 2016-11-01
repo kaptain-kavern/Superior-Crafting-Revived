@@ -53,7 +53,7 @@ Beauty:  3</Description>
 			<WoodPlank>2</WoodPlank>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<ResearchPrerequisite>CraftingI</ResearchPrerequisite>
+		<researchPrerequisites>CraftingI</researchPrerequisites>
 	</TerrainDef>
   
 	<TerrainDef  ParentName="FloorBase">
@@ -71,7 +71,7 @@ Beauty:  6</Description>
 			<WoodPlank>3</WoodPlank>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<ResearchPrerequisite>ElectricSmelting</ResearchPrerequisite>
+		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
 	</TerrainDef>
 
   <!-- ================= Tile ================= -->
@@ -108,7 +108,7 @@ Beauty:  3</Description>
 		<CostList>
 			<Sand>2</Sand>
 		</CostList>
-		<ResearchPrerequisite>CraftingI</ResearchPrerequisite>
+		<researchPrerequisites>CraftingI</researchPrerequisites>
 	</TerrainDef>
   
 	<TerrainDef  ParentName="FloorBase">
@@ -126,7 +126,7 @@ Beauty:  6</Description>
 			<SteelBar>3</SteelBar>
 		</CostList>
 		<constructEffect>ConstructMetal</constructEffect>
-		<ResearchPrerequisite>ElectricSmelting</ResearchPrerequisite>
+		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
 	</TerrainDef>
 
 
@@ -140,7 +140,7 @@ Beauty:  6</Description>
 		<Description>Soft, white carpet with a fresh and clean look.
 Beauty:  6</Description>
 		<texturePath>Terrain/Surfaces/CarpetWhite</texturePath>
-		<ResearchPrerequisite>CarpetMaking</ResearchPrerequisite>
+		<researchPrerequisites>CarpetMaking</researchPrerequisites>
 		<CostList>
 			<Cloth>3</Cloth>
 		</CostList>
@@ -156,7 +156,7 @@ Beauty:  6</Description>
 		<Description>Stunning beige carpet that is soft, and relaxing.
 Beauty:  6</Description>
 		<texturePath>Terrain/Surfaces/CarpetBeige</texturePath>
-		<ResearchPrerequisite>CarpetMaking</ResearchPrerequisite>
+		<researchPrerequisites>CarpetMaking</researchPrerequisites>
 		<CostList>
 			<Cloth>3</Cloth>
 		</CostList>
@@ -172,7 +172,7 @@ Beauty:  6</Description>
 		<Description>Plush carpet in a lovely rose hue.
 Beauty:  6</Description>
 		<texturePath>Terrain/Surfaces/CarpetRed</texturePath>
-		<ResearchPrerequisite>CarpetMaking</ResearchPrerequisite>
+		<researchPrerequisites>CarpetMaking</researchPrerequisites>
 		<CostList>
 			<Cloth>3</Cloth>
 		</CostList>
@@ -188,7 +188,7 @@ Beauty:  6</Description>
 		<Description>Naturalistic-feeling green carpet.
 Beauty:  6</Description>
 		<texturePath>Terrain/Surfaces/CarpetGreen</texturePath>
-		<ResearchPrerequisite>CarpetMaking</ResearchPrerequisite>
+		<researchPrerequisites>CarpetMaking</researchPrerequisites>
 		<CostList>
 			<Cloth>3</Cloth>
 		</CostList>
@@ -204,7 +204,7 @@ Beauty:  6</Description>
 		<Description>Toe-hugging plush carpet in a cool blue color.
 Beauty:  6</Description>
 		<texturePath>Terrain/Surfaces/CarpetBlue</texturePath>
-		<ResearchPrerequisite>CarpetMaking</ResearchPrerequisite>
+		<researchPrerequisites>CarpetMaking</researchPrerequisites>
 		<CostList>
 			<Cloth>3</Cloth>
 		</CostList>

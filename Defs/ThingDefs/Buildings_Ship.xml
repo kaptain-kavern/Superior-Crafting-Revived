@@ -48,7 +48,7 @@
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<researchPrerequisite>ConstructionIV</researchPrerequisite>
+		<researchPrerequisites>ConstructionIV</researchPrerequisites>
 	</ThingDef>
 
 
@@ -64,7 +64,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
-		<researchPrerequisite>ShipCryptosleep</researchPrerequisite>
+		<researchPrerequisites>ShipCryptosleep</researchPrerequisites>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
@@ -124,7 +124,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		<researchPrerequisite>ShipComputerCore</researchPrerequisite>
+		<researchPrerequisites>ShipComputerCore</researchPrerequisites>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>Impassable</passability>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -175,7 +175,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(7,7)</drawSize>
 		</graphicData>
-		<researchPrerequisite>ShipReactor</researchPrerequisite>
+		<researchPrerequisites>ShipReactor</researchPrerequisites>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>Impassable</passability>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -228,7 +228,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,5)</drawSize>
 		</graphicData>
-		<researchPrerequisite>ShipEngine</researchPrerequisite>
+		<researchPrerequisites>ShipEngine</researchPrerequisites>
 		<altitudeLayer>BuildingTall</altitudeLayer>
 		<passability>Impassable</passability>
 		<castEdgeShadows>true</castEdgeShadows>

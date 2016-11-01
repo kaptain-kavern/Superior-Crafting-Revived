@@ -28,7 +28,7 @@
 		<CostList>
 				<Mulch>10</Mulch>
 		</CostList>
-		<researchPrerequisite>AgricultureII</researchPrerequisite>
+		<researchPrerequisites>AgricultureII</researchPrerequisites>
 	</TerrainDef>
   
   

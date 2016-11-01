@@ -197,7 +197,7 @@
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
 		</comps>
-		<researchPrerequisite>ElectricSmelting</researchPrerequisite>
+		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -254,7 +254,7 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
 		</building>
-		<researchPrerequisite>ElectricSmelting</researchPrerequisite>
+		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -308,7 +308,7 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
 		</building>
-		<researchPrerequisite>PowerI</researchPrerequisite>
+		<researchPrerequisites>PowerI</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -361,7 +361,7 @@
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
 		</comps>
-		<researchPrerequisite>Machining</researchPrerequisite>
+		<researchPrerequisites>Machining</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -406,7 +406,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-		<researchPrerequisite>CraftingI</researchPrerequisite>
+		<researchPrerequisites>CraftingI</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -445,7 +445,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-		<researchPrerequisite>CraftingI</researchPrerequisite>
+		<researchPrerequisites>CraftingI</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -484,7 +484,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-		<researchPrerequisite>ElectricSmelting</researchPrerequisite>
+		<researchPrerequisites>ElectricSmelting</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -632,7 +632,7 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<heatPerTickWhileWorking>0.25</heatPerTickWhileWorking>
 		</building>
-		<researchPrerequisite>PowerI</researchPrerequisite>
+		<researchPrerequisites>PowerI</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -675,7 +675,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-		<researchPrerequisite>Brewing</researchPrerequisite>
+		<researchPrerequisites>Brewing</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -731,7 +731,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-		<researchPrerequisite>Chemlab</researchPrerequisite>
+		<researchPrerequisites>Chemlab</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
@@ -789,7 +789,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-		<researchPrerequisite>Cryptosleep</researchPrerequisite>
+		<researchPrerequisites>Cryptosleep</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
@@ -845,7 +845,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-		<researchPrerequisite>CraftingIV</researchPrerequisite>
+		<researchPrerequisites>CraftingIV</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
@@ -894,7 +894,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-		<researchPrerequisite>AgricultureII</researchPrerequisite>
+		<researchPrerequisites>AgricultureII</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -965,7 +965,7 @@
 				<glowColor>(370,370,370,0)</glowColor>
 			</li>
 		</comps>
-		<researchPrerequisite>Hydroponics</researchPrerequisite>
+		<researchPrerequisites>Hydroponics</researchPrerequisites>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Production</designationCategory>
 		<staticSunShadowHeight>0.03</staticSunShadowHeight>
@@ -1015,7 +1015,7 @@
 		<specialDisplayRadius>5.8</specialDisplayRadius>
 		<designationCategory>Production</designationCategory>
 		<rotatable>false</rotatable>
-		<researchPrerequisite>PowerI</researchPrerequisite>
+		<researchPrerequisites>PowerI</researchPrerequisites>
 	</ThingDef>
   
   
