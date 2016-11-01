@@ -518,8 +518,7 @@
       <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2, 3)</drawSize>
-    </graphicData>
-    <researchPrerequisites><li>Cryptosleep</li></researchPrerequisites>
+    </graphicData>    
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
