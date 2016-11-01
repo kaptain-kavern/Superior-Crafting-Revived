@@ -46,7 +46,7 @@ Rest effectiveness: 80%</Description>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -89,7 +89,7 @@ Rest effectiveness: 100%</Description>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -130,7 +130,7 @@ Rest effectiveness: 125%</Description>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -171,7 +171,7 @@ Rest effectiveness: 125%</Description>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -212,7 +212,7 @@ Rest effectiveness: 85%</Description>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>2500</WorkToMake>
@@ -258,7 +258,7 @@ Rest effectiveness: 85%</Description>
 				<tallness>0.6</tallness>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>30</MaxHitPoints>
 			<WorkToMake>375</WorkToMake>
@@ -294,7 +294,7 @@ Rest effectiveness: 85%</Description>
 				<tallness>0.6</tallness>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<WorkToMake>750</WorkToMake>
@@ -332,7 +332,7 @@ Rest effectiveness: 85%</Description>
 				<tallness>0.6</tallness>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>1250</WorkToMake>
@@ -375,7 +375,7 @@ Rest effectiveness: 85%</Description>
 		<uiIconPath>Things/Building/SCFurniture/Tables/Table_Icon</uiIconPath>
 		<description>A dragable table.  A place for your colonists to sit and eat.</description>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<surfaceType>Eat</surfaceType>
 		<statBases>
 			<MaxHitPoints>40</MaxHitPoints>
@@ -670,7 +670,7 @@ Rest effectiveness: 85%</Description>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.4</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -732,7 +732,7 @@ Rest effectiveness: 85%</Description>
 				<offset>(0,0,-0.1)</offset>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.20</fillPercent>
 		<statBases>
@@ -781,7 +781,7 @@ Rest effectiveness: 85%</Description>
 				<offset>(0,0,-0.1)</offset>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.5</fillPercent>
 		<costList>
@@ -816,7 +816,7 @@ Rest effectiveness: 85%</Description>
 				<offset>(0,0,-0.1)</offset>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.5</fillPercent>
 		<costList>
@@ -850,7 +850,7 @@ Rest effectiveness: 85%</Description>
 				<offset>(0,0,-0.1)</offset>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.5</fillPercent>
 		<costList>
@@ -884,7 +884,7 @@ Rest effectiveness: 85%</Description>
 				<offset>(0,0,-0.1)</offset>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.5</fillPercent>
 		<costList>

@@ -21,7 +21,7 @@
 			<texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
 		</blueprintGraphicData>
 		<uiIconPath>Things/Building/Linked/Sandbags_MenuIcon</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>40</pathCost>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -69,7 +69,7 @@
 			<texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
 		</blueprintGraphicData>
 		<uiIconPath>Things/Building/SCSecurity/StoneEmbrasure_MenuIcon</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.9</fillPercent>
@@ -111,7 +111,7 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/MannedGunIco</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -170,7 +170,7 @@ Burst:	  3</description>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/MannedGunGatlingIco</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -229,7 +229,7 @@ Burst:	 30</description>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/MannedGunShotgunIco</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -288,7 +288,7 @@ Burst:	  1</description>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/MannedGunSniperIco</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -351,7 +351,7 @@ Burst:	  1</description>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/SentryGunIco</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>550</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -410,7 +410,7 @@ Burst:	  3</description>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/SentryGunGatlingIco</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>550</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -469,7 +469,7 @@ Burst:	 30</description>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/SentryGunShotgunIco</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>550</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -528,7 +528,7 @@ Burst:	  1</description>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/SentryGunSniperIco</uiIconPath>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>550</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -590,7 +590,7 @@ Burst:	  1</description>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -655,7 +655,7 @@ Burst:	  1</description>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -720,7 +720,7 @@ Burst:	  1</description>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -909,7 +909,7 @@ Burst:	  1</description>
 			<texPath>Things/Building/Security/DeadfallArmed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<drawerType>RealtimeOnly</drawerType>
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
@@ -949,7 +949,7 @@ Burst:	  1</description>
 			<texPath>Things/Building/Security/IEDBomb</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<drawerType>RealtimeOnly</drawerType>
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
@@ -993,7 +993,7 @@ Burst:	  1</description>
 			<texPath>Things/Building/Security/IEDIncendiary</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<drawerType>RealtimeOnly</drawerType>
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>

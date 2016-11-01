@@ -19,7 +19,7 @@
 				<WoodLog>50</WoodLog>
 				<Steel>10</Steel>
 			</CostList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -61,7 +61,7 @@
 			<WoodLog>30</WoodLog>
 			<Steel>30</Steel>
 		</CostList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -106,7 +106,7 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -157,7 +157,7 @@
 			<SteelBar>100</SteelBar>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -215,7 +215,7 @@
 		<CostList>
 			<SteelBar>120</SteelBar>
 		</CostList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -272,7 +272,7 @@
 		<CostList>
 			<SteelBar>90</SteelBar>
 		</CostList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -327,7 +327,7 @@
 			<PlasteelBar>50</PlasteelBar>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -380,7 +380,7 @@
 			<SteelBar>30</SteelBar>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -425,7 +425,7 @@
 			<SteelBar>30</SteelBar>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -464,7 +464,7 @@
 			<SteelBar>80</SteelBar>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -503,7 +503,7 @@
 			<Steel>10</Steel>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -544,7 +544,7 @@
 			<Steel>60</Steel>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -593,7 +593,7 @@
 			<WoodPlank>60</WoodPlank>
 			<SteelBar>30</SteelBar>
 		</CostList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -651,7 +651,7 @@
 			<WoodPlank>40</WoodPlank>
 			<SteelBar>50</SteelBar>
 		</CostList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -694,7 +694,7 @@
 			<SteelBar>90</SteelBar>
 			<Glass>30</Glass>
 		</CostList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -749,7 +749,7 @@
 			<SteelBar>90</SteelBar>
 			<PlasteelBar>30</PlasteelBar>
 		</CostList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -808,7 +808,7 @@
 			<PlasteelBar>30</PlasteelBar>
 			<Glass>30</Glass>
 		</CostList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -862,7 +862,7 @@
 			<SteelBar>90</SteelBar>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>

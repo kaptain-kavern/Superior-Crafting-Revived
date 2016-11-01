@@ -73,7 +73,7 @@
 			<isEdifice>true</isEdifice>
 			<allowWireConnection>false</allowWireConnection>
 		</building>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>Standable</passability>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<statBases>
@@ -156,7 +156,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<fillPercent>1</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -210,7 +210,7 @@ Energy Output:  750W</description>
 			<texPath>Things/Building/SCPower/GenHopper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.5</fillPercent>
 		<pathCost>70</pathCost>
@@ -346,7 +346,7 @@ Energy Output:  750W</description>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<fillPercent>0.5</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>

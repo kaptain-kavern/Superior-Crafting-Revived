@@ -58,7 +58,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,1)</drawSize>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<castEdgeShadows>true</castEdgeShadows>
 		<statBases>
@@ -135,7 +135,7 @@
 				<tallness>0.6</tallness>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>1500</WorkToMake>
@@ -211,7 +211,7 @@
 			<texPath>Things/Building/SCMisc/Hopper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.5</fillPercent>
 		<pathCost>70</pathCost>
@@ -281,7 +281,7 @@
 		<costList>
 			<SteelBar>20</SteelBar>
 		</costList>
-		<AltitudeLayer>Waist</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
 			<WorkToMake>2250</WorkToMake>
@@ -330,7 +330,7 @@
 			<texPath>Things/Building/SCMisc/FertilizerPump</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>Standable</passability>
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.2</fillPercent>
@@ -374,7 +374,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<statBases>
@@ -416,7 +416,7 @@
 			<texPath>Things/Building/SCMisc/CPRdummy1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<statBases>
@@ -452,7 +452,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<statBases>
@@ -497,7 +497,7 @@
 				<tallness>0.6</tallness>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<statBases>

@@ -9,7 +9,7 @@
 			<texPath>Things/Building/Joy/HorseshoesPin</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
@@ -42,7 +42,7 @@
 				<tallness>0.6</tallness>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
@@ -75,7 +75,7 @@
 			<drawSize>(4,5)</drawSize>
 		</graphicData>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -116,7 +116,7 @@
 				<tallness>0.6</tallness>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -150,7 +150,7 @@
 				<tallness>0.6</tallness>
 			</shadowInfo>
 		</graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>
 		<size>(1,1)</size>
