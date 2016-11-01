@@ -45,6 +45,9 @@ Rest effectiveness: 80%</Description>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -53,7 +56,7 @@ Rest effectiveness: 80%</Description>
 			<Beauty>8</Beauty>
 			<WorkToMake>1000</WorkToMake>
 			<Comfort>0.6</Comfort>
-			<BedRestEffectiveness>0.8</BedRestEffectiveness>
+			<BedRestEffectiveness>0.8</BedRestEffectiveness>			
 		</statBases>
 		<Size>(1,2)</Size>
 		<costStuffCount>10</costStuffCount>
@@ -88,6 +91,9 @@ Rest effectiveness: 100%</Description>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -97,6 +103,7 @@ Rest effectiveness: 100%</Description>
 			<WorkToMake>1000</WorkToMake>
 			<Comfort>0.75</Comfort>
 			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
 		</statBases>
 		<Size>(1,2)</Size>
 		<costList>
@@ -107,6 +114,16 @@ Rest effectiveness: 100%</Description>
 			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
 			<Bed_HealTickInterval>2000</Bed_HealTickInterval>
 		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
 		<fillPercent>0.4</fillPercent>
 		<PathCost>60</PathCost>
 		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
@@ -129,6 +146,9 @@ Rest effectiveness: 125%</Description>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -138,6 +158,7 @@ Rest effectiveness: 125%</Description>
 			<WorkToMake>1500</WorkToMake>
 			<Comfort>0.85</Comfort>
 			<BedRestEffectiveness>1.25</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
 		</statBases>
 		<Size>(1,2)</Size>
 		<costList>
@@ -148,6 +169,16 @@ Rest effectiveness: 125%</Description>
 			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
 			<Bed_HealTickInterval>2000</Bed_HealTickInterval>
 		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
 		<fillPercent>0.4</fillPercent>
 		<PathCost>60</PathCost>
 		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
@@ -170,6 +201,9 @@ Rest effectiveness: 125%</Description>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -179,6 +213,8 @@ Rest effectiveness: 125%</Description>
 			<WorkToMake>2500</WorkToMake>
 			<Comfort>0.95</Comfort>
 			<BedRestEffectiveness>1.25</BedRestEffectiveness>
+			<MedicalTreatmentQualityFactor>1.1</MedicalTreatmentQualityFactor>
+			<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>			
 		</statBases>
 		<Size>(1,2)</Size>
 		<costList>
@@ -189,6 +225,16 @@ Rest effectiveness: 125%</Description>
 			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
 			<Bed_HealTickInterval>1800</Bed_HealTickInterval>
 		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
 		<fillPercent>0.4</fillPercent>
 		<PathCost>60</PathCost>
 		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
@@ -219,8 +265,8 @@ Rest effectiveness: 85%</Description>
 			<Flammability>1.0</Flammability>
 			<BedRestEffectiveness>0.85</BedRestEffectiveness>
 			<Comfort>0.6</Comfort>
-			<MedicalTreatmentQualityFactor>1.04</MedicalTreatmentQualityFactor>
-			<ImmunityGainSpeedFactor>1.144</ImmunityGainSpeedFactor>
+			<MedicalTreatmentQualityFactor>1.2</MedicalTreatmentQualityFactor>
+			<ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
 		</statBases>
 		<Size>(1,2)</Size>
 		<costList>
@@ -254,11 +300,19 @@ Rest effectiveness: 85%</Description>
 		<graphicData>
 			<texPath>Things/Building/SCFurniture/Chairs/Stool</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-			</shadowInfo>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -269,7 +323,7 @@ Rest effectiveness: 85%</Description>
 			<Comfort>0.5</Comfort>
 		</statBases>
 		<description>A basic stool people can sit on.</description>
-		<size>(1,1)</size>
+		<socialPropernessMatters>true</socialPropernessMatters>		
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -290,13 +344,17 @@ Rest effectiveness: 85%</Description>
 		<graphicData>
 			<texPath>Things/Building/SCFurniture/Chairs/ComfyChair</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-			</shadowInfo>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+		        <rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+		        <rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+		        <rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+		    </damageData>
+	  	</graphicData>
+	  	<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<WorkToMake>750</WorkToMake>
@@ -309,6 +367,7 @@ Rest effectiveness: 85%</Description>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
+		<socialPropernessMatters>true</socialPropernessMatters>
 		<costStuffCount>20</costStuffCount>
 		<costList>
 			<WoodPlank>10</WoodPlank>
@@ -328,12 +387,16 @@ Rest effectiveness: 85%</Description>
 		<graphicData>
 			<texPath>Things/Building/SCFurniture/Chairs/PodChair</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-			</shadowInfo>
-		</graphicData>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+        		<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+        		<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+        		<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+        	</damageData>
+        </graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -356,6 +419,7 @@ Rest effectiveness: 85%</Description>
 		<building>
 			<isSittable>true</isSittable>
 		</building>
+		<socialPropernessMatters>true</socialPropernessMatters>
 		<researchPrerequisites>Machining</researchPrerequisites>
 	</ThingDef>
 
@@ -385,6 +449,7 @@ Rest effectiveness: 85%</Description>
 			<Flammability>1.0</Flammability>
 			<Beauty>6</Beauty>
 		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -401,286 +466,118 @@ Rest effectiveness: 85%</Description>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<designationCategory>Furniture</designationCategory>
 		<comps>
-			<li>
-				<compClass>CompGatherSpot</compClass>
-			</li>
+			<li><compClass>CompGatherSpot</compClass></li>
+			<li><compClass>CompQuality</compClass></li>
 		</comps>
 	</ThingDef>
 
 
-	<!-- ======================== Lighting ======================= -->
-	
-	
-	<ThingDef ParentName="BuildingBase">
-		<defName>TorchLamp</defName>
-		<label>torch lamp</label>
-		<description>A temporary light source which burns for a few days.</description>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Building/SCFurniture/Lights/WoodTorch</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawRotated>false</drawRotated>
-			<damageData>
-				<rect>(0.35,0.35,0.3,0.3)</rect>
-			</damageData>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>10</pathCost>
-		<constructEffect>ConstructWood</constructEffect>
-		<tickerType>Normal</tickerType>
-		<drawerType>RealtimeOnly</drawerType>
-		<statBases>
-			<MaxHitPoints>20</MaxHitPoints>
-			<WorkToMake>250</WorkToMake>
-			<Flammability>0</Flammability>
-		</statBases>
-		<selectable>true</selectable>		
-		<costList>
-			<WoodLog>10</WoodLog>
-		</costList>
-		<soundImpactDefault>BulletImpactGround</soundImpactDefault>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<placeWorkers>
-			<li>PlaceWorker_Heater</li>
-		</placeWorkers>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<comps>
-			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>2.2</fuelConsumptionRate>
-				<fuelCapacity>20.0</fuelCapacity>
-				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
-				<fuelFilter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
-				</fuelFilter>
-				<destroyOnNoFuel>true</destroyOnNoFuel>
-			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>10</glowRadius>
-				<glowColor>(252,187,113,0)</glowColor>
-			</li>
-			<li Class="CompProperties_HeatPusher">
-				<heatPerSecond>3.5</heatPerSecond>
-				<heatPushMaxTemperature>23</heatPushMaxTemperature>
-			</li>
-			<li Class="CompProperties_FireOverlay">
-				<fireSize>0.4</fireSize>
-				<offset>(0,0,0.2)</offset>
-			</li>
-		</comps>
-		<designationCategory>Furniture</designationCategory>
-		<rotatable>false</rotatable>
+	<!-- ======================== Lighting ======================= -->	
 
-	</ThingDef>
-	
+  <ThingDef Abstract="True" Name="LampBase" ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <selectable>true</selectable>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>8</pathCost>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <designationCategory>Furniture</designationCategory>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToMake>170</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>PowerI</li>
+    </researchPrerequisites>
+  </ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>StandingLamp</defName>
-		<label>ceiling lamp</label>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Building/SCFurniture/Lights/CeilingLamp</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-				<offset>(0,0,-0.1)</offset>
-			</shadowInfo>
-		</graphicData>
-		<altitudeLayer>BuildingTall</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<WorkToMake>115</WorkToMake>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<selectable>true</selectable>
-		<description>Indoor ceiling lamp that lights an area.</description>
-		<size>(1,1)</size>
-		<costList>
-			<SteelBar>20</SteelBar>
-			<Glass>5</Glass>
-		</costList>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
-		<comps>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>75</basePowerConsumption>
-				<shortCircuitInRain>true</shortCircuitInRain>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
-			</li>
-			<li>
-				<compClass>CompGlower</compClass>
-				<glowRadius>12</glowRadius>
-				<glowColor>(217,217,208,0)</glowColor>
-			</li>
-		</comps>
-		<designationCategory>Furniture</designationCategory>
-		<rotatable>false</rotatable>
-		<researchPrerequisites>PowerI</researchPrerequisites>
-	</ThingDef>
+  <ThingDef Abstract="True" Name="StandingLampBase" ParentName="LampBase">
+    <graphicData>
+      <texPath>Things/Building/Furniture/LampStanding</texPath>
+    </graphicData>
+    <costList>
+    	<SteelBar>20</SteelBar>
+    	<Glass>5</Glass>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>75</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="StandingLampBase" >
+    <defName>StandingLamp</defName>
+    <label>standing lamp</label>
+    <description>Standing lamp that lights an area.</description>
+    <designationHotKey>Misc11</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
 
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Red</defName>
+    <label>standing lamp (red)</label>
+    <description>Standing lamp that lights an area in red.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,0,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>StandingLamp_Red</defName>
-		<label>ceiling lamp (red)</label>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Building/SCFurniture/Lights/CeilingLamp_Red</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-				<offset>(0,0,-0.1)</offset>
-			</shadowInfo>
-		</graphicData>
-		<altitudeLayer>BuildingTall</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<WorkToMake>130</WorkToMake>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<selectable>true</selectable>
-		<description>Indoor ceiling lamp that lights an area in red.</description>
-		<size>(1,1)</size>
-		<costList>
-			<SteelBar>20</SteelBar>
-			<Glass>5</Glass>
-		</costList>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<comps>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>75</basePowerConsumption>
-				<shortCircuitInRain>true</shortCircuitInRain>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
-			</li>
-			<li>
-				<compClass>CompGlower</compClass>
-				<glowRadius>12</glowRadius>
-				<glowColor>(217,0,0,0)</glowColor>
-			</li>
-		</comps>
-		<designationCategory>Furniture</designationCategory>
-		<rotatable>false</rotatable>
-		<researchPrerequisites>ColoredLights</researchPrerequisites>
-	</ThingDef>
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Green</defName>
+    <label>standing lamp (green)</label>
+    <description>Standing lamp that lights an area in green.</description>
+    <comps>   
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(0,217,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
 
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>StandingLamp_Green</defName>
-		<label>ceiling lamp (green)</label>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Building/SCFurniture/Lights/CeilingLamp_Green</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-				<offset>(0,0,-0.1)</offset>
-			</shadowInfo>
-		</graphicData>
-		<altitudeLayer>BuildingTall</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<WorkToMake>130</WorkToMake>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<selectable>true</selectable>
-		<description>Indoor ceiling lamp that lights an area in green.</description>
-		<size>(1,1)</size>
-		<costList>
-			<SteelBar>20</SteelBar>
-			<Glass>5</Glass>
-		</costList>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<comps>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>75</basePowerConsumption>
-				<shortCircuitInRain>true</shortCircuitInRain>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
-			</li>
-			<li>
-				<compClass>CompGlower</compClass>
-				<glowRadius>12</glowRadius>
-				<glowColor>(0,217,0,0)</glowColor>
-			</li>
-		</comps>
-		<designationCategory>Furniture</designationCategory>
-		<rotatable>false</rotatable>
-		<researchPrerequisites>ColoredLights</researchPrerequisites>
-	</ThingDef>
-
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>StandingLamp_Blue</defName>
-		<label>ceiling lamp (blue)</label>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Building/SCFurniture/Lights/CeilingLamp_Blue</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<shadowInfo>
-				<basewidth>0.3</basewidth>
-				<baseHeight>0.3</baseHeight>
-				<tallness>0.6</tallness>
-				<offset>(0,0,-0.1)</offset>
-			</shadowInfo>
-		</graphicData>
-		<altitudeLayer>BuildingTall</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<WorkToMake>130</WorkToMake>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<selectable>true</selectable>
-		<description>Indoor ceiling lamp that lights an area in blue.</description>
-		<size>(1,1)</size>
-		<costList>
-			<SteelBar>20</SteelBar>
-			<Glass>5</Glass>
-		</costList>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<comps>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>75</basePowerConsumption>
-				<shortCircuitInRain>true</shortCircuitInRain>
-				<soundPowerOn>PowerOnSmall</soundPowerOn>
-				<soundPowerOff>PowerOffSmall</soundPowerOff>
-			</li>
-			<li>
-				<compClass>CompGlower</compClass>
-				<glowRadius>12</glowRadius>
-				<glowColor>(0,0,217,0)</glowColor>
-			</li>
-		</comps>
-		<designationCategory>Furniture</designationCategory>
-		<rotatable>false</rotatable>
-		<researchPrerequisites>ColoredLights</researchPrerequisites>
-	</ThingDef>
-
+  <ThingDef ParentName="StandingLampBase">
+    <defName>StandingLamp_Blue</defName>
+    <label>standing lamp (blue)</label>
+    <description>Standing lamp that lights an area in blue.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(0,0,217,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
 
 	<!--============================== Storage ==============================-->
 
