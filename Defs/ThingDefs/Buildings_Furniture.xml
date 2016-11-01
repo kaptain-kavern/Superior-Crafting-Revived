@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
 	<!--============================== Beds ==============================-->
 
@@ -412,46 +412,68 @@ Rest effectiveness: 85%</Description>
 	
 	
 	<ThingDef ParentName="BuildingBase">
-		<defName>Armchair</defName>
-		<label>wood torch</label>
+		<defName>TorchLamp</defName>
+		<label>torch lamp</label>
 		<description>A temporary light source which burns for a few days.</description>
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
 			<texPath>Things/Building/SCFurniture/Lights/WoodTorch</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
 		</graphicData>
-		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<pathCost>50</pathCost>
-		<constructEffect>ConstructDirt</constructEffect>
+		<pathCost>10</pathCost>
+		<constructEffect>ConstructWood</constructEffect>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<statBases>
 			<MaxHitPoints>20</MaxHitPoints>
 			<WorkToMake>250</WorkToMake>
-			<Flammability>1.0</Flammability>
+			<Flammability>0</Flammability>
 		</statBases>
-		<selectable>true</selectable>
-		<size>(1,1)</size>
+		<selectable>true</selectable>		
 		<costList>
 			<WoodLog>10</WoodLog>
 		</costList>
 		<soundImpactDefault>BulletImpactGround</soundImpactDefault>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li>
-				<compClass>CompGlower</compClass>
-				<glowRadius>8</glowRadius>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.2</fuelConsumptionRate>
+				<fuelCapacity>20.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>true</destroyOnNoFuel>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
-			<li>
-				<compClass>CompLifespan</compClass>
-				<lifespanTicks>80000</lifespanTicks>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.4</fireSize>
+				<offset>(0,0,0.2)</offset>
 			</li>
 		</comps>
 		<designationCategory>Furniture</designationCategory>
 		<rotatable>false</rotatable>
+
 	</ThingDef>
 	
 
