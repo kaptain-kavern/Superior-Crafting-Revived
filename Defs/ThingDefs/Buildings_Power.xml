@@ -416,7 +416,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(6,6)</drawSize>
 		</graphicData>
-		<altitudeLayer>BuildingTall</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>70</pathCost>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -438,11 +438,11 @@ Energy Output 9000W</description>
 			<Electronics>50</Electronics>
 		</costList>
 		<comps>
+      <li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-9000</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
-				<powerToggleable>false</powerToggleable>
+				<transmitsPower>true</transmitsPower>				
 			</li>
 			<li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
