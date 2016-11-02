@@ -103,9 +103,9 @@
 		<statBases>
 			<MarketValue>200</MarketValue>
 		</statBases>
-		<artificialBodyPartsTags>
-			<li>Simple</li>
-		</artificialBodyPartsTags>
+	    <techHediffsTags>
+	      <li>Simple</li>
+	    </techHediffsTags>
 	</ThingDef>
 	
 	<!-- artificial - advanced prosthetics -->
@@ -121,9 +121,9 @@
 		<statBases>
 			<MarketValue>792</MarketValue>
 		</statBases>
-		<artificialBodyPartsTags>
-			<li>Advanced</li>
-		</artificialBodyPartsTags>
+	    <techHediffsTags>
+	      <li>Advanced</li>
+	    </techHediffsTags>
 	</ThingDef>
 	
 	<ThingDef ParentName="BodyPartArtificialBase">
@@ -137,9 +137,9 @@
 		<statBases>
 			<MarketValue>1512</MarketValue>
 		</statBases>
-		<artificialBodyPartsTags>
-			<li>Advanced</li>
-		</artificialBodyPartsTags>
+	    <techHediffsTags>
+	      <li>Advanced</li>
+	    </techHediffsTags>
 	</ThingDef>
 	
 	<ThingDef ParentName="BodyPartArtificialBase">
@@ -153,9 +153,9 @@
 		<statBases>
 			<MarketValue>515</MarketValue>
 		</statBases>
-		<artificialBodyPartsTags>
-			<li>Advanced</li>
-		</artificialBodyPartsTags>
+	    <techHediffsTags>
+	      <li>Advanced</li>
+	    </techHediffsTags>
 	</ThingDef>
 
 	<!-- artificial - bionics -->
