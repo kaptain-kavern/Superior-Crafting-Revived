@@ -49,7 +49,7 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Tailoring</workType>
 		<priorityInType>110</priorityInType>
-		<singleBillGiverDef>TableTailor</singleBillGiverDef>
+		<singleBillGiverDef>ElectricTailoringBench</singleBillGiverDef>
 		<verb>tailor</verb>
 		<gerund>tailoring at</gerund>
 		<requiredCapacities>

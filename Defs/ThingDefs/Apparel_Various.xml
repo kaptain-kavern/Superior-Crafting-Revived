@@ -43,7 +43,7 @@
 			<effectWorking>Tailor</effectWorking>
 			<soundWorking>Recipe_Tailor</soundWorking>
 			<recipeUsers>
-				<li>TableTailor</li>
+				<li>ElectricTailoringBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 		</recipeMaker>
