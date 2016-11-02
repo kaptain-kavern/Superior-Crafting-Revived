@@ -988,8 +988,7 @@
 			<SteelBar>10</SteelBar>
 			<Component>1</Component>
 		</costList>
-		<designationCategory>Security</designationCategory>
-		<designationHotKey>M</designationHotKey>
+		<designationCategory>Security</designationCategory>		
 		<building>
 			<isTrap>true</isTrap>
 		</building>
@@ -1032,8 +1031,7 @@
 			<SteelBar>10</SteelBar>
 			<Component>1</Component>
 		</costList>
-		<designationCategory>Security</designationCategory>
-		<designationHotKey>N</designationHotKey>
+		<designationCategory>Security</designationCategory>		
 		<building>
 			<isTrap>true</isTrap>
 		</building>
