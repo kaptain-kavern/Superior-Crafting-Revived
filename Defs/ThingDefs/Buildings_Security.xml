@@ -4,55 +4,60 @@
 	<!--========================= Sandbags =============================-->
 
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>Sandbags</defName>
-		<label>sandbags</label>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Building/Linked/Sandbags_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>Basic</linkType>
-			<linkFlags>
-				<li>Sandbags</li>
-			</linkFlags>
-		</graphicData>
-		<blueprintGraphicData>
-			<texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
-		</blueprintGraphicData>
-		<uiIconPath>Things/Building/Linked/Sandbags_MenuIcon</uiIconPath>
-		<altitudeLayer>Building</altitudeLayer>
-		<pathCost>40</pathCost>
-		<passability>PassThroughOnly</passability>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>0.65</fillPercent>
-		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
-			<Beauty>-10</Beauty>
-			<WorkToMake>125</WorkToMake>
-			<Flammability>0</Flammability>
-		</statBases>
-		<description>A sandbag barrier that provides cover from gunfire.</description>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
-		<costList>
-			<Sand>5</Sand>
-		</costList>
-		<filthLeaving>SandbagRubble</filthLeaving>
-		<rotatable>false</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Security</designationCategory>
-		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-		<constructEffect>ConstructDirt</constructEffect>
-		<repairEffect>ConstructDirt</repairEffect>
-	</ThingDef>
+<ThingDef ParentName="BuildingBase">
+    <defName>Sandbags</defName>
+    <label>sandbags</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Linked/Sandbags_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Sandbags</li>
+      </linkFlags>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/Linked/Sandbags_MenuIcon</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>40</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.65</fillPercent>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <WorkToMake>180</WorkToMake>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+    </building>
+    <description>Cover from gunfire.</description>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Sand>5</Sand>
+    </costList>
+    <filthLeaving>SandbagRubble</filthLeaving>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <constructEffect>ConstructDirt</constructEffect>
+    <repairEffect>ConstructDirt</repairEffect>
+    <designationHotKey>Misc1</designationHotKey>
+</ThingDef>
   
   
 	<!--========================= Embrasures =============================-->
 	
 	
-	<ThingDef ParentName="BuildingBase">
+<ThingDef ParentName="BuildingBase">
 		<defName>StoneEmbrasure</defName>
 		<label>embrasure</label>
 		<thingClass>Building</thingClass>
@@ -95,23 +100,98 @@
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<repairEffect>ConstructDirt</repairEffect>
 		<researchPrerequisites><li>Embrasures</li></researchPrerequisites>
-	</ThingDef>
+</ThingDef>
 	
+
+	<!--==================== asbtract/base =================-->
+
+<ThingDef Name="BaseArtilleryBuilding" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/SCSecurity/MannedGun_bottom</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(3,3)</drawSize>
+		<damageData>
+			<rect>(0.2,0.2,0.6,0.6)</rect>
+		</damageData>
+	</graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <stealable>false</stealable>
+    <size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <tickerType>Normal</tickerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>2700</WorkToMake>
+      <Beauty>-60</Beauty>
+    </statBases>
+    <building>
+      <turretShellDef>ArtilleryShell</turretShellDef>
+      <turretBurstWarmupTicks>300</turretBurstWarmupTicks>
+      <turretBurstCooldownTicks>2100</turretBurstCooldownTicks>
+      <buildingTags>
+        <li>Artillery</li>
+      </buildingTags>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Mortars</li>
+    </researchPrerequisites>
+</ThingDef>
+
+<ThingDef Name="BaseArtilleryWeapon" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <label>artillery error</label>
+    <equipmentType>Primary</equipmentType>
+    <tickerType>Never</tickerType>
+    <techLevel>Industrial</techLevel>
+    <destroyOnDrop>True</destroyOnDrop>
+    <menuHidden>True</menuHidden>
+    <tradeability>Never</tradeability>
+    <weaponTags>
+      <li>Artillery</li>
+    </weaponTags>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+</ThingDef>	
 
 	<!--=============== Manned turrets ===============-->
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BaseArtilleryBuilding">
 		<defName>TurretGunManned</defName>
-		<label>manned turret</label>
-		<thingClass>Building_TurretGun</thingClass>
+		<label>manned turret</label>		
 		<graphicData>
 			<texPath>Things/Building/SCSecurity/MannedGun_bottom</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/SCSecurity/MannedGunIco</uiIconPath>
-		<altitudeLayer>Building</altitudeLayer>
+		<uiIconPath>Things/Building/SCSecurity/MannedGunIco</uiIconPath>	
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -122,29 +202,22 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
+			<li Class="CompProperties_Explosive">
 				<explosiveRadius>3.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompMannable</compClass>
+				<explosiveDamageType>Bomb</explosiveDamageType>				
 			</li>
 		</comps>
 		<description>A simple turret that can be manned to fire at nearby enemies. Explodes when damaged.
-Range:	 35
-Damage:   7
-Burst:	  3</description>
-		<size>(1,1)</size>
-		<passability>Impassable</passability>
+		Range:	 35
+		Damage:   7
+		Burst:	  3</description>
+		<size>(1,1)</size>		
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
 			<SteelBar>250</SteelBar>
+			<Component>3</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -160,14 +233,16 @@ Burst:	  3</description>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BaseArtilleryBuilding">
 		<defName>TurretGunMannedGatling</defName>
-		<label>manned gatling turret</label>
-		<thingClass>Building_TurretGun</thingClass>
+		<label>manned gatling turret</label>		
 		<graphicData>
 			<texPath>Things/Building/SCSecurity/MannedGun_bottom</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/MannedGunGatlingIco</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
@@ -181,29 +256,22 @@ Burst:	  3</description>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
+			<li Class="CompProperties_Explosive">
 				<explosiveRadius>3.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompMannable</compClass>
+				<explosiveDamageType>Bomb</explosiveDamageType>				
 			</li>
 		</comps>
 		<description>A gatling turret that can be manned to fire at nearby enemies. Explodes when damaged.
-Range:	 32
-Damage:   8
-Burst:	 30</description>
-		<size>(1,1)</size>
-		<passability>Impassable</passability>
+		Range:	 32
+		Damage:   8
+		Burst:	 30</description>
+		<size>(1,1)</size>		
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
 			<SteelBar>250</SteelBar>
+			<Component>3</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -219,14 +287,16 @@ Burst:	 30</description>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BaseArtilleryBuilding">
 		<defName>TurretGunMannedShotgun</defName>
-		<label>manned shotgun turret</label>
-		<thingClass>Building_TurretGun</thingClass>
+		<label>manned shotgun turret</label>		
 		<graphicData>
 			<texPath>Things/Building/SCSecurity/MannedGun_bottom</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/MannedGunShotgunIco</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
@@ -240,29 +310,22 @@ Burst:	 30</description>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
+			<li Class="CompProperties_Explosive">
 				<explosiveRadius>3.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompMannable</compClass>
+				<explosiveDamageType>Bomb</explosiveDamageType>				
 			</li>
 		</comps>
 		<description>A shotgun turret that can be manned to fire at nearby enemies. Explodes when damaged.
-Range:	 16
-Damage:  20
-Burst:	  1</description>
-		<size>(1,1)</size>
-		<passability>Impassable</passability>
+		Range:	 16
+		Damage:  20
+		Burst:	  1</description>
+		<size>(1,1)</size>		
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
 			<SteelBar>250</SteelBar>
+			<Component>3</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -278,14 +341,16 @@ Burst:	  1</description>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BaseArtilleryBuilding">
 		<defName>TurretGunMannedSniper</defName>
-		<label>manned sniper turret</label>
-		<thingClass>Building_TurretGun</thingClass>
+		<label>manned sniper turret</label>		
 		<graphicData>
 			<texPath>Things/Building/SCSecurity/MannedGun_bottom</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/SCSecurity/MannedGunSniperIco</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
@@ -299,29 +364,22 @@ Burst:	  1</description>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
+			<li Class="CompProperties_Explosive">
 				<explosiveRadius>3.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompMannable</compClass>
+				<explosiveDamageType>Bomb</explosiveDamageType>				
 			</li>
 		</comps>
 		<description>A sniper turret that can be manned to fire at nearby enemies. Explodes when damaged.
-Range:	 45
-Damage:  40
-Burst:	  1</description>
-		<size>(1,1)</size>
-		<passability>Impassable</passability>
+		Range:	 45
+		Damage:  40
+		Burst:	  1</description>
+		<size>(1,1)</size>		
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
 			<SteelBar>250</SteelBar>
+			<Component>3</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -349,9 +407,14 @@ Burst:	  1</description>
 			<texPath>Things/Building/SCSecurity/SentryGun_bottom</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
+			<damageData>
+        		<rect>(0.2,0.2,0.6,0.6)</rect>
+      		</damageData>
 		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<uiIconPath>Things/Building/SCSecurity/SentryGunIco</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
 		<statBases>
 			<MaxHitPoints>550</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -359,32 +422,34 @@ Burst:	  1</description>
 			<Beauty>-60</Beauty>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
-				<explosiveRadius>3.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>350</basePowerConsumption>
-			</li>
-		</comps>
+	    <comps>
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>3.9</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+	      </li>
+	      <li Class="CompProperties_Forbiddable"/>
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>350</basePowerConsumption>
+	      </li>
+	      <li Class="CompProperties_Flickable"/>
+	      <li Class="CompProperties_Breakdownable"/>
+	    </comps>
 		<description>A simple auto-turret that can fire at nearby enemies. Explodes when damaged.
-Range:	 35
-Damage:   7
-Burst:	  3</description>
+		Range:	 35
+		Damage:   7
+		Burst:	  3</description>
 		<size>(1,1)</size>
-		<passability>Impassable</passability>
+		<passability>PassThroughOnly</passability>
+    	<pathCost>50</pathCost>
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
 			<SteelBar>250</SteelBar>
 			<Electronics>50</Electronics>
+			<Component>3</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -408,7 +473,12 @@ Burst:	  3</description>
 			<texPath>Things/Building/SCSecurity/SentryGun_bottom</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
+			<damageData>
+        		<rect>(0.2,0.2,0.6,0.6)</rect>
+      		</damageData>
 		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<stealable>false</stealable>
 		<uiIconPath>Things/Building/SCSecurity/SentryGunGatlingIco</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -418,32 +488,34 @@ Burst:	  3</description>
 			<Beauty>-60</Beauty>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
-				<explosiveRadius>3.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>350</basePowerConsumption>
-			</li>
-		</comps>
+	    <comps>
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>3.9</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+	      </li>
+	      <li Class="CompProperties_Forbiddable"/>
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>350</basePowerConsumption>
+	      </li>
+	      <li Class="CompProperties_Flickable"/>
+	      <li Class="CompProperties_Breakdownable"/>
+	    </comps>
 		<description>A gatling sentry turret that can be manned to fire at nearby enemies. Explodes when damaged.
-Range:	 32
-Damage:   8
-Burst:	 30</description>
+		Range:	 32
+		Damage:   8
+		Burst:	 30</description>
 		<size>(1,1)</size>
-		<passability>Impassable</passability>
+		<passability>PassThroughOnly</passability>
+    	<pathCost>50</pathCost>
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
 			<SteelBar>250</SteelBar>
 			<Electronics>50</Electronics>
+			<Component>3</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -467,7 +539,12 @@ Burst:	 30</description>
 			<texPath>Things/Building/SCSecurity/SentryGun_bottom</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
+			<damageData>
+        		<rect>(0.2,0.2,0.6,0.6)</rect>
+      		</damageData>			
 		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<stealable>false</stealable>
 		<uiIconPath>Things/Building/SCSecurity/SentryGunShotgunIco</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -477,32 +554,34 @@ Burst:	 30</description>
 			<Beauty>-60</Beauty>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
-				<explosiveRadius>3.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>350</basePowerConsumption>
-			</li>
-		</comps>
+	    <comps>
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>3.9</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+	      </li>
+	      <li Class="CompProperties_Forbiddable"/>
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>350</basePowerConsumption>
+	      </li>
+	      <li Class="CompProperties_Flickable"/>
+	      <li Class="CompProperties_Breakdownable"/>
+	    </comps>
 		<description>A shotgun turret that can be manned to fire at nearby enemies. Explodes when damaged.
-Range:	 16
-Damage:  20
-Burst:	  1</description>
+		Range:	 16
+		Damage:  20
+		Burst:	  1</description>
 		<size>(1,1)</size>
-		<passability>Impassable</passability>
+		<passability>PassThroughOnly</passability>
+    	<pathCost>50</pathCost>
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
 			<SteelBar>250</SteelBar>
 			<Electronics>50</Electronics>
+			<Component>3</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -526,7 +605,12 @@ Burst:	  1</description>
 			<texPath>Things/Building/SCSecurity/SentryGun_bottom</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
+			<damageData>
+        		<rect>(0.2,0.2,0.6,0.6)</rect>
+      		</damageData>
 		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<stealable>false</stealable>		
 		<uiIconPath>Things/Building/SCSecurity/SentryGunSniperIco</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -536,32 +620,34 @@ Burst:	  1</description>
 			<Beauty>-60</Beauty>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
-				<explosiveRadius>3.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>350</basePowerConsumption>
-			</li>
-		</comps>
+	    <comps>
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>3.9</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+	      </li>
+	      <li Class="CompProperties_Forbiddable"/>
+	      <li Class="CompProperties_Power">
+	        <compClass>CompPowerTrader</compClass>
+	        <basePowerConsumption>350</basePowerConsumption>
+	      </li>
+	      <li Class="CompProperties_Flickable"/>
+	      <li Class="CompProperties_Breakdownable"/>
+	    </comps>
 		<description>A sniper turret that can be manned to fire at nearby enemies. Explodes when damaged.
-Range:	 45
-Damage:  40
-Burst:	  1</description>
+		Range:	 45
+		Damage:  40
+		Burst:	  1</description>
 		<size>(1,1)</size>
-		<passability>Impassable</passability>
+		<passability>PassThroughOnly</passability>
+    	<pathCost>50</pathCost>
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
 			<SteelBar>250</SteelBar>
 			<Electronics>50</Electronics>
+			<Component>3</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -581,10 +667,9 @@ Burst:	  1</description>
 	<!--=============== Mortar turret ===============-->
   
   
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BaseArtilleryBuilding">
 		<defName>Turret_MortarIncendiary</defName>
-		<label>incendiary mortar</label>
-		<thingClass>Building_TurretGun</thingClass>
+		<label>incendiary mortar</label>		
 		<graphicData>
 			<texPath>Things/Building/Security/TurretMortarBase</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -600,22 +685,14 @@ Burst:	  1</description>
 			<Beauty>-60</Beauty>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
-				<explosiveRadius>4.9</explosiveRadius>
-				<explosiveDamageType>Flame</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompMannable</compClass>
-			</li>
-		</comps>
+	    <comps>
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>4.9</explosiveRadius>
+	        <explosiveDamageType>Flamme</explosiveDamageType>	        
+	      </li>
+	    </comps>
 		<description>A mortar that launches incendiary shells. Must be manned. Explodes when damaged.</description>
-		<size>(2,2)</size>
-		<passability>Impassable</passability>
+		<size>(2,2)</size>		
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<stuffCategories>
@@ -624,6 +701,7 @@ Burst:	  1</description>
 		<costStuffCount>100</costStuffCount>
 		<costList>
 			<SteelBar>150</SteelBar>
+			<Component>4</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -646,10 +724,9 @@ Burst:	  1</description>
 	</ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BaseArtilleryBuilding">
 		<defName>Turret_MortarBomb</defName>
-		<label>mortar</label>
-		<thingClass>Building_TurretGun</thingClass>
+		<label>mortar</label>		
 		<graphicData>
 			<texPath>Things/Building/Security/TurretMortarBase</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -666,17 +743,10 @@ Burst:	  1</description>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
+			<li Class="CompProperties_Explosive">
 				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompMannable</compClass>
-			</li>
+			</li>			
 		</comps>
 		<description>A mortar that launches explosive shells. Must be manned. Explodes when damaged.</description>
 		<size>(2,2)</size>
@@ -689,6 +759,7 @@ Burst:	  1</description>
 		<costStuffCount>100</costStuffCount>
 		<costList>
 			<SteelBar>150</SteelBar>
+			<Component>4</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -711,7 +782,7 @@ Burst:	  1</description>
 	</ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BaseArtilleryBuilding">
 		<defName>Turret_MortarEMP</defName>
 		<label>EMP mortar</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -731,21 +802,13 @@ Burst:	  1</description>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
+			<li Class="CompProperties_Explosive">
 				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>EMP</explosiveDamageType>
 			</li>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-			<li>
-				<compClass>CompMannable</compClass>
-			</li>
 		</comps>
 		<description>A mortar that launches EMP bombs. Must be manned. Explodes when damaged.</description>
-		<size>(2,2)</size>
-		<passability>Impassable</passability>
+		<size>(2,2)</size>		
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
 		<stuffCategories>
@@ -754,6 +817,7 @@ Burst:	  1</description>
 		<costStuffCount>100</costStuffCount>
 		<costList>
 			<SteelBar>150</SteelBar>
+			<Component>4</Component>
 		</costList>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -778,7 +842,7 @@ Burst:	  1</description>
 	<!--=============== Jaxxa Shields ===============-->
 	
 	
-	<ThingDef Class="Enhanced_Defence.Shields.ShieldBuildingThingDef" ParentName="BuildingBase" Name="ShieldBase" Abstract="True">
+<!-- 	<ThingDef Class="Enhanced_Defence.Shields.ShieldBuildingThingDef" ParentName="BuildingBase" Name="ShieldBase" Abstract="True">
 		<category>Building</category>
 		<altitudeLayer>Building</altitudeLayer>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
@@ -802,9 +866,9 @@ Burst:	  1</description>
 		<combatTargetBuilding>true</combatTargetBuilding>
 		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
-	</ThingDef>
+	</ThingDef> -->
 	
-	<ThingDef Class="Enhanced_Defence.Shields.ShieldBuildingThingDef" ParentName="ShieldBase">
+<!-- 	<ThingDef Class="Enhanced_Defence.Shields.ShieldBuildingThingDef" ParentName="ShieldBase">
 		<defName>Building_ShieldStandard</defName>
 		<label>sabre force shield</label>
 		<description>Creates shield field to protect important infrastructure.</description>
@@ -847,10 +911,10 @@ Burst:	  1</description>
 		<colourGreen>0.3764705882352941</colourGreen>
 		<colourBlue>0.7294117647058823</colourBlue>
 		<researchPrerequisites><li>SecurityIV</li></researchPrerequisites>
-	</ThingDef>
+	</ThingDef> -->
 	
 	
-  	<ThingDef Class="Enhanced_Defence.Shields.ShieldBuildingThingDef" ParentName="ShieldBase">
+<!--   	<ThingDef Class="Enhanced_Defence.Shields.ShieldBuildingThingDef" ParentName="ShieldBase">
 		<defName>Building_Shield_Fortress</defName>
 		<label>CRAM fortress shield</label>
 		<description>By refocusing the primary coil system into a vertical configuration the shields range can be extended, while lacking the flexability of the Fire Supression mode it does cover a large area and gain the ability to disrupt the avionic systems of DropPods, caulsing failure of their decent rockets and therefore a terminal velocity impact.</description>
@@ -895,51 +959,10 @@ Burst:	  1</description>
 		<colourGreen>1.0</colourGreen>
 		<colourBlue>0.5</colourBlue>
 		<researchPrerequisites><li>SecurityIV</li></researchPrerequisites>
-	</ThingDef>
+	</ThingDef> -->
 	
 	
-	<!--==================== Traps ======================== -->
-  
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>TrapDeadfall</defName>
-		<label>deadfall trap</label>
-		<thingClass>Building_TrapRearmable</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Security/DeadfallArmed</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<drawerType>RealtimeOnly</drawerType>
-		<rotatable>false</rotatable>
-		<tickerType>Normal</tickerType>
-		<statBases>
-			<MaxHitPoints>40</MaxHitPoints>
-			<WorkToMake>3000</WorkToMake>
-			<Beauty>-4</Beauty>
-			<TrapMeleeDamage>30</TrapMeleeDamage>
-			<TrapSpringChance>0.8</TrapSpringChance>
-		</statBases>
-		<description>A suspended spiked weight held up by a delicate trigger. When the victim disturbs the trigger, the weight is released and falls on his head or torso.</description>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
-		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
-		<designationCategory>Security</designationCategory>
-		<designationHotKey>L</designationHotKey>
-		<building>
-			<isTrap>true</isTrap>
-			<trapDamageCategory>Sharp</trapDamageCategory>
-			<trapUnarmedGraphicData>
-				<texPath>Things/Building/Security/DeadfallUnarmed</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<shaderType>Cutout</shaderType>
-			</trapUnarmedGraphicData>
-		</building>
-	</ThingDef>
-  
+	<!--==================== Traps ======================== -->  
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>TrapIEDBomb</defName>
@@ -962,25 +985,25 @@ Burst:	  1</description>
 		<description>An artillery shell connected to a homemade trigger. When someone disturbs the trigger, the shell explodes. The improvised trigger has a random delay that might allow an nimble enemy to escape.</description>
 		<costList>
 			<ArtilleryShell>1</ArtilleryShell>
-			<SteelBar>50</SteelBar>
+			<SteelBar>10</SteelBar>
+			<Component>1</Component>
 		</costList>
 		<designationCategory>Security</designationCategory>
 		<designationHotKey>M</designationHotKey>
 		<building>
 			<isTrap>true</isTrap>
 		</building>
-		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
-				<explosiveRadius>2.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-				<wickTicks>
-					<min>20</min>
-					<max>90</max>
-				</wickTicks>
-			</li>
-		</comps>
+	    <comps>
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>2.9</explosiveRadius>
+	        <explosiveDamageType>Bomb</explosiveDamageType>
+	        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+	        <wickTicks>
+	          <min>15</min>
+	          <max>70</max>
+	        </wickTicks>
+	      </li>
+	    </comps>
 		<researchPrerequisites><li>IEDBomb</li></researchPrerequisites>
 	</ThingDef>
   
@@ -1006,25 +1029,25 @@ Burst:	  1</description>
 		<description>Explosives mixed into an incendiary paste with a chemical trigger for dispersal. When someone disturbs the chemical trigger, it ignites burning fuel sprays. Since it doesn't need to detonate high exposives, the chemical trigger is simpler and more reliable than some others.</description>
 		<costList>
 			<ArtilleryShell>1</ArtilleryShell>
-			<SteelBar>50</SteelBar>
+			<SteelBar>10</SteelBar>
+			<Component>1</Component>
 		</costList>
 		<designationCategory>Security</designationCategory>
 		<designationHotKey>N</designationHotKey>
 		<building>
 			<isTrap>true</isTrap>
 		</building>
-		<comps>
-			<li>
-				<compClass>CompExplosive</compClass>
-				<explosiveRadius>2.9</explosiveRadius>
-				<explosiveDamageType>Flame</explosiveDamageType>
-				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-				<wickTicks>
-					<min>10</min>
-					<max>70</max>
-				</wickTicks>
-			</li>
-		</comps>
+	    <comps>
+	      <li Class="CompProperties_Explosive">
+	        <explosiveRadius>2.9</explosiveRadius>
+	        <explosiveDamageType>Flame</explosiveDamageType>
+	        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+	        <wickTicks>
+	          <min>10</min>
+	          <max>50</max>
+	        </wickTicks>
+	      </li>
+	    </comps>
 		<researchPrerequisites><li>IEDIncendiary</li></researchPrerequisites>
 	</ThingDef>
   
