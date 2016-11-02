@@ -1,37 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
 
-	<ThingDef Name="BodyPartBase" Abstract="True">
-		<label>body part</label>
-		<thingClass>ThingWithComps</thingClass>
-		<category>Item</category>
-		<useHitPoints>true</useHitPoints>
-		<selectable>true</selectable>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<altitudeLayer>Item</altitudeLayer>
-		<tickerType>Never</tickerType>
-		<alwaysHaulable>true</alwaysHaulable>
-		<isBodyPart>true</isBodyPart>
-		<tradeTags>
-			<li>BodyPart</li>
-		</tradeTags>
-		<comps>
-			<li>
-				<compClass>CompForbiddable</compClass>
-			</li>
-		</comps>
-		<thingCategories>
-			<li>BodyParts</li>
-		</thingCategories>
-		<pathCost>10</pathCost>
-	</ThingDef>
+<ThingDef Name="BodyPartBase" Abstract="True">
+    <label>body part</label>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <tradeTags>
+      <li>BodyPartOrImplant</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <pathCost>10</pathCost>
+</ThingDef>
+
+<ThingDef ParentName="BodyPartBase" Name="BodyPartNaturalBase" Abstract="True">
+    <thingCategories>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+</ThingDef>
+
+<ThingDef ParentName="BodyPartBase" Name="BodyPartArtificialBase" Abstract="True">
+    <thingCategories>
+      <li>BodyPartsArtificial</li>
+    </thingCategories>
+</ThingDef>  
 
 	<!-- Natural parts - can be harvested, or grown in the organ vat -->
 	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartNaturalBase">
 		<defName>Eye</defName>
 		<label>eye</label>
 		<description>A replacement eye fabricated from biomatter.</description>
@@ -44,7 +51,7 @@
 		</statBases>
 	</ThingDef>
 	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartNaturalBase">
 		<defName>Ear</defName>
 		<label>ear</label>
 		<description>A replacement ear fabricated from biomatter.</description>
@@ -57,7 +64,7 @@
 		</statBases>
 	</ThingDef>
 	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartNaturalBase">
 		<defName>Nose</defName>
 		<label>nose</label>
 		<description>A replacement nose fabricated from biomatter.</description>
@@ -66,63 +73,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>504</MarketValue>
+			<MarketValue>404</MarketValue>
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="BodyPartBase">
-		<defName>Heart</defName>
-		<label>heart</label>
-		<description>Supplies blood and oxygen to all parts of the body. Ready to find a new owner.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedOrgan</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>504</MarketValue>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="BodyPartBase">
-		<defName>Lung</defName>
-		<label>lung</label>
-		<description>Essential part of the respiratory system.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedOrgan</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>504</MarketValue>
-		</statBases>
-	</ThingDef>
-	
-	<ThingDef ParentName="BodyPartBase">
-		<defName>Liver</defName>
-		<label>liver</label>
-		<description>Plays an important role in metabolism.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedOrgan</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>504</MarketValue>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="BodyPartBase">
-		<defName>Kidney</defName>
-		<label>kidney</label>
-		<description>Filters and removes waste products from the blood.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedOrgan</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>504</MarketValue>
-		</statBases>
-	</ThingDef>
-  
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartNaturalBase">
 		<defName>Stomach</defName>
 		<label>stomach</label>
 		<description>Digests food and turns it into energy and nutrients.</description>
@@ -137,39 +92,7 @@
 
 	<!-- artificial - simple prosthetics -->
 	
-	<ThingDef ParentName="BodyPartBase">
-		<defName>SimpleProstheticArm</defName>
-		<label>simple prosthetic arm</label>
-		<description>Simple but durable arm prosthesis.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedProstheticSimple</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>144</MarketValue>
-		</statBases>
-		<artificialBodyPartsTags>
-			<li>Simple</li>
-		</artificialBodyPartsTags>
-	</ThingDef>
-	
-	<ThingDef ParentName="BodyPartBase">
-		<defName>SimpleProstheticLeg</defName>
-		<label>simple prosthetic leg</label>
-		<description>Simple prosthesis made to replace a missing leg. Not very comfortable but quite efficient.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedProstheticSimple</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>216</MarketValue>
-		</statBases>
-		<artificialBodyPartsTags>
-			<li>Simple</li>
-		</artificialBodyPartsTags>
-	</ThingDef>
-	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartArtificialBase">
 		<defName>SteelDenture</defName>
 		<label>steel denture</label>
 		<description>Simple but durable jaw prosthesis.</description>
@@ -178,7 +101,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>72</MarketValue>
+			<MarketValue>200</MarketValue>
 		</statBases>
 		<artificialBodyPartsTags>
 			<li>Simple</li>
@@ -187,7 +110,7 @@
 	
 	<!-- artificial - advanced prosthetics -->
 	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartArtificialBase">
 		<defName>AdvancedProstheticArm</defName>
 		<label>advanced prosthetic arm</label>
 		<description>Advanced prosthesis made to replace a missing arm.  Very comfortable and quite efficient.</description>
@@ -203,7 +126,7 @@
 		</artificialBodyPartsTags>
 	</ThingDef>
 	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartArtificialBase">
 		<defName>AdvancedProstheticLeg</defName>
 		<label>advanced prosthetic leg</label>
 		<description>Advanced prosthesis made to replace a missing leg.  Very comfortable and quite efficient.</description>
@@ -219,7 +142,7 @@
 		</artificialBodyPartsTags>
 	</ThingDef>
 	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartArtificialBase">
 		<defName>PlasteelDenture</defName>
 		<label>plasteel denture</label>
 		<description>Advanced prosthesis made to replace a missing jaw.  Very comfortable and quite efficient.</description>
@@ -234,62 +157,10 @@
 			<li>Advanced</li>
 		</artificialBodyPartsTags>
 	</ThingDef>
-	
-	<!-- artificial - advanced prosthetic weapons -->
-	
-	<ThingDef ParentName="BodyPartBase">
-		<defName>PowerClaw</defName>
-		<label>powered claw</label>
-		<description>Powerful hand replacement consisting of three deadly claws.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedProstheticWeapon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>468</MarketValue>
-		</statBases>
-		<artificialBodyPartsTags>
-			<li>AdvancedWeapon</li>
-		</artificialBodyPartsTags>
-		<tradeability>Sellable</tradeability>
-	</ThingDef>
-  
-	<ThingDef ParentName="BodyPartBase">
-		<defName>ScytherBlade</defName>
-		<label>scyther blade</label>
-		<description>Hand replacement with a telescoping blade.  Not very comfortable, but quite effective as a close-range weapon.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedProstheticWeapon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>1500</MarketValue>
-		</statBases>
-		<artificialBodyPartsTags>
-			<li>SpecialWeapon</li>
-		</artificialBodyPartsTags>
-		<tradeability>Sellable</tradeability>
-	</ThingDef>
 
 	<!-- artificial - bionics -->
-
-	<ThingDef ParentName="BodyPartBase">
-		<defName>BionicEye</defName>
-		<label>bionic eye</label>
-		<description>Advanced piece of technology made not only to fully replace a natural eye, but also to give supernatural vision abilities.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedBionic</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>1444</MarketValue>
-		</statBases>
-		<artificialBodyPartsTags>
-			<li>Bionic</li>
-		</artificialBodyPartsTags>
-	</ThingDef>
 	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartArtificialBase">
 		<defName>BionicEar</defName>
 		<label>bionic ear</label>
 		<description>Advanced piece of technology made not only to fully replace a natural ear, but also to give supernatural hearing.</description>
@@ -298,46 +169,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1850</MarketValue>
+			<MarketValue>1200</MarketValue>
 		</statBases>
-		<artificialBodyPartsTags>
-			<li>Bionic</li>
-		</artificialBodyPartsTags>
-	</ThingDef>
-
-	<ThingDef ParentName="BodyPartBase">
-		<defName>BionicArm</defName>
-		<label>bionic arm</label>
-		<description>One of the most sophisticated arm replacements. Gives extreme strength to its user.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedBionic</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>3071</MarketValue>
-		</statBases>
-		<artificialBodyPartsTags>
-			<li>Bionic</li>
-		</artificialBodyPartsTags>
-	</ThingDef>
-
-	<ThingDef ParentName="BodyPartBase">
-		<defName>BionicLeg</defName>
-		<label>bionic leg</label>
-		<description>Bionic leg uses cutting-edge technology to give its owner extreme walking comfort and strength.</description>
-		<graphicData>
-			<texPath>Things/Item/BodyPart/MedBionic</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>3071</MarketValue>
-		</statBases>
-		<artificialBodyPartsTags>
-			<li>Bionic</li>
-		</artificialBodyPartsTags>
+	    <techHediffsTags>
+	      <li>Advanced</li>
+	    </techHediffsTags>
 	</ThingDef>
 	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartArtificialBase">
 		<defName>BionicSpine</defName>
 		<label>bionic spine</label>
 		<description>Advanced piece of technology made not only to fully replace the spine, but also to give supernatural strength and agility.</description>
@@ -346,14 +185,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>4198</MarketValue>
+			<MarketValue>2500</MarketValue>
 		</statBases>
-		<artificialBodyPartsTags>
-			<li>Bionic</li>
-		</artificialBodyPartsTags>
+	    <techHediffsTags>
+	      <li>Advanced</li>
+	    </techHediffsTags>
 	</ThingDef>
 	
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartArtificialBase">
 		<defName>BionicBrain</defName>
 		<label>positronic brain implant</label>
 		<description>Advanced piece of technology made not only to augment the human brain, but also to give enhanced neurotransmitter function.</description>
@@ -362,11 +201,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>9468</MarketValue>
+			<MarketValue>5000</MarketValue>
 		</statBases>
-		<artificialBodyPartsTags>
-			<li>Bionic</li>
-		</artificialBodyPartsTags>
+	    <techHediffsTags>
+	      <li>Advanced</li>
+	    </techHediffsTags>
 	</ThingDef>
   
 </ThingDefs>
