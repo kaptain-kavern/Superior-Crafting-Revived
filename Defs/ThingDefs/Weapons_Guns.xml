@@ -559,24 +559,22 @@
       <AccuracyLong>0.53</AccuracyLong>
       <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
     </statBases>
+    <costList>
+      <SteelBar>70</SteelBar>
+      <PlasteelBar>20</PlasteelBar>
+      <Electronics>5</Electronics>
+      <Uranium>5</Uranium>
+      <Component>4</Component>
+    </costList>
     <recipeMaker>
       <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <skillRequirements>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>12</minLevel>
+        </li>
+      </skillRequirements>
     </recipeMaker>
-    <costList>
-    	<SteelBar>70</SteelBar>
-		<PlasteelBar>20</PlasteelBar>
-		<Electronics>5</Electronics>
-		<Uranium>5</Uranium>
-		<Component>4</Component>
-	</costList>
-	<recipeMaker>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-		</skillRequirements>
-	</recipeMaker>
     <techLevel>Spacer</techLevel>
     <weaponTags>
       <li>AdvancedGun</li>
