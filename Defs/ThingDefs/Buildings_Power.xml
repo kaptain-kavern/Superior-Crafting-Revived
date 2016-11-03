@@ -58,7 +58,7 @@
     <constructEffect>ConstructMetal</constructEffect>
     <designationHotKey>Misc1</designationHotKey>
     <researchPrerequisites>
-      <li>PowerI</li>
+      <li>Electricity</li>
     </researchPrerequisites>
 </ThingDef>
   
@@ -110,7 +110,7 @@
     <constructEffect>ConstructMetal</constructEffect>
     <designationHotKey>Misc2</designationHotKey>
     <researchPrerequisites>
-      <li>PowerI</li>
+      <li>Electricity</li>
     </researchPrerequisites>
 </ThingDef>
 	
@@ -168,7 +168,7 @@
     <constructEffect>ConstructMetal</constructEffect>
     <designationHotkey>Misc4</designationHotkey>
     <researchPrerequisites>
-      <li>PowerI</li>
+      <li>Electricity</li>
     </researchPrerequisites>
 </ThingDef>
 	
@@ -237,7 +237,7 @@
     <designationHotkey>Misc3</designationHotkey>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>PowerI</li>
+      <li>Electricity</li>
     </researchPrerequisites>
 </ThingDef>	
 
@@ -295,7 +295,7 @@
 		</comps>
 		<designationHotkey>Misc7</designationHotkey>
 		<researchPrerequisites>
-			<li>PowerI</li>
+			<li>Electricity</li>
 		</researchPrerequisites>
 	</ThingDef>
 

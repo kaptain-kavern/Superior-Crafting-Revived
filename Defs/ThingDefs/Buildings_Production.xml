@@ -376,7 +376,7 @@
 	      </li>
 	      <li Class="CompProperties_Breakdownable"/>
 	    </comps>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>		
@@ -448,7 +448,7 @@
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       <heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
     </building>
-    <researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+    <researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
     <designationHotKey>Misc10</designationHotKey>
 </ThingDef>	
 	
@@ -515,7 +515,7 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
 		</building>
-		<researchPrerequisites><li>PowerI</li></researchPrerequisites>
+		<researchPrerequisites><li>Electricity</li></researchPrerequisites>
 </ThingDef>	
 	
 <ThingDef ParentName="BenchBase">
@@ -756,7 +756,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 </ThingDef>
 
 <ThingDef ParentName="BenchBase">
@@ -943,7 +943,7 @@
     </building>
     <designationHotKey>Misc8</designationHotKey>
     <researchPrerequisites>
-      <li>PowerI</li>
+      <li>Electricity</li>
     </researchPrerequisites>
 </ThingDef>
 
@@ -1137,8 +1137,7 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
     <researchPrerequisites>
-      <li>DrugProduction</li>
-      <li>Chemlab</li>
+      <li>DrugProduction</li>      
     </researchPrerequisites>
 </ThingDef>
 	
@@ -1427,7 +1426,7 @@
 		</comps>
 		<specialDisplayRadius>5.8</specialDisplayRadius>		
 		<rotatable>false</rotatable>
-		<researchPrerequisites><li>PowerI</li></researchPrerequisites>
+		<researchPrerequisites><li>Electricity</li></researchPrerequisites>
 </ThingDef>
   
   

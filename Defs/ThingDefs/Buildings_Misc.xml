@@ -155,7 +155,7 @@
 		<designationCategory>Misc</designationCategory>
 		<staticSunShadowHeight>0.75</staticSunShadowHeight>
 		<constructEffect>ConstructMetal</constructEffect>
-		<researchPrerequisites><li>FoodSynthesizer</li></researchPrerequisites>
+		<researchPrerequisites><li>NutrientPaste</li></researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -223,7 +223,7 @@
       <li>PlaceWorker_NextToHopperAccepter</li>
     </placeWorkers>
     <constructEffect>ConstructMetal</constructEffect>
-    <researchPrerequisites><li>FoodSynthesizer</li></researchPrerequisites>
+    <researchPrerequisites><li>NutrientPaste</li></researchPrerequisites>
 </ThingDef>
 	
   <ThingDef ParentName="BuildingBase">
@@ -294,7 +294,7 @@
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       <heatPerTickWhileWorking>0.6</heatPerTickWhileWorking>
     </building>
-    <researchPrerequisites><li>Cremation</li></researchPrerequisites>
+    <researchPrerequisites><li>ElectricCremation</li></researchPrerequisites>
     <designationHotKey>Misc5</designationHotKey>
   </ThingDef>
 	
@@ -388,7 +388,7 @@
 		<pathCost>30</pathCost>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>true</rotatable>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 	</ThingDef> -->
 
 
@@ -423,7 +423,7 @@
 		<pathCost>30</pathCost>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>true</rotatable>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 	</ThingDef> -->
 	
 	
@@ -463,7 +463,7 @@
 		<pathCost>30</pathCost>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>true</rotatable>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 	</ThingDef> -->
 	
 	
@@ -505,7 +505,7 @@
 		<pathCost>30</pathCost>
 		<designationCategory>Misc</designationCategory>
 		<rotatable>true</rotatable>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 	</ThingDef> -->
 
   

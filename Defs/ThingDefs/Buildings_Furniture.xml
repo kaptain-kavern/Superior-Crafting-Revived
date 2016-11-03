@@ -265,7 +265,7 @@
 		<DesignationCategory>Furniture</DesignationCategory>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 </ThingDef>
 	
 	
@@ -376,7 +376,7 @@
 		<DesignationCategory>Furniture</DesignationCategory>
 		<Passability>PassThroughOnly</Passability>
 		<DrawGUIOverlay>True</DrawGUIOverlay>
-		<researchPrerequisites><li><li>Chemlab</li></li></researchPrerequisites>
+		<researchPrerequisites><li>DrugProduction</li></researchPrerequisites>
 </ThingDef>
 
 
@@ -465,7 +465,7 @@
     <building>
       <isSittable>true</isSittable>
     </building>
-    <researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+    <researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 </ThingDef>
 
 	
@@ -595,7 +595,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <researchPrerequisites><li>
-      <li>PowerI</li>
+      <li>Electricity</li>
     </li></researchPrerequisites>
 </ThingDef>
 
@@ -698,7 +698,7 @@
 		<designationCategory>Furniture</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 </ThingDef>
 	
 <ThingDef ParentName="HighQualityFurnitureBase">
@@ -730,7 +730,7 @@
 		<designationCategory>Furniture</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 </ThingDef>
 
 <ThingDef ParentName="HighQualityFurnitureBase">
@@ -761,7 +761,7 @@
 		<designationCategory>Furniture</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 </ThingDef>
 	
 <ThingDef ParentName="HighQualityFurnitureBase">
@@ -792,7 +792,7 @@
 		<designationCategory>Furniture</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 </ThingDef>
 
   

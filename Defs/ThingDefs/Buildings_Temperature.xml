@@ -199,7 +199,7 @@
     <designationCategory>Temperature</designationCategory>
     <designationHotKey>Misc3</designationHotKey>
     <researchPrerequisites>
-      <li>PowerI</li>
+      <li>Electricity</li>
     </researchPrerequisites>
 </ThingDef>
 
@@ -313,7 +313,7 @@
     <designationCategory>Temperature</designationCategory>
     <designationHotKey>Misc4</designationHotKey>
     <researchPrerequisites>
-      <li>PowerI</li>
+      <li>Electricity</li>
     </researchPrerequisites>
 </ThingDef>
 
@@ -414,7 +414,7 @@
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
 		<designationCategory>Temperature</designationCategory>
-		<researchPrerequisites><li>PowerI</li></researchPrerequisites>
+		<researchPrerequisites><li>Electricity</li></researchPrerequisites>
 		<designationHotKey>Misc5</designationHotKey>
   </ThingDef>
 
