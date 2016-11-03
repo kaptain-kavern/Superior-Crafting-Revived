@@ -3,16 +3,17 @@
 
 <!--================================ Abstract bases ======================================-->
 
-<ThingDef Name="BuildingBase" Abstract="True">
-		<category>Building</category>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
-		<selectable>true</selectable>
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<repairEffect>Repair</repairEffect>
-		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<filthLeaving>BuildingRubble</filthLeaving>
-</ThingDef>	
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
 
 <ThingDef ParentName="BuildingBase" Name="SculptureBase" Abstract="True">
     <thingClass>Building_Art</thingClass>
