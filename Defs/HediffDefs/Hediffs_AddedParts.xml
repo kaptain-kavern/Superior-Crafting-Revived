@@ -2,11 +2,11 @@
 <Defs>
 	<!-- Added body parts -->
 
-	<HediffDef Name="AddedBodyPartBase" Abstract="True">
-		<hediffClass>Hediff_AddedPart</hediffClass>
-		<naturallyHealed>false</naturallyHealed>
-		<defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
-	</HediffDef>
+  <HediffDef Name="AddedBodyPartBase" Abstract="True">
+    <hediffClass>Hediff_AddedPart</hediffClass>
+    <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+    <isBad>false</isBad>
+  </HediffDef>
 	
 	<!-- Artificial body parts - simple -->
 
@@ -28,18 +28,8 @@
 			<isSolid>true</isSolid>
 			<partEfficiency>0.5</partEfficiency>
 		</addedPartProps>
-	</HediffDef>
-  
-	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(70,220,30)</defaultLabelColor>
-		<defName>SimpleProstheticArm</defName>
-		<label>simple prosthetic arm</label>
-		<spawnThingOnRemoved>SimpleProstheticArm</spawnThingOnRemoved>
-		<addedPartProps>
-			<isSolid>true</isSolid>
-			<partEfficiency>0.75</partEfficiency>			
-		</addedPartProps>
-	</HediffDef>
+	</HediffDef>  
+
 
 	<HediffDef ParentName="AddedBodyPartBase">
 	<defaultLabelColor>(70,220,30)</defaultLabelColor>
@@ -75,7 +65,7 @@
 					<li>
 						<verbClass>Verb_MeleeAttack</verbClass>
 						<defaultCooldownTicks>150</defaultCooldownTicks>
-						<meleeDamageBaseAmount>9</meleeDamageBaseAmount>
+						<meleeDamageBaseAmount>8</meleeDamageBaseAmount>
 						<meleeDamageDef>Blunt</meleeDamageDef>
 					</li>
 				</verbs>
@@ -109,86 +99,10 @@
 			<partEfficiency>1.0</partEfficiency>			
 		</addedPartProps>
 	</HediffDef>
-	
-	<!-- Artificial body parts - weapons -->
-	
-	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,30,30)</defaultLabelColor>
-		<defName>PowerClaw</defName>
-		<label>power claw</label>
-		<comps>
-			<li>
-				<compClass>HediffComp_VerbGiver</compClass>
-				<verbs>
-					<li>
-						<verbClass>Verb_MeleeAttack</verbClass>
-						<defaultCooldownTicks>60</defaultCooldownTicks>
-						<meleeDamageBaseAmount>15</meleeDamageBaseAmount>
-						<meleeDamageDef>Scratch</meleeDamageDef>
-					</li>
-				</verbs>
-			</li>
-		</comps>
-		<spawnThingOnRemoved>PowerClaw</spawnThingOnRemoved>
-		<addedPartProps>
-			<isGoodWeapon>true</isGoodWeapon>
-			<isBionic>true</isBionic>
-			<isSolid>true</isSolid>
-			<partEfficiency>0.9</partEfficiency>			
-		</addedPartProps>
-	</HediffDef>
-
-	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,30,30)</defaultLabelColor>
-		<defName>ScytherBlade</defName>
-		<label>scyther blade</label>
-		<comps>
-			<li>
-				<compClass>HediffComp_VerbGiver</compClass>
-				<verbs>
-					<li>
-						<verbClass>Verb_MeleeAttack</verbClass>
-						<defaultCooldownTicks>60</defaultCooldownTicks>
-						<meleeDamageBaseAmount>30</meleeDamageBaseAmount>
-						<meleeDamageDef>Cut</meleeDamageDef>
-					</li>
-				</verbs>
-			</li>
-		</comps>
-		<spawnThingOnRemoved>ScytherBlade</spawnThingOnRemoved>
-		<addedPartProps>
-			<isGoodWeapon>true</isGoodWeapon>
-			<isBionic>true</isBionic>
-			<isSolid>true</isSolid>
-			<partEfficiency>0.9</partEfficiency>			
-		</addedPartProps>
-	</HediffDef>
   
 	<!-- Artificial body parts - bionics -->
-
-	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,30,220)</defaultLabelColor>
-		<defName>BionicEye</defName>
-		<label>bionic eye</label>
-		<spawnThingOnRemoved>BionicEye</spawnThingOnRemoved>
-		<addedPartProps>
-			<isBionic>true</isBionic>
-			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>			
-		</addedPartProps>
-		<stages>
-			<li>
-			<capMods>
-				<li>
-					<capacity>Sight</capacity>
-					<offset>0.2</offset>
-				</li>
-			</capMods>
-			</li>
-		</stages>
-	</HediffDef>
 	
-	<HediffDef ParentName="AddedBodyPartBase">
+<HediffDef ParentName="AddedBodyPartBase">
 	<defaultLabelColor>(220,30,220)</defaultLabelColor>
 		<defName>BionicEar</defName>
 		<label>bionic ear</label>
@@ -208,64 +122,8 @@
 			</capMods>
 			</li>
 		</stages>
-	</HediffDef>
+</HediffDef>
 
-	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,30,220)</defaultLabelColor>
-		<defName>BionicArm</defName>
-		<label>bionic arm</label>
-		<comps>
-			<li>
-				<compClass>HediffComp_VerbGiver</compClass>
-				<verbs>
-					<li>
-						<verbClass>Verb_MeleeAttack</verbClass>
-						<defaultCooldownTicks>100</defaultCooldownTicks>
-						<meleeDamageBaseAmount>9</meleeDamageBaseAmount>
-						<meleeDamageDef>Blunt</meleeDamageDef>
-					</li>
-				</verbs>
-			</li>
-		</comps>
-		<spawnThingOnRemoved>BionicArm</spawnThingOnRemoved>
-		<addedPartProps>
-			<isBionic>true</isBionic>
-			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>			
-		</addedPartProps>
-		<stages>
-			<li>
-			<capMods>
-				<li>
-					<capacity>Manipulation</capacity>
-					<offset>0.2</offset>
-				</li>
-			</capMods>
-			</li>
-		</stages>
-	</HediffDef>
-
-	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,30,220)</defaultLabelColor>
-		<defName>BionicLeg</defName>
-		<label>bionic leg</label>
-		<spawnThingOnRemoved>BionicLeg</spawnThingOnRemoved>
-		<addedPartProps>
-			<isBionic>true</isBionic>
-			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>			
-		</addedPartProps>
-		<stages>
-			<li>
-			<capMods>
-				<li>
-					<capacity>Moving</capacity>
-					<offset>0.2</offset>
-				</li>
-			</capMods>
-			</li>
-		</stages>
-	</HediffDef>
 	
 	<HediffDef ParentName="AddedBodyPartBase">
 	<defaultLabelColor>(220,30,220)</defaultLabelColor>
