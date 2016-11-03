@@ -446,6 +446,7 @@
     <defName>Gun_IncendiaryLauncher</defName>
     <label>incendiary launcher</label>
     <description>Incendiary bolt launcher. Starts fires.  Dmg:10 / Rng:24</description>
+    <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/IncendiaryLauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
