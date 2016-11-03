@@ -276,7 +276,7 @@
 				</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
-				<thingDef>Television</thingDef>
+				<thingDef>TubeTelevision</thingDef>
 				<countRange>
 					<min>-5</min>
 					<max>20</max>
