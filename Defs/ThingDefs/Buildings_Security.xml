@@ -218,8 +218,7 @@
 		<costList>
 			<SteelBar>250</SteelBar>
 			<Component>3</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>34.9</specialDisplayRadius>
@@ -272,8 +271,7 @@
 		<costList>
 			<SteelBar>250</SteelBar>
 			<Component>3</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>31.9</specialDisplayRadius>
@@ -326,8 +324,7 @@
 		<costList>
 			<SteelBar>250</SteelBar>
 			<Component>3</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>15.9</specialDisplayRadius>
@@ -380,8 +377,7 @@
 		<costList>
 			<SteelBar>250</SteelBar>
 			<Component>3</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>44.9</specialDisplayRadius>
@@ -450,8 +446,7 @@
 			<SteelBar>250</SteelBar>
 			<Electronics>50</Electronics>
 			<Component>3</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>34.9</specialDisplayRadius>
@@ -516,8 +511,7 @@
 			<SteelBar>250</SteelBar>
 			<Electronics>50</Electronics>
 			<Component>3</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>31.9</specialDisplayRadius>
@@ -582,8 +576,7 @@
 			<SteelBar>250</SteelBar>
 			<Electronics>50</Electronics>
 			<Component>3</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>15.9</specialDisplayRadius>
@@ -648,8 +641,7 @@
 			<SteelBar>250</SteelBar>
 			<Electronics>50</Electronics>
 			<Component>3</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>44.9</specialDisplayRadius>
@@ -688,7 +680,7 @@
 	    <comps>
 	      <li Class="CompProperties_Explosive">
 	        <explosiveRadius>4.9</explosiveRadius>
-	        <explosiveDamageType>Flamme</explosiveDamageType>	        
+	        <explosiveDamageType>Flame</explosiveDamageType>	        
 	      </li>
 	    </comps>
 		<description>A mortar that launches incendiary shells. Must be manned. Explodes when damaged.</description>
@@ -702,8 +694,7 @@
 		<costList>
 			<SteelBar>150</SteelBar>
 			<Component>4</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<building>
@@ -760,8 +751,7 @@
 		<costList>
 			<SteelBar>150</SteelBar>
 			<Component>4</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<building>
@@ -818,8 +808,7 @@
 		<costList>
 			<SteelBar>150</SteelBar>
 			<Component>4</Component>
-		</costList>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		</costList>		
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<building>
@@ -862,8 +851,7 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>-2</Beauty>
 		</statBases>
-		<passability>Impassable</passability>
-		<combatTargetBuilding>true</combatTargetBuilding>
+		<passability>Impassable</passability>		
 		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
 	</ThingDef> -->
