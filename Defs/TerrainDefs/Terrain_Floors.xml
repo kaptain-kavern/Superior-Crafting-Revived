@@ -71,7 +71,7 @@ Beauty:  6</Description>
 			<WoodPlank>3</WoodPlank>
 		</CostList>
 		<constructEffect>ConstructWood</constructEffect>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 	</TerrainDef>
 
   <!-- ================= Tile ================= -->
@@ -126,7 +126,7 @@ Beauty:  6</Description>
 			<SteelBar>3</SteelBar>
 		</CostList>
 		<constructEffect>ConstructMetal</constructEffect>
-		<researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+		<researchPrerequisites><li>MicroelectronicsBasics</li></researchPrerequisites>
 	</TerrainDef>
 
 
