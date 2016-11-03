@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<StuffCategoryDef>
-		<defName>Matty</defName>
-		<label>matty</label>
-	</StuffCategoryDef>
 	
 	<StuffCategoryDef>
-		<defName>Precious</defName>
-		<label>precious</label>
+		<defName>Glassy</defName>
+		<label>Glassy</label>
 	</StuffCategoryDef>
 
 	<StuffCategoryDef>
@@ -34,6 +29,6 @@
 	<StuffCategoryDef>
 		<defName>Leathery</defName>
 		<label>leathery</label>
-	</StuffCategoryDef>  
+	</StuffCategoryDef>
 
 </Defs>
