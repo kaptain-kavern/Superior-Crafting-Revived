@@ -44,8 +44,8 @@
 			<texPath>Things/Item/Resource/RawCotton</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>Food_Drop</soundInteract>
-		<soundDrop>Food_Drop</soundDrop>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
 		<statBases>
 			<MarketValue>1.5</MarketValue>
 		</statBases>
@@ -62,8 +62,8 @@
 			<texPath>Things/Item/Resource/RawDevilstrand</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>Food_Drop</soundInteract>
-		<soundDrop>Food_Drop</soundDrop>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
 		<statBases>
 			<MarketValue>5</MarketValue>
 		</statBases>
@@ -320,8 +320,8 @@
 			<texPath>Things/Item/Resource/Biomatter</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>Food_Drop</soundInteract>
-		<soundDrop>Food_Drop</soundDrop>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
 		<statBases>
 			<MarketValue>12</MarketValue>
 		</statBases>
@@ -341,8 +341,8 @@
 			<texPath>Things/Item/BodyPart/ArtificialBone</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>Food_Drop</soundInteract>
-		<soundDrop>Food_Drop</soundDrop>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
 			<MarketValue>180</MarketValue>
 		</statBases>
