@@ -36,7 +36,7 @@
 	
 	<!--=============== Raw Materials ====================-->
 	
-	<ThingDef ParentName="ResourceBase">
+	<ThingDef ParentName="RoughPlantBase">
 		<defName>RawCotton</defName>
 		<label>raw cotton</label>
 		<description>Raw cotton. It can be spun into cloth or sold to a trader.</description>
@@ -50,11 +50,11 @@
 			<MarketValue>1.5</MarketValue>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>PlantMatter</li>
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="ResourceBase">
+	<ThingDef ParentName="RoughPlantBase">
 		<defName>RawDevilstrand</defName>
 		<label>Raw devilstrand</label>
 		<description>Raw devilstrand. It can be spun into cloth or sold to a trader.</description>
@@ -65,10 +65,10 @@
 		<soundInteract>Food_Drop</soundInteract>
 		<soundDrop>Food_Drop</soundDrop>
 		<statBases>
-			<MarketValue>6.4</MarketValue>
+			<MarketValue>5</MarketValue>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>PlantMatter</li>
 		</thingCategories>
 	</ThingDef>
   
@@ -356,233 +356,35 @@
 
 	<!--=================== Plant products ===============-->
 
-	<ThingDef Abstract="True" ParentName="ResourceBase" Name="PlantProductBase">
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Food_Drop</soundInteract>
-		<soundDrop>Food_Drop</soundDrop>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<DeteriorationRate>5</DeteriorationRate>
-		</statBases>
-		<tickerType>Rare</tickerType>
-	</ThingDef>
-  
-	<ThingDef ParentName="PlantProductBase">
-		<defName>RawHops</defName>
-		<label>hops</label>
-		<description>Raw hops. Awful and not nutritious to eat, but necessary for making beer</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Hops</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>2.0</MarketValue>
-		</statBases>
-		<thingCategories>
-			<li>ResourcesRaw</li>
-		</thingCategories>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>25</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-	</ThingDef>
-  
+<ThingDef Abstract="True" Name="OrganicProductBase" ParentName="ResourceBase">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+    </statBases>
+    <tickerType>Rare</tickerType>
+</ThingDef>
+
 	<!--=============== Raw foods ====================-->
 
-	<ThingDef Abstract="True" ParentName="PlantProductBase" Name="RawFoodBase">
-		<ingestible>
-			<preferability>Raw</preferability>
-			<nutrition>0.05</nutrition>
-			<eatEffect>EatVegetarian</eatEffect>
-			<soundEat>RawVegetable_Eat</soundEat>
-		</ingestible>
-		<thingCategories>
-			<li>PlantFoodRaw</li>
-		</thingCategories>
-	</ThingDef>
-
-	<ThingDef ParentName="RawFoodBase">
-		<defName>RawPotatoes</defName>
-		<label>potatoes</label>
-		<description>Raw potatoes.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Potatoes</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>1.9</MarketValue>
-		</statBases>
-		<ingestible>
-			<ingestedDirectThought>AteRawFood</ingestedDirectThought>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>30</daysToRotStart>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="RawFoodBase">
-		<defName>RawCorn</defName>
-		<label>corn</label>
-		<description>Raw corn. Nice to eat, even when raw.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Corn</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>2.1</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="RawFoodBase">
-		<defName>RawRice</defName>
-		<label>rice</label>
-		<description>Raw rice.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Rice</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>1.9</MarketValue>
-		</statBases>
-		<ingestible>
-			<ingestedDirectThought>AteRawFood</ingestedDirectThought>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>40</daysToRotStart>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="RawFoodBase">
-		<defName>RawBerries</defName>
-		<label>berries</label>
-		<description>Assorted berries. Nice to eat, even when raw.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Berries</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>2.1</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>14</daysToRotStart>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="RawFoodBase">
-		<defName>RawAgave</defName>
-		<label>agave fruit</label>
-		<description>Raw agave fruit.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/AgaveFruit</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>2.1</MarketValue>
-		</statBases>
-		<ingestible>
-			<ingestedDirectThought>AteRawFood</ingestedDirectThought>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>25</daysToRotStart>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<!--=============== Medicine ====================-->
-
-	<ThingDef ParentName="ResourceBase">
-		<defName>HerbalMedicine</defName>
-		<label>herbal medicine</label>
-		<description>A pack of herbal concoctions typically extracted from the xerigium plant. Less potent than industrial pharmaceuticals.</description>
-		<thingClass>Medicine</thingClass>
-		<graphicData>
-			<texPath>Things/Item/Resource/MedicineHerbal</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Standard_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<MarketValue>5</MarketValue>
-			<Flammability>1.0</Flammability>
-			<MedicalPotency>0.85</MedicalPotency>
-			<DeteriorationRate>5</DeteriorationRate>
-		</statBases>
-		<thingCategories>
-			<li>Medicine</li>
-		</thingCategories>
-		<tickerType>Rare</tickerType>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>150</daysToRotStart>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="ResourceBase">
-		<defName>Medicine</defName>
-		<label>medicine</label>
-		<description>Medical staff use these supplies to heal the wounded.</description>
-		<thingClass>Medicine</thingClass>
-		<graphicData>
-			<texPath>Things/Item/Resource/Medicine</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Standard_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<MarketValue>25</MarketValue>
-			<Flammability>1.0</Flammability>
-			<MedicalPotency>1.0</MedicalPotency>
-			<DeteriorationRate>1</DeteriorationRate>
-		</statBases>
-		<thingCategories>
-			<li>Medicine</li>
-		</thingCategories>
-	</ThingDef>
-
-	<ThingDef ParentName="ResourceBase">
-		<defName>GlitterworldMedicine</defName>
-		<label>glitterworld medicine</label>
-		<description>Advanced medical supplies from a high-tech glitterworld.</description>
-		<thingClass>Medicine</thingClass>
-		<graphicData>
-			<texPath>Things/Item/Resource/MedicineGlitterworld</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Standard_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<statBases>
-			<MarketValue>100</MarketValue>
-			<Flammability>1.0</Flammability>
-			<MedicalPotency>1.8</MedicalPotency>
-		</statBases>
-		<thingCategories>
-			<li>Medicine</li>
-		</thingCategories>
-		<tradeTags>
-			<li>Exotic</li>
-		</tradeTags>
-	</ThingDef>
-
+<ThingDef Abstract="True" Name="PlantFoodRawBase" ParentName="OrganicProductBase">
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tastesRaw>true</tastesRaw>
+      <nutrition>0.05</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_FoodPoisoningChance" />
+    </comps>
+</ThingDef>
 
 </Resources>
