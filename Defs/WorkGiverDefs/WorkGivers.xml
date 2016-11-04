@@ -20,12 +20,15 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>95</priorityInType>
-		<fixedBillGiverDefs>TableGrill</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableGrill</li>
+		</fixedBillGiverDefs>
 		<verb>cook</verb>
 		<gerund>cooking</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
 	<!-- ============= Crafting - weapons ============= -->
@@ -35,7 +38,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Smithing</workType>
 		<priorityInType>115</priorityInType>
-		<fixedBillGiverDefs>TableSmithing</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableSmithing</li>
+		</fixedBillGiverDefs>
 		<verb>smith</verb>
 		<gerund>smithing at</gerund>
 		<requiredCapacities>
@@ -50,7 +55,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Tailoring</workType>
 		<priorityInType>110</priorityInType>
-		<fixedBillGiverDefs>ElectricTailoringBench</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>ElectricTailoringBench</li>
+		</fixedBillGiverDefs>
 		<verb>tailor</verb>
 		<gerund>tailoring at</gerund>
 		<requiredCapacities>
@@ -65,7 +72,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>90</priorityInType>
-		<fixedBillGiverDefs>TableSawmillHand</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableSawmillHand</li>
+		</fixedBillGiverDefs>
 		<verb>saw logs</verb>
 		<gerund>sawing logs</gerund>
 		<requiredCapacities>
@@ -78,7 +87,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>85</priorityInType>
-		<fixedBillGiverDefs>TableStonecutter</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableStonecutter</li>
+		</fixedBillGiverDefs>
 		<verb>stonecut</verb>
 		<gerund>stonecutting at</gerund>
 		<requiredCapacities>
@@ -91,7 +102,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>80</priorityInType>
-		<fixedBillGiverDefs>TableFurnace</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableFurnace</li>
+		</fixedBillGiverDefs>
 		<verb>smelt metal</verb>
 		<gerund>smelting metal</gerund>
 		<requiredCapacities>
@@ -104,7 +117,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>80</priorityInType>
-		<fixedBillGiverDefs>ElectricSmelter</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>ElectricSmelter</li>
+		</fixedBillGiverDefs>
 		<verb>refine</verb>
 		<gerund>refining at</gerund>
 		<requiredCapacities>
@@ -117,7 +132,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>90</priorityInType>
-		<fixedBillGiverDefs>TableMachining</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableMachining</li>
+		</fixedBillGiverDefs>
 		<verb>craft</verb>
 		<gerund>crafting at</gerund>
 		<requiredCapacities>
@@ -130,7 +147,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>75</priorityInType>
-		<fixedBillGiverDefs>TableGlassworks</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableGlassworks</li>
+		</fixedBillGiverDefs>
 		<verb>make glass</verb>
 		<gerund>making glass</gerund>
 		<requiredCapacities>
@@ -143,7 +162,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>65</priorityInType>
-		<fixedBillGiverDefs>TableLoom</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>HandTailoringBench</li>
+		</fixedBillGiverDefs>
 		<verb>make cloth</verb>
 		<gerund>making cloth</gerund>
 		<requiredCapacities>
@@ -156,7 +177,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>60</priorityInType>
-		<fixedBillGiverDefs>TableComposter</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableComposter</li>
+		</fixedBillGiverDefs>
 		<verb>make mulch</verb>
 		<gerund>making mulch</gerund>
 		<requiredCapacities>
@@ -169,7 +192,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>55</priorityInType>
-		<fixedBillGiverDefs>TableChemlab</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DrugLab</li>
+		</fixedBillGiverDefs>
 		<verb>craft</verb>
 		<gerund>crafting</gerund>
 		<requiredCapacities>
@@ -182,7 +207,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>50</priorityInType>
-		<fixedBillGiverDefs>TableBionics</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableBionics</li>
+		</fixedBillGiverDefs>
 		<verb>craft</verb>
 		<gerund>crafting</gerund>
 		<requiredCapacities>
@@ -195,7 +222,9 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>45</priorityInType>
-		<fixedBillGiverDefs>TableOrganvat</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>TableOrganvat</li>
+		</fixedBillGiverDefs>
 		<verb>extract</verb>
 		<gerund>extracting</gerund>
 		<requiredCapacities>
