@@ -117,7 +117,8 @@ Beauty:  3</Description>
 		<RenderPrecedence>240</RenderPrecedence>
 		<Description>Metal tiles, for that spaceship look.
 Beauty:  6</Description>
-		<texturePath>Terrain/Surfaces/MetalTile</texturePath>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<color>(0.369, 0.369, 0.369)</color>
 		<statBases>
 			<Beauty>6</Beauty>
 		<WorkToMake>85</WorkToMake>
