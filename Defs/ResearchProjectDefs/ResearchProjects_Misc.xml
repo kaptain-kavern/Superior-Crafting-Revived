@@ -350,6 +350,7 @@
 		<prerequisites>
 			<li>ConstructionII</li>
 		</prerequisites>
+		<techLevel>Industrial</techLevel>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>

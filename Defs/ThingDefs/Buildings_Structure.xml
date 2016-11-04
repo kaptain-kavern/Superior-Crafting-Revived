@@ -306,6 +306,16 @@
 				<li>Wall</li>
 				<li>Rock</li>
 			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+		        <cornerTR>Damage/Corner</cornerTR>
+		        <cornerBL>Damage/Corner</cornerBL>
+		        <cornerBR>Damage/Corner</cornerBR>
+		        <edgeTop>Damage/Edge</edgeTop>
+		        <edgeBot>Damage/Edge</edgeBot>
+		        <edgeLeft>Damage/Edge</edgeLeft>
+		        <edgeRight>Damage/Edge</edgeRight>
+		    </damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/SCWalls/WallLights_MenuIcon</uiIconPath>
 		<blueprintGraphicData>
@@ -335,6 +345,7 @@
 		<CostList>
 			<SteelBar>1</SteelBar>
 			<Glass>5</Glass>
+			<Component>1</Component>
 		</CostList>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -347,7 +358,8 @@
 		</building>
 		<Comps>
 			<li Class="CompProperties_Flickable"/>
-			 <li Class="CompProperties_Power">				
+			 <li Class="CompProperties_Power">
+			 	<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>50</basePowerConsumption>
 				<shortCircuitInRain>false</shortCircuitInRain>				
 			</li>
@@ -356,12 +368,12 @@
 				<glowColor>(217,217,208,0)</glowColor>
 			</li>
 		</Comps>
-		<damageMultipliers>
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>3</multiplier>
-			</li>
-		</damageMultipliers>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+    </damageMultipliers>
 		<researchPrerequisites><li>LightedWalls</li></researchPrerequisites>
 	</ThingDef>
 
