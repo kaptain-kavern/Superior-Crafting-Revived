@@ -12,7 +12,12 @@
     </blueprintGraphicData>
     <altitudeLayer>DoorMoveable</altitudeLayer>
     <fillPercent>1</fillPercent>
-    <useHitPoints>true</useHitPoints>    
+    <useHitPoints>true</useHitPoints>
+<!--     <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories> -->
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>1.0</Flammability>
@@ -41,113 +46,122 @@
     </comps>
 </ThingDef>
 
+<ThingDef ParentName="DoorBase">
+    <defName>Door</defName>
+    <label>door</label>
+    <description>Divides rooms. Must be manually opened and closed, which slows people down.</description>
+    <statBases>
+      <WorkToMake>850</WorkToMake>
+    </statBases>
+    <stuffCategories>
+    	<li>Woody</li>
+    </stuffCategories>    
+    <graphicData>
+      <texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/DoorSimple_MenuIcon</uiIconPath>
+    <costStuffCount>25</costStuffCount>
+    <designationHotKey>Misc1</designationHotKey>
+</ThingDef>
 
-	<ThingDef ParentName="DoorBase">
-		<defName>Door</defName>
-		<label>door</label>
-		<description>Divides rooms. Must be manually opened and closed, which slows people down.</description>
-		<statBases>
-			<WorkToMake>850</WorkToMake>
-		</statBases>
-		<stuffCategories>
-			<li>Woody</li>
-		</stuffCategories>
-		<graphicData>
-			<texPath>Things/Building/SCDoors/DoorSimple_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData><enabled>false</enabled></damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/SCDoors/DoorSimple_MenuIcon</uiIconPath>
-		<costStuffCount>25</costStuffCount>
-		<designationHotKey>Misc1</designationHotKey>
-	</ThingDef>
+<ThingDef ParentName="DoorBase">
+    <defName>Autodoor</defName>
+    <label>autodoor</label>
+    <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToMake>1100</WorkToMake>
+    </statBases>
+    <stuffCategories>
+    	<li>Metallic</li>
+    	<li>Woody</li>
+    </stuffCategories>    
+    <graphicData>
+      <texPath>Things/Building/Door/Autodoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+      <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
+    <costList>
+      <SteelBar>25</SteelBar>
+      <Component>1</Component>
+    </costList>
+    <costStuffCount>20</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>    
+    <researchPrerequisites>
+      <li>ConstructionII</li>
+    </researchPrerequisites>
+</ThingDef>
 
-	<ThingDef ParentName="DoorBase">
-		<defName>Autodoor</defName>
-		<label>autodoor</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
-		<statBases>
-			<WorkToMake>1100</WorkToMake>
-		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-		</stuffCategories>
-		<graphicData>
-			<texPath>Things/Building/SCDoors/Autodoor_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData><enabled>false</enabled></damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/SCDoors/Autodoor_MenuIcon</uiIconPath>
-		<costList>
-			<SteelBar>25</SteelBar>
-			<Component>1</Component>
-		</costList>
-		<costStuffCount>25</costStuffCount>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>50</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Breakdownable"/>
-		</comps>
-		<researchPrerequisites><li>ConstructionII</li></researchPrerequisites>
-	</ThingDef>
+<ThingDef ParentName="DoorBase">
+	<defName>Blastdoor</defName>
+	<label>blast door</label>
+	<description>A powered blast door that allows people to move through the door without slowing down.</description>
+	<statBases>
+		<MaxHitPoints>750</MaxHitPoints>
+		<WorkToMake>2000</WorkToMake>
+	</statBases>
+	<costList>
+		<SteelBar>50</SteelBar>
+		<PlasteelBar>30</PlasteelBar>
+		<Component>1</Component>
+	</costList>
+	<graphicData>
+		<texPath>Things/Building/SCDoors/DoorBlast_Mover</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<damageData><enabled>false</enabled></damageData>
+	</graphicData>
+	<uiIconPath>Things/Building/SCDoors/DoorBlast_MenuIcon</uiIconPath>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>50</basePowerConsumption>
+		</li>
+		<li Class="CompProperties_Breakdownable"/>
+	</comps>
+	<researchPrerequisites><li>ConstructionIII</li></researchPrerequisites>
+</ThingDef>
 	
-	<ThingDef ParentName="DoorBase">
-		<defName>Blastdoor</defName>
-		<label>blast door</label>
-		<description>A powered blast door that allows people to move through the door without slowing down.</description>
-		<statBases>
-			<MaxHitPoints>750</MaxHitPoints>
-			<WorkToMake>2000</WorkToMake>
-		</statBases>
-		<costList>
-			<SteelBar>30</SteelBar>
-			<PlasteelBar>50</PlasteelBar>
-			<Component>1</Component>
-		</costList>
-		<graphicData>
-			<texPath>Things/Building/SCDoors/DoorBlast_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData><enabled>false</enabled></damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/SCDoors/DoorBlast_MenuIcon</uiIconPath>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>50</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Breakdownable"/>
-		</comps>
-		<researchPrerequisites><li>ConstructionIII</li></researchPrerequisites>
-	</ThingDef>
-	
-	<ThingDef ParentName="DoorBase">
-		<defName>FenceGate</defName>
-		<label>fence gate</label>
-		<description>A fence gate. Must be manually opened and closed, which slows people down.</description>
-		<statBases>
-			<WorkToMake>850</WorkToMake>
-		</statBases>
-		<stuffCategories>
-			<li>Woody</li>
-		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
-		<blueprintGraphicData>
-			<texPath>Things/Building/SCDoors/FenceGate_Blueprint</texPath>
-		</blueprintGraphicData>
-		<graphicData>
-			<texPath>Things/Building/SCDoors/FenceGate_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData><enabled>false</enabled></damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/SCDoors/FenceGate_MenuIcon</uiIconPath>
-		<holdsRoof>false</holdsRoof>
-		<designationCategory>Structure</designationCategory>
-		<staticSunShadowHeight>0.30</staticSunShadowHeight>
-		<researchPrerequisites><li>AgricultureI</li></researchPrerequisites>
-	</ThingDef>
+<ThingDef ParentName="DoorBase">
+	<defName>FenceGate</defName>
+	<label>fence gate</label>
+	<description>A fence gate. Must be manually opened and closed, which slows people down.</description>
+	<statBases>
+		<WorkToMake>850</WorkToMake>
+	</statBases>
+    <costList>
+    	<WoodPlank>20</WoodPlank>
+    	<WoodLog>2</WoodLog>
+    </costList>	
+	<blueprintGraphicData>
+		<texPath>Things/Building/SCDoors/FenceGate_Blueprint</texPath>
+	</blueprintGraphicData>
+	<graphicData>
+		<texPath>Things/Building/SCDoors/FenceGate_Mover</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<damageData><enabled>false</enabled></damageData>
+	</graphicData>
+	<uiIconPath>Things/Building/SCDoors/FenceGate_MenuIcon</uiIconPath>
+	<holdsRoof>false</holdsRoof>
+	<designationCategory>Structure</designationCategory>
+	<staticSunShadowHeight>0.30</staticSunShadowHeight>
+	<researchPrerequisites><li>AgricultureI</li></researchPrerequisites>
+</ThingDef>
 
 
 	<!--========================= Walls =============================-->
@@ -266,7 +280,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="Wall">
+<!-- 	<ThingDef ParentName="Wall">
 		<defName>WallConduit</defName>
 		<label>conduit wall</label>
 		<description>A wall with a built-in power conduit.</description>
@@ -289,7 +303,7 @@
 	    	<li>PlaceWorker_Conduit</li>
 	    </placeWorkers>
 		<researchPrerequisites><li>ConstructionII</li></researchPrerequisites>
-	</ThingDef>
+	</ThingDef> -->
 	
 	
 	<ThingDef ParentName="BuildingBase">
@@ -368,12 +382,12 @@
 				<glowColor>(217,217,208,0)</glowColor>
 			</li>
 		</Comps>
-    <damageMultipliers>
-      <li>
-        <damageDef>Bomb</damageDef>
-        <multiplier>2</multiplier>
-      </li>
-    </damageMultipliers>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+		</damageMultipliers>
 		<researchPrerequisites><li>LightedWalls</li></researchPrerequisites>
 	</ThingDef>
 
@@ -401,7 +415,10 @@
 			<WorkToMake>150</WorkToMake>
 			<Flammability>1.0</Flammability>
 		</statBases>
-		<costStuffCount>6</costStuffCount>
+		<costList>
+			<WoodPlank>5</WoodPlank>
+			<WoodLog>1</WoodLog>
+		</costList>	
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
@@ -427,7 +444,7 @@
 		<damageMultipliers>
 			<li>
 				<damageDef>Bomb</damageDef>
-				<multiplier>3</multiplier>
+				<multiplier>2</multiplier>
 			</li>
 		</damageMultipliers>
 		<researchPrerequisites><li>AgricultureI</li></researchPrerequisites>
