@@ -767,7 +767,7 @@
     <graphicData>
       <texPath>Things/Building/SCProduction/PrepTable3x1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3.5,1.5)</drawSize>
+      <drawSize>(3,1)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -955,7 +955,7 @@
     <graphicData>
       <texPath>Things/Building/SCProduction/CookStove3x1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3.5,1.5)</drawSize>
+      <drawSize>(3,1)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
