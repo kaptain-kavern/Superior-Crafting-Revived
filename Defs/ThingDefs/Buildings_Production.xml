@@ -919,9 +919,6 @@
       <li>CookMealSimple</li>
       <li>CookMealFine</li>
       <li>CookMealLavish</li>
-      <li>CookMealSimple_Bulk</li>
-      <li>CookMealFine_Bulk</li>
-      <li>CookMealLavish_Bulk</li>
       <li>MakePemmican</li>
     </recipes>
     <inspectorTabs>
@@ -988,9 +985,6 @@
       <li>CookMealFine</li>
       <li>CookMealLavish</li>
       <li>MakePemmican</li>
-      <li>CookMealSimple_Bulk</li>
-      <li>CookMealFine_Bulk</li>
-      <li>CookMealLavish_Bulk</li>
     </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <CommunityCoreLibrary.AdvancedResearchDef>
+
+        <defName>CookMeal_Bulk</defName>
+        <Priority>0</Priority>
+
+        <researchDefs>
+            <li>MicroelectronicsBasics</li>
+        </researchDefs>
+
+        <recipeDefs>
+            <li>CookMealSimple_Bulk</li>
+            <li>CookMealFine_Bulk</li>
+            <li>CookMealLavish_Bulk</li>
+        </recipeDefs>
+
+        <thingDefs>
+            <li>ElectricStove</li>
+            <li>FueledStove</li>
+        </thingDefs>
+
+    </CommunityCoreLibrary.AdvancedResearchDef>
+
+</Defs>
