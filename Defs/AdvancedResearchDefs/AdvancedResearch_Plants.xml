@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <CommunityCoreLibrary.AdvancedResearchDef>
+        <defName>CraftingI</defName>
+        <Priority>0</Priority>
+
+        <researchDefs>
+            <li>CraftingI</li>
+        </researchDefs>
+
+        <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+        </sowTags>
+
+        <thingDefs>
+            <li>PlantCotton</li>
+            <li>PlantDevilstrand</li>
+        </thingDefs>
+    </CommunityCoreLibrary.AdvancedResearchDef>
+
+    <CommunityCoreLibrary.AdvancedResearchDef>
+        <defName>AgricultureI</defName>
+        <Priority>0</Priority>
+
+        <researchDefs>
+            <li>AgricultureI</li>
+        </researchDefs>
+
+        <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+        </sowTags>
+
+        <thingDefs>
+            <li>PlantRice</li>
+            <li>PlantStrawberry</li>
+        </thingDefs>
+    </CommunityCoreLibrary.AdvancedResearchDef>
+
+    <CommunityCoreLibrary.AdvancedResearchDef>
+        <defName>AgricultureIbis</defName>
+        <Priority>0</Priority>
+
+        <researchDefs>
+            <li>AgricultureI</li>
+        </researchDefs>
+
+        <sowTags>
+            <li>Ground</li>
+        </sowTags>
+
+        <thingDefs>
+            <li>PlantCorn</li>
+        </thingDefs>
+    </CommunityCoreLibrary.AdvancedResearchDef>
+
+    <CommunityCoreLibrary.AdvancedResearchDef>
+        <defName>PlantHops</defName>
+        <Priority>0</Priority>
+
+        <researchDefs>
+            <li>Brewing</li>
+        </researchDefs>
+
+        <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+        </sowTags>
+
+        <thingDefs>
+            <li>PlantHops</li>
+        </thingDefs>
+    </CommunityCoreLibrary.AdvancedResearchDef>
+
+</Defs>
