@@ -54,7 +54,7 @@
             <harvestYield>3</harvestYield>            
             <shootsSeeds>false</shootsSeeds>
             <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
-            <soundHarvesting>Harvest_Standard</soundHarvesting>            
+            <soundHarvesting>Harvest_Standard</soundHarvesting>
             <sowMinSkill>10</sowMinSkill>
             <sowWork>260</sowWork>
             <sowResearchPrerequisites></sowResearchPrerequisites>

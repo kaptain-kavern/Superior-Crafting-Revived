@@ -2,7 +2,6 @@
 <Defs>
 
     <CommunityCoreLibrary.AdvancedResearchDef>
-
         <defName>CookMeal_Bulk</defName>
         <Priority>0</Priority>
 
@@ -20,7 +19,6 @@
             <li>ElectricStove</li>
             <li>FueledStove</li>
         </thingDefs>
-
     </CommunityCoreLibrary.AdvancedResearchDef>
 
 </Defs>
