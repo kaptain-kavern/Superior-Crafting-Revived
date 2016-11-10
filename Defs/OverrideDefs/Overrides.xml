@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <Override.Def Filter="Trader" Category="Caravan" Tech="Outlander" Role="BulkGoods">
+        <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Jade</thingDef>
+                <countRange>
+                    <min>200</min>
+                    <max>400</max>
+                </countRange>
+            </li>
+        </stockGenerators>
+    </Override.Def>
+
+    <Override.Def Type="ThingDef" Target="PlantCotton">
+        <description>Yields raw cotton, a fine plant fiber used to make cloth.</description>
+        <plant>
+            <dieIfLeafless>true</dieIfLeafless>
+            <fertilityFactorGrowthRate>0.4</fertilityFactorGrowthRate>
+            <fertilityMin>0.5</fertilityMin>
+            <growDays>2.705</growDays>
+            <harvestDestroys>true</harvestDestroys>
+            <harvestedThingDef>RawCotton</harvestedThingDef>
+            <harvestTag>Standard</harvestTag>
+            <harvestWork>190</harvestWork>
+            <harvestYield>5</harvestYield>
+            <shootsSeeds>false</shootsSeeds>
+            <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+            <soundHarvesting>Harvest_Standard</soundHarvesting>
+            <sowWork>260</sowWork>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.05</max>
+            </visualSizeRange>
+        </plant>
+    </Override.Def>
+
+    <Override.Def Target="PlantDevilstrand">
+        <plant>
+            <dieIfLeafless>true</dieIfLeafless>
+            <fertilityFactorGrowthRate>0.4</fertilityFactorGrowthRate>
+            <fertilityMin>0.5</fertilityMin>
+            <growDays>22.5</growDays>
+            <harvestDestroys>true</harvestDestroys>
+            <harvestedThingDef>RawDevilstrand</harvestedThingDef>
+            <harvestTag>Standard</harvestTag>
+            <harvestWork>190</harvestWork>
+            <harvestYield>3</harvestYield>            
+            <shootsSeeds>false</shootsSeeds>
+            <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+            <soundHarvesting>Harvest_Standard</soundHarvesting>            
+            <sowMinSkill>10</sowMinSkill>
+            <sowWork>260</sowWork>
+            <sowResearchPrerequisites></sowResearchPrerequisites>
+            <sowTags>
+                <li>Ground</li>                
+            </sowTags>            
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.3</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </Override.Def>
+
+    <Override.Def Target="MakeStoneBlocks">
+    	<products>
+            <Sand>1</Sand>
+        </products>
+    </Override.Def>
+    
+</Defs>
+
