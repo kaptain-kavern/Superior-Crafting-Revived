@@ -1,0 +1,54 @@
+digraph "Production Diagram"
+{graph [bgcolor="#404040"];
+node[color="#79B75F", shape=box, style=filled, fontcolor="#404040"];
+edge [color="#898989", fontcolor="#FFFFFF"];
+WoodLogs -> WoodPlanks[label="Saw
+Mill"];
+WoodLogs -> Kindling;
+Kindling -> Mulch[label="Composter"];
+RockChunk -> Sand[label="Crafting
+Table"];
+Sand -> Glass[label="Glass
+works"];
+Silver -> Electronics;
+Sand -> Electronics[label="Smithing
+Table"];
+Steel -> SteelBar[label="Smelting
+Furnace"];
+Plasteel -> PlasteelBar[label="Smelting
+Furnace"];
+PlasteelBar -> ArtificialBone[label="Drug
+Lab"];
+CornPlant -> Corn[label="Harvested"];
+Corn  -> Ethanol[label="Brewery"];
+CottonPlant -> RawCotton[label="Harvested"];
+RawCotton-> Cloth;
+Cloth -> Medicine[label="Drug
+Lab"];
+HealrootPlant -> HerbalMedicine[label="Harvested"];
+HerbalMedicine-> Medicine;
+RawCotton -> Synthread[label="Tailoring
+Bench"];
+Plasteel -> Synthread;
+DevilstrandPlant -> RawDevilstrand[label="Harvested"];
+RawDevilstrand -> "Devilstrand"[label="Tailor's
+Loom"];
+Devilstrand -> Hyperweave[label="Tailor's
+Loom"];
+Synthread -> Hyperweave;
+{rank=same;DevilstrandPlant HealrootPlant CottonPlant CornPlant Steel Plasteel}
+WoodLogs [label="Wood
+Log"]; WoodPlanks [label="Wood
+Plank"]; RockChunk [label="Rock
+Chunk"]; SteelBar [label="Steel
+Bar"]; DevilstrandPlant [label="Devilstrand
+(Plant)"]; RawDevilstrand [label="Raw
+Devilstrand"]; PlasteelBar [label="Plasteel
+Bar"]; ArtificialBone [label="Artificial
+Bone"]; CottonPlant [label="Cotton
+(Plant)"]; RawCotton [label="Raw
+Cotton"]; HealrootPlant [label="Healroot
+(Plant)"]; HerbalMedicine [label="Herbal
+Medicine"]; CornPlant [label="Corn
+(Plant)"]
+}
