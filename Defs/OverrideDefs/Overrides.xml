@@ -69,18 +69,6 @@
             </visualSizeRange>
         </plant>
     </Override.Def>
-
-<!-- Making stone blocks also drop a bit of sand -->
-    <Override.Def Target="MakeStoneBlocks">
-    	<products>
-            <Sand>1</Sand>
-        </products>
-    </Override.Def>
-
-<!-- Stomach is now harvestable -->
-    <Override.Def Type="BodyPartDef" Target="Stomach">
-        <spawnThingOnRemoved>Stomach</spawnThingOnRemoved>
-    </Override.Def>
     
 </Defs>
 
