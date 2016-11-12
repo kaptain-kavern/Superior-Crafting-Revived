@@ -1098,8 +1098,7 @@
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <recipes>
-    	<li>MakeMedicine</li>
+    <recipes>    	
 		<li>AlchemyPlasteel</li>
 		<li>MakeArtificialBone</li>
 		<li>MakeAdvancedProstheticArm</li>
