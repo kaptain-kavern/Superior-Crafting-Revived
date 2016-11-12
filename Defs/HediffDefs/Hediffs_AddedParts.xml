@@ -1,49 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Added body parts -->
-
-  <HediffDef Name="AddedBodyPartBase" Abstract="True">
-    <hediffClass>Hediff_AddedPart</hediffClass>
-    <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
-    <isBad>false</isBad>
-  </HediffDef>
+	<HediffDef Name="AddedBodyPartBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+		<isBad>false</isBad>
+  	</HediffDef>
 	
-	<!-- Artificial body parts - simple -->
-
+	<!-- Artificial body parts - simple -->	
 	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,150,30)</defaultLabelColor>
-		<defName>PegLeg</defName>
-		<label>peg leg</label>
-		<addedPartProps>
-			<isSolid>true</isSolid>
-			<partEfficiency>0.5</partEfficiency>
-		</addedPartProps>
-	</HediffDef>
-
-	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,150,30)</defaultLabelColor>
-		<defName>Denture</defName>
-		<label>wood denture</label>
-		<addedPartProps>
-			<isSolid>true</isSolid>
-			<partEfficiency>0.5</partEfficiency>
-		</addedPartProps>
-	</HediffDef>  
-
-
-	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(70,220,30)</defaultLabelColor>
-		<defName>SimpleProstheticLeg</defName>
-		<label>simple prosthetic leg</label>
-		<spawnThingOnRemoved>SimpleProstheticLeg</spawnThingOnRemoved>
-		<addedPartProps>
-			<isSolid>true</isSolid>
-			<partEfficiency>0.75</partEfficiency>			
-		</addedPartProps>
-	</HediffDef>
-	
-	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(70,220,30)</defaultLabelColor>
+		<defaultLabelColor>(70,220,30)</defaultLabelColor>
 		<defName>SteelDenture</defName>
 		<label>steel denture</label>
 		<addedPartProps>
@@ -52,8 +18,7 @@
 		</addedPartProps>
 	</HediffDef>
 	
-	<!-- Artificial body parts - advanced -->
-	
+	<!-- Artificial body parts - advanced -->	
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>AdvancedProstheticArm</defName>
 		<defaultLabelColor>(30,160,220)</defaultLabelColor>
@@ -100,33 +65,31 @@
 		</addedPartProps>
 	</HediffDef>
   
-	<!-- Artificial body parts - bionics -->
-	
-<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,30,220)</defaultLabelColor>
-		<defName>BionicEar</defName>
-		<label>bionic ear</label>
-		<spawnThingOnRemoved>BionicEar</spawnThingOnRemoved>
-		<addedPartProps>
-			<isBionic>true</isBionic>
-			<isSolid>true</isSolid>
-			<partEfficiency>1.0</partEfficiency>			
-		</addedPartProps>
-		<stages>
-			<li>
-			<capMods>
+	<!-- Artificial body parts - bionics -->	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defaultLabelColor>(220,30,220)</defaultLabelColor>
+			<defName>BionicEar</defName>
+			<label>bionic ear</label>
+			<spawnThingOnRemoved>BionicEar</spawnThingOnRemoved>
+			<addedPartProps>
+				<isBionic>true</isBionic>
+				<isSolid>true</isSolid>
+				<partEfficiency>1.0</partEfficiency>			
+			</addedPartProps>
+			<stages>
 				<li>
-					<capacity>Hearing</capacity>
-					<offset>0.2</offset>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
 				</li>
-			</capMods>
-			</li>
-		</stages>
-</HediffDef>
-
+			</stages>
+	</HediffDef>
 	
 	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,30,220)</defaultLabelColor>
+		<defaultLabelColor>(220,30,220)</defaultLabelColor>
 		<defName>BionicSpine</defName>
 		<label>bionic spine</label>
 		<spawnThingOnRemoved>BionicSpine</spawnThingOnRemoved>
@@ -152,7 +115,7 @@
 	</HediffDef>
 	
 	<HediffDef ParentName="AddedBodyPartBase">
-	<defaultLabelColor>(220,30,220)</defaultLabelColor>
+		<defaultLabelColor>(220,30,220)</defaultLabelColor>
 		<defName>BionicBrain</defName>
 		<label>positronic brain implant</label>
 		<spawnThingOnRemoved>BionicBrain</spawnThingOnRemoved>

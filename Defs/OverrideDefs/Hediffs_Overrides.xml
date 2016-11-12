@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+<!-- Vanilla denture become "denture wood" -->
+    <Override.Def Type="HediffDef" Target="Denture">
+        <label>wood denture</label>
+        <addedPartProps>
+            <isSolid>true</isSolid>
+            <partEfficiency>0.5</partEfficiency>
+        </addedPartProps>
+    </Override.Def>
+
+    <Override.Def Type="HediffDef" Target="SimpleProstheticLeg">
+        <addedPartProps>
+            <isSolid>true</isSolid>
+            <partEfficiency>0.75</partEfficiency>
+        </addedPartProps>
+    </Override.Def>
+
+</Defs>
+
