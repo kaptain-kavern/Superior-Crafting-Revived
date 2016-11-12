@@ -146,6 +146,9 @@
 				<count>1</count>
 			</li>
 		</ingredients>
+		<products>
+			<sand>1</sand>
+		</products>
 		<specialProducts>
 			<li>Butchery</li>
 		</specialProducts>
@@ -304,67 +307,6 @@
 		<products>
 			<PlasteelBar>40</PlasteelBar>
 		</products>
-		<workSkill>Crafting</workSkill>
-	</RecipeDef>
-	
-	<RecipeDef>
-		<defName>ExtractMetalFromSlag</defName>
-		<label>smelt metal from slag</label>
-		<description>Use heat and strong electromagnets to separate useful metal from slag chunks.</description>
-		<jobString>Smelting metal from slag.</jobString>
-		<workAmount>600</workAmount>
-		<workSpeedStat>SmeltingSpeed</workSpeedStat>
-		<effectWorking>Smelt</effectWorking>
-		<soundWorking>Recipe_Smelt</soundWorking>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ChunkSlagSteel</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<specialProducts>
-			<li>Smelted</li>
-		</specialProducts>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>ChunkSlagSteel</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<workSkill>Crafting</workSkill>
-	</RecipeDef>
-
-	
-	<RecipeDef>
-		<defName>SmeltWeapon</defName>
-		<label>smelt metal from weapon</label>
-		<description>Use heat and strong electromagnets to separate useful metal from weapons.</description>
-		<jobString>Smelting metal from weapon.</jobString>
-		<workAmount>600</workAmount>
-		<workSpeedStat>SmeltingSpeed</workSpeedStat>
-		<effectWorking>Smelt</effectWorking>
-		<soundWorking>Recipe_Smelt</soundWorking>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Weapons</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<specialProducts>
-			<li>Smelted</li>
-		</specialProducts>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Weapons</li>
-			</categories>
-		</fixedIngredientFilter>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
 	
@@ -603,77 +545,6 @@
 		</fixedIngredientFilter>
 		<products>
 			<Electronics>5</Electronics>
-		</products>
-		<workSkill>Crafting</workSkill>
-	</RecipeDef>
-	
-	<RecipeDef>
-		<defName>MakeMedicine</defName>
-		<label>make medicine</label>
-		<description>Make medicine from herbs and cloth.</description>
-		<jobString>Making medicine.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<workAmount>600</workAmount>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>HerbalMedicine</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>HerbalMedicine</li>
-				<li>Cloth</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<Medicine>1</Medicine>
-		</products>
-		<workSkill>Medicine</workSkill>
-	</RecipeDef>
-
-	<RecipeDef>
-		<defName>MakeArtilleryShell</defName>
-		<label>make artillery shell</label>
-		<description>Craft an artillery shell.</description>
-		<jobString>Making artillery shell.</jobString>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<effectWorking>Smith</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<workAmount>600</workAmount>
-		<targetCountAdjustment>5</targetCountAdjustment>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>SteelBar</li>
-					</thingDefs>
-				</filter>
-				<count>25</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>SteelBar</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<ArtilleryShell>5</ArtilleryShell>
 		</products>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>

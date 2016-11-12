@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>    
+<!-- Making stone blocks also drop a bit of sand -->
+    <Override.Def Target="MakeStoneBlocks">
+        <products>
+            <Sand>1</Sand>
+        </products>
+    </Override.Def>
+
+<!-- MakeArtilleryShell -->
+    <Override.Def Type="RecipeDef" Target="MakeArtilleryShell">
+        <ingredients Mode="Replace">
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SteelBar</li>
+              </thingDefs>
+            </filter>
+            <count>25</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>SteelBar</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ArtilleryShell>5</ArtilleryShell>
+        </products>
+    </Override.Def>    
+
+</Defs>
