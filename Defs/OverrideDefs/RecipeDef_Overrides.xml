@@ -5,28 +5,27 @@
         <products>
             <Sand>1</Sand>
         </products>
-    </Override.Def>
+    </Override.Def>  
 
-<!-- MakeArtilleryShell -->
-    <Override.Def Type="RecipeDef" Target="MakeArtilleryShell">
-        <ingredients Mode="Replace">
-          <li>
-            <filter>
-              <thingDefs>
-                <li>SteelBar</li>
-              </thingDefs>
-            </filter>
-            <count>25</count>
-          </li>
-        </ingredients>
-        <fixedIngredientFilter>
-          <thingDefs>
-            <li>SteelBar</li>
-          </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <ArtilleryShell>5</ArtilleryShell>
-        </products>
-    </Override.Def>    
+    <Override.Def Target="ArtilleryShell">
+      <label>SC_ArtilleryShell</label>
+      <statBases Mode="Replace">
+        <WorkToMake>800</WorkToMake>
+      </statBases>
+      <costList>
+        <SteelBar>5</SteelBar>
+      </costList>      
+      <recipeMaker>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>        
+        <recipeUsers>
+          <li>TableMachining</li>
+          <li>TableSmithing</li>
+        </recipeUsers>        
+        <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      </recipeMaker>
+    </Override.Def>
 
 </Defs>

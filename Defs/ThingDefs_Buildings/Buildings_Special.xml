@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Hidden_tokken</defName>
+    <label>Hidden_tokken</label>
+    <description>Used to hide undesired items/recipes/techs ... Shouldn't be displayed :-D</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/HorseshoesPin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.08,0.3,0.08)</volume>
+        <offset>(0,0,-0.18)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.3,0.4,0.4)</rect>
+      </damageData>
+    </graphicData>    
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>    
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToMake>150</WorkToMake>
+      <Flammability>1.0</Flammability>      
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <pathCost>10</pathCost>    
+  </ThingDef>
+  
+</ThingDefs>

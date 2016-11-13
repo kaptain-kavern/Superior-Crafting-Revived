@@ -557,8 +557,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<recipes>
 			<li>MakeElectronics</li>
-			<li>MakeScytherBlade</li>
-			<li>MakeArtilleryShell</li>
+			<li>MakeScytherBlade</li>			
 		</recipes>
 		<surfaceType>Item</surfaceType>
 		<inspectorTabs>
