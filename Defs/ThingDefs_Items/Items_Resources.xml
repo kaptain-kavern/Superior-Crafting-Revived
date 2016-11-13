@@ -136,6 +136,7 @@
 				<DoorOpenSpeed>1.0</DoorOpenSpeed>
 				<MeleeWeapon_Cooldown>1.0</MeleeWeapon_Cooldown>
 			</statFactors>
+			<smeltable>true</smeltable>
 		</stuffProps>
 	</ThingDef>
 	
@@ -175,6 +176,7 @@
 				<DoorOpenSpeed>0.8</DoorOpenSpeed>
 				<MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
 			</statFactors>
+			<smeltable>true</smeltable>
 		</stuffProps>
 	</ThingDef>
 	

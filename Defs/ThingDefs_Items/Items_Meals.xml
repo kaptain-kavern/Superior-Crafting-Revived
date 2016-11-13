@@ -114,6 +114,7 @@
 			<WorkToMake>350</WorkToMake>
 		</statBases>
 		<ingestible>
+      <foodType>Meal</foodType>
 			<preferability>MealSimple</preferability>
 			<nutrition>0.50</nutrition>
 			<ingestEffect>EatVegetarian</ingestEffect>
