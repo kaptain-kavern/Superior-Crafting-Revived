@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <!-- ============= Firefighter ============= -->
+
+  <!-- ============= PatientEmergency ============= -->
+  
+  <!-- ============= Doctor ============= -->
+
+  <!-- ============= PatientBedRest ============= -->
+  
+  <!-- ============= Flicker ============= -->
+
+  <!-- ============= Warden ============= -->
+
+  <!-- ============= Handling ============= -->
+  
+  <!-- ============= Cooking ============= -->
+  
+  <!-- ============= Hunting ============= -->
+  
+  <!-- ============= Construction ============= -->
+  
+  <!-- ============= Growing ============= -->
+  
+  <!-- ============= Mining ============= -->
+
+  <!-- ============= PlantCutting ============= -->
+  
+  <!-- ============= Smithing ============= -->
+
+  <!-- ============= Tailoring ============= -->
+
+  <!-- ============= Art ============= -->
+  
+  <!-- ============= Crafting ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsMakeWoodPlanks_Hand</defName>
+    <label>sawing logs at Sawmill</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>90</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TableSawmillHand</li>
+    </fixedBillGiverDefs>
+    <verb>saw logs</verb>
+    <gerund>sawing logs</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <!-- ============= Hauling ============= -->
+  
+  <!-- ============= Research ============= -->
+
+</WorkGivers>
