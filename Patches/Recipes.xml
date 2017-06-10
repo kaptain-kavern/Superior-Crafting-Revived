@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationInsert"> 
-		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksAny"]/fixedIngredientFilter</xpath>
+		<xpath>/RecipeDefs/RecipeDef[defName = "MakeStoneBlocksAny"]/fixedIngredientFilter</xpath>
 		<value>
 			<products>
 				<Sand>2</Sand>
