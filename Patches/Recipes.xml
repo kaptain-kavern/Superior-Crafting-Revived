@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationInsert"> 
+		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksAny"]/fixedIngredientFilter</xpath>
+		<value>
+			<products>
+				<Sand>2</Sand>
+			</products>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert"> 
+		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksSandstone"]/products/BlocksSandstone</xpath>
+		<value>
+		    <Sand>2</Sand>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert"> 
+		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksGranite"]/products/BlocksGranite</xpath>
+		<value>
+		    <Sand>2</Sand>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert"> 
+		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksLimestone"]/products/BlocksLimestone</xpath>
+		<value>
+		    <Sand>2</Sand>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert"> 
+		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksSlate"]/products/BlocksSlate</xpath>
+		<value>
+		    <Sand>2</Sand>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert"> 
+		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksMarble"]/products/BlocksMarble</xpath>
+		<value>
+		    <Sand>2</Sand>
+		</value>
+	</Operation>
+</Patch>
