@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace"> <!-- Change Silver category -->
+		<xpath>/Defs/ThingDef[defName = "Silver"]/stuffProps/categories</xpath>
+		<value>
+			<categories>
+				<li>Precious</li>
+			</categories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> <!-- Change Gold category -->
+		<xpath>/Defs/ThingDef[defName = "Gold"]/stuffProps/categories</xpath>
+		<value>
+			<categories>
+				<li>Precious</li>
+			</categories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> <!-- Change Jade category -->
+		<xpath>/Defs/ThingDef[defName = "Silver"]/stuffProps/categories</xpath>
+		<value>
+			<categories>
+				<li>Precious</li>
+			</categories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> <!-- Change Steel category -->
+		<xpath>/Defs/ThingDef[defName = "Steel"]/stuffProps/categories</xpath>
+		<value>
+			<categories>
+				<li>Matty</li>
+			</categories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> <!-- Change Plasteel category -->
+		<xpath>/Defs/ThingDef[defName = "Plasteel"]/stuffProps/categories</xpath>
+		<value>
+			<categories>
+				<li>Matty</li>
+			</categories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> <!-- Change Uranium category -->
+		<xpath>/Defs/ThingDef[defName = "Uranium"]/stuffProps/categories</xpath>
+		<value>
+			<categories>
+				<li>Matty</li>
+			</categories>
+		</value>
+	</Operation>
+
+</Patch>

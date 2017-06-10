@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StuffCategoryDef>
+    <defName>Matty</defName>
+    <label>matty</label>
+  </StuffCategoryDef>
+  
+  <StuffCategoryDef>
+    <defName>Precious</defName>
+    <label>precious</label>
+  </StuffCategoryDef>  
+
+</Defs>
