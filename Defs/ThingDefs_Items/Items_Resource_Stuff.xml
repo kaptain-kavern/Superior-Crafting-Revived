@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Pure stuffs: Basics ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Sand</defName>
+    <label>sand</label>
+    <description>Sand made from stone chunks.  For making glass and other items.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Sand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.7</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Matty</li>
+      </categories>
+    </stuffProps>
+  </ThingDef>
+
+  <!--=============== Manufactured stuffs: Basics ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>WoodPlank</defName>
+    <label>wood plank</label>
+    <description>Wood planks crafted from logs. Useful for building structures, weapons, and even simple prosthetics.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/WoodPlank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1.7</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
+      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <stuffProps>
+      <stuffAdjective>wood plank</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>0.9</commonality>
+      <appearance>Planks</appearance>
+      <constructEffect>ConstructWood</constructEffect>
+      <color>(240,190,120)</color>
+      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+     <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>1</Flammability>
+        <WorkToMake>0.7</WorkToMake>
+        <WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Kindling</defName>
+    <label>kindling</label>
+    <description>Kindling made from wood logs.  Used as fuel in the steam generator.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Kindling</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.7</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Matty</li>
+      </categories>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>SteelBar</defName>
+    <label>steel bar</label>
+    <description>Steel bars crafted from ore. Useful for building structures, weapons, and even some prosthetics.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/SteelBar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(255,255,255)</color>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <Mass>0.4</Mass>
+      <SharpDamageMultiplier>1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <slagDef>ChunkSlagSteel</slagDef>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <stuffProps>
+      <stuffAdjective>steel</stuffAdjective>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>1.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(102,102,105)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <WorkToMake>1</WorkToMake>
+        <WorkToBuild>1</WorkToBuild>
+        <DoorOpenSpeed>1</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.2</Flammability>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>PlasteelBar</defName>
+    <label>plasteel bar</label>
+    <description>Plasteel bars crafted from ore.  Useful for building structures, weapons, and even some prosthetics.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlasteelBar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <stuffProps>
+      <stuffAdjective>plasteel</stuffAdjective>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.20</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(160,178,181)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>3</MaxHitPoints>
+        <Beauty>1.2</Beauty>
+        <Flammability>0.1</Flammability>
+        <WorkToMake>2.2</WorkToMake>
+        <WorkToBuild>2.2</WorkToBuild>
+        <DoorOpenSpeed>0.8</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+  <!--=============== Pure stuffs: Fabric, leather, etc  ====================-->
+  
+</Defs>
