@@ -28,6 +28,15 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace"> <!-- Change WoodLog category -->
+		<xpath>/Defs/ThingDef[defName = "WoodLog"]/stuffProps/categories</xpath>
+		<value>
+			<categories>
+				<li>Matty</li>
+			</categories>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace"> <!-- Change Steel category -->
 		<xpath>/Defs/ThingDef[defName = "Steel"]/stuffProps/categories</xpath>
 		<value>

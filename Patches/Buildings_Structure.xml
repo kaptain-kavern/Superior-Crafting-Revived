@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--================= Doors ======================-->
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Buildings/ThingDef[defName = "Door"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Buildings/ThingDef[defName = "Autodoor"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+<!--========================= Walls =============================-->
+
+</Patch>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<!--================= Buildings_Ancient =======================-->
+<!--================= Buildings_Ancient ======================-->
 
 	<Operation Class="PatchOperationReplace"> 
 		<xpath>/ThingDefs/ThingDef[defName = "AncientConcreteBarrier"]/costList</xpath>
@@ -18,6 +18,53 @@
 			<costList>
       			<SteelBar>10</SteelBar>
     		</costList>
+		</value>
+	</Operation>
+
+<!--================= Buildings_Exotic =======================-->
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Defs/ThingDef[defName = "CrashedPsychicEmanatorShipPart"]/killedLeavings</xpath>
+		<value>
+			<killedLeavings>
+				<AIPersonaCore>1</AIPersonaCore>
+				<SteelBar>185</SteelBar>
+				<Silver>140</Silver>
+				<ChunkSlagSteel>2</ChunkSlagSteel>
+			</killedLeavings>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Defs/ThingDef[defName = "CrashedPoisonShipPart"]/killedLeavings</xpath>
+		<value>
+			<killedLeavings>
+				<SteelBar>150</SteelBar>
+				<Silver>120</Silver>
+				<ChunkSlagSteel>2</ChunkSlagSteel>
+			</killedLeavings>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Defs/ThingDef[defName = "ShipChunk"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>11</Component>
+				<SteelBar>25</SteelBar>
+			</costList>
+		</value>
+	</Operation>
+
+<!--============ Buildings_Power_WindTurbine =================-->
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Buildings/ThingDef[defName = "WindTurbine"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>2</Component>
+				<SteelBar>65</SteelBar>
+			</costList>
 		</value>
 	</Operation>
 
