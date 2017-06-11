@@ -1,4 +1,5 @@
 - Abrexus obviously (and his dog!)
+- JabbaMonkey for some textures
 - Mrofa for some textures
 - MarvinKosh for many tips and pointers (namely the "trick" for hidding vanilla things or recipes amongst other things)
 - All the modding community that helps me here and there on the forum and both Discord servers ;-) (Skullywag, E, Spoonshortage, etc...) 
