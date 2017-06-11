@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/PawnKindDefs/PawnKindDef[defName = "TribalWarrior"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>
+				<min>70</min>
+				<max>400</max>
+			</weaponMoney>
+		</value>
+	</Operation>
+
+</Patch>
