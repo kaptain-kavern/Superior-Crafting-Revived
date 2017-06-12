@@ -57,7 +57,26 @@
 	</Operation>
 
 <!--================== Buildings_Power =======================-->
-	
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Buildings/ThingDef[defName = "PowerConduit"]/costList</xpath>
+		<value>
+			<costList>
+				<SteelBar>1</SteelBar>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Buildings/ThingDef[defName = "PowerSwitch"]/costList</xpath>
+		<value>
+			<costList>
+				<SteelBar>15</SteelBar>
+				<Component>1</Component>
+			</costList>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace"> 
 		<xpath>/Buildings/ThingDef[defName = "FueledGenerator"]/costList</xpath>
 		<value>
@@ -73,9 +92,45 @@
 		<value>
 			<thingDefs>
 				<li>Kindling</li>
+				<li>Chemfuel</li>
 			</thingDefs>
 		</value>
 	</Operation>
+
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Buildings/ThingDef[defName = "Battery"]/costList</xpath>
+		<value>
+			<costList>
+				<SteelBar>50</SteelBar>
+				<Component>2</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Buildings/ThingDef[defName = "SolarGenerator"]/costList</xpath>
+		<value>
+			<costList>
+				<SteelBar>30</SteelBar>
+				<Glass>50</Glass>
+				<Component>3</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Buildings/ThingDef[defName = "GeothermalGenerator"]/costList</xpath>
+		<value>
+			<costList>
+				<SteelBar>250</SteelBar>
+				<PlasteelBar>100</PlasteelBar>
+				<Glass>20</Glass>
+				<Component>8</Component>
+			</costList>
+		</value>
+	</Operation>
+	
 
 <!--============ Buildings_Power_WindTurbine =================-->
 
@@ -84,7 +139,7 @@
 		<value>
 			<costList>
 				<Component>2</Component>
-				<SteelBar>65</SteelBar>
+				<SteelBar>100</SteelBar>
 			</costList>
 		</value>
 	</Operation>
