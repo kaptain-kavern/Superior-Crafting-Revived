@@ -21,6 +21,24 @@
 		</value>
 	</Operation>
 	
-<!--===================== Walls =========================-->
+<!--===================== FueledStove =========================-->
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[defName = "FueledStove"]/CostList</xpath>
+		<value>
+			<CostList>
+				<SteelBar>80</SteelBar>
+			</CostList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[defName = "FueledStove"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+			<thingDefs>
+				<li>Kindling</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</value>
+	</Operation>
 
 </Patch>
