@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--================= FueledSmithy ======================-->
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "FueledSmithy"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+			<thingDefs>
+				<li>Kindling</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "FueledSmithy"]/CostList</xpath>
+		<value>
+			<CostList>
+				<SteelBar>100</SteelBar>
+			</CostList>
+		</value>
+	</Operation>
+	
+<!--===================== Walls =========================-->
+
+</Patch>
