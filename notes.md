@@ -1,2 +1,0 @@
-- try to have stonecutting recipe drop the sand on floor and the pawn bringing the cutted stones (actually it's the other way around)
-- Change fuel type taken by fuel generators 
