@@ -56,6 +56,27 @@
 		</value>
 	</Operation>
 
+<!--================== Buildings_Power =======================-->
+	
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Buildings/ThingDef[defName = "FueledGenerator"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>2</Component>
+				<SteelBar>75</SteelBar>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Buildings/ThingDef[defName = "FueledGenerator"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+			<thingDefs>
+				<li>Kindling</li>
+			</thingDefs>
+		</value>
+	</Operation>
+
 <!--============ Buildings_Power_WindTurbine =================-->
 
 	<Operation Class="PatchOperationReplace"> 
