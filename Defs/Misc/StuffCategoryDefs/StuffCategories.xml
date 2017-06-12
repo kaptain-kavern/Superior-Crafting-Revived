@@ -9,6 +9,11 @@
   <StuffCategoryDef>
     <defName>Precious</defName>
     <label>precious</label>
+  </StuffCategoryDef>
+
+   <StuffCategoryDef>
+    <defName>Glassy</defName>
+    <label>glassy</label>
   </StuffCategoryDef>  
 
 </Defs>
