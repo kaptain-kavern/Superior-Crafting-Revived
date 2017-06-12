@@ -3,31 +3,6 @@
 
   <!--=============== Pure stuffs: Basics ====================-->
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>Sand</defName>
-    <label>sand</label>
-    <description>Sand made from stone chunks.  For making glass and other items.</description>
-    <graphicData>
-      <texPath>Things/Item/Resource/Sand</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <statBases>
-      <MarketValue>1.7</MarketValue>
-      <Mass>0.3</Mass>
-      <Flammability>0.1</Flammability>
-    </statBases>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-    <stuffProps>
-      <categories>
-        <li>Matty</li>
-      </categories>
-    </stuffProps>
-  </ThingDef>
-
   <!--=============== Manufactured stuffs: Basics ====================-->
 
   <ThingDef ParentName="ResourceBase">
@@ -161,32 +136,6 @@
         <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
       </statFactors>
       <smeltable>true</smeltable>
-    </stuffProps>
-  </ThingDef>
-
-  <ThingDef ParentName="ResourceBase">
-    <defName>Kindling</defName>
-    <label>kindling</label>
-    <description>Kindling made from wood logs.  Used as fuel in the steam generator.</description>
-    <graphicData>
-      <texPath>Things/Item/Resource/Kindling</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <statBases>
-      <MarketValue>1.7</MarketValue>
-      <Mass>0.3</Mass>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>1</DeteriorationRate>
-    </statBases>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-    <stuffProps>
-      <categories>
-        <li>Matty</li>
-      </categories>
     </stuffProps>
   </ThingDef>
 
