@@ -3,8 +3,6 @@
 
 <!--================= Doors ======================-->
 
-
-
 	<Operation Class="PatchOperationAdd"> 
 		<xpath>/Buildings/ThingDef[defName = "Autodoor"]</xpath>
 		<value>

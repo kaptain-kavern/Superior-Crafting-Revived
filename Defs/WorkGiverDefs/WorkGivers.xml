@@ -54,7 +54,7 @@
 
   <WorkGiverDef>
     <defName>DoBillsSmeltMetal_Hand</defName>
-     <label>smelt metal at Table Furnace</label>
+    <label>smelt metal at Table Furnace</label>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
     <priorityInType>80</priorityInType>
@@ -63,6 +63,22 @@
     </fixedBillGiverDefs>
     <verb>smelt metal</verb>
     <gerund>smelting metal</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsTableGlassworks</defName>
+    <label>make glass at Glassworks Table</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TableGlassworks</li>
+    </fixedBillGiverDefs>
+    <verb>make glass</verb>
+    <gerund>making glass</gerund>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
