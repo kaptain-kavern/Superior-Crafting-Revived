@@ -52,6 +52,22 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
+  <WorkGiverDef>
+    <defName>DoBillsSmeltMetal_Hand</defName>
+     <label>smelt metal at Table Furnace</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>80</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TableFurnace</li>
+    </fixedBillGiverDefs>
+    <verb>smelt metal</verb>
+    <gerund>smelting metal</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
   <!-- ============= Hauling ============= -->
   
   <!-- ============= Research ============= -->
