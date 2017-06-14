@@ -5,8 +5,7 @@
 
   <!--=============== Manufactured stuffs: Basics ====================-->
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>WoodPlank</defName>
+  <ThingDef ParentName="ResourceBase"><defName>WoodPlank</defName>
     <label>wood plank</label>
     <description>Wood planks crafted from logs. Useful for building structures, weapons, and even simple prosthetics.</description>
     <graphicData>
@@ -53,8 +52,7 @@
     </stuffProps>
   </ThingDef>
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>SteelBar</defName>
+  <ThingDef ParentName="ResourceBase"><defName>SteelBar</defName>
     <label>steel bar</label>
     <description>Steel bars crafted from ore. Useful for building structures, weapons, and even some prosthetics.</description>
     <graphicData>
@@ -96,8 +94,7 @@
     </stuffProps>
   </ThingDef>
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>PlasteelBar</defName>
+  <ThingDef ParentName="ResourceBase"><defName>PlasteelBar</defName>
     <label>plasteel bar</label>
     <description>Plasteel bars crafted from ore.  Useful for building structures, weapons, and even some prosthetics.</description>
     <graphicData>
@@ -139,8 +136,7 @@
     </stuffProps>
   </ThingDef>
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>Glass</defName>
+  <ThingDef ParentName="ResourceBase"><defName>Glass</defName>
     <label>glass</label>
     <description>Glass made from sand.  Used for building structures and items.</description>
       <graphicData>
