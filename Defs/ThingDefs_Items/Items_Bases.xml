@@ -23,6 +23,27 @@
 		<pathCost>15</pathCost>
 	</ThingDef>
 
-  <!--=============== Luxury ====================-->
+	<ThingDef Abstract="True" Name="OrganicProductBase" ParentName="ResourceBase">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Mass>0.03</Mass>
+		</statBases>
+		<tickerType>Rare</tickerType>
+	</ThingDef>
+
+	<ThingDef ParentName="OrganicProductBase" Name="RoughPlantBase" Abstract="True">
+		<ingestible>
+			<foodType>Plant</foodType>
+			<preferability>DesperateOnly</preferability>
+			<nutrition>0.05</nutrition>
+		</ingestible>
+	</ThingDef>
+
+  <!--===============  ====================-->
 
 </Defs>

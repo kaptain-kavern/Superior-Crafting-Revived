@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="ResourceBase">
-		<defName>Sand</defName>
+	<ThingDef ParentName="ResourceBase"><defName>Sand</defName>
 		<label>sand</label>
 		<description>Sand made from stone chunks.  For making glass and other items.</description>
 	    <graphicData>
@@ -19,15 +18,14 @@
 	    <thingCategories>
 	      <li>Manufactured</li>
 	    </thingCategories>
-	    <stuffProps>
+	    <!-- <stuffProps>
 	      <categories>
 	        <li>Matty</li>
 	      </categories>
-	    </stuffProps>
+	    </stuffProps> -->
 	</ThingDef>
 
-	<ThingDef ParentName="ResourceBase">
-		<defName>Kindling</defName>
+	<ThingDef ParentName="ResourceBase"><defName>Kindling</defName>
 		<label>kindling</label>
 		<description>Kindling made from wood logs.  Used as fuel in the steam generator.</description>
 		<graphicData>
@@ -45,11 +43,71 @@
 		<thingCategories>
 			<li>Manufactured</li>
 		</thingCategories>
-		<stuffProps>
+		<!-- <stuffProps>
 			<categories>
 				<li>Matty</li>
 			</categories>
-		</stuffProps>
+		</stuffProps> -->
 	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase"><defName>Mulch</defName>
+		<label>mulch</label>
+		<description>Mulch made from wood logs.  Used for enriching the soil.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Mulch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.7</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>0.7</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+  	<ThingDef ParentName="RoughPlantBase"><defName>RawCotton</defName>
+  		<label>raw cotton</label>
+  		<description>Raw cotton. It can be spun into cloth or sold to a trader.</description>
+  		<graphicData>
+  			<texPath>Things/Item/Resource/RawCotton</texPath>
+  		</graphicData>
+  		<statBases>
+  			<MarketValue>1.5</MarketValue>
+  		</statBases>
+  		<comps>
+  			<li Class="CompProperties_Rottable">
+  				<daysToRotStart>30</daysToRotStart>
+  				<rotDestroys>true</rotDestroys>
+  			</li>
+  		</comps>
+  		<thingCategories>
+  			<li>PlantMatter</li>
+  		</thingCategories>
+  	</ThingDef>
+
+  	<ThingDef ParentName="RoughPlantBase"><defName>RawDevilstrand</defName>
+  		<label>Raw devilstrand</label>
+		<description>Raw devilstrand. It can be spun into cloth or sold to a trader.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawDevilstrand</texPath>
+  		</graphicData>
+  		<statBases>
+  			<MarketValue>5</MarketValue>
+  		</statBases>
+  		<comps>
+  			<li Class="CompProperties_Rottable">
+  				<daysToRotStart>20</daysToRotStart>
+  				<rotDestroys>true</rotDestroys>
+  			</li>
+  		</comps>
+  		<thingCategories>
+  			<li>PlantMatter</li>
+  		</thingCategories>
+  	</ThingDef>
 
 </Defs>
