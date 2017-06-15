@@ -2,9 +2,21 @@ Buildings:
 
   Structure:
     ☐ Wall log should have more kind of disadvantage (Beside the reduced HP) : maybe negative beauty @low
+    ☐ Need a low-tech door to go with the Wall log @high
+
+  Furniture:
+    ☐ Lamp/Hydroponic should use glass @high
+
+  Production:
+    ☐ Re-add Tailoring buildings @high
 
 Recipes:
 
   Production:
-    ☐ Try to have stone-cutting recipe drop the sand on floor and the pawn bringing the cut stones (actually it's the other way around) @low
-    
+    ☐ RawCotton ==> Cloth @high
+    ☐ RawDevilstrand ==> Devilstrand @high
+    ☐ Try to have stone-cutting recipe to drop sand on the floor and the pawn bringing the cut stones to stockpile (actually it's the other way around) @low
+
+Animals & Plants:
+  ✔ Change Cotton and Devilstrand `harvestedThingDef` @high @done (17-06-14 14:50)             
+---------------------------
