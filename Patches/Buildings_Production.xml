@@ -40,6 +40,7 @@
 			</thingDefs>
 		</value>
 	</Operation>
+	
 <!--==================== TableStonecutter ===================-->
 	<Operation Class="PatchOperationReplace"> 
 		<xpath>/ThingDefs/ThingDef[DefName = "TableStonecutter"]/CostList</xpath>
