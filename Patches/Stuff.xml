@@ -20,7 +20,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace"> <!-- Change Jade category -->
-		<xpath>/Defs/ThingDef[defName = "Silver"]/stuffProps/categories</xpath>
+		<xpath>/Defs/ThingDef[defName = "Jade"]/stuffProps/categories</xpath>
 		<value>
 			<categories>
 				<li>Precious</li>

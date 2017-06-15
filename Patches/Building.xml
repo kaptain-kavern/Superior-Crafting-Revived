@@ -131,7 +131,6 @@
 		</value>
 	</Operation>
 	
-
 <!--============ Buildings_Power_WindTurbine =================-->
 
 	<Operation Class="PatchOperationReplace"> 

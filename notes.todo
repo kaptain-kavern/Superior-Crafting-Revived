@@ -1,22 +1,32 @@
 Buildings:
 
-  Structure:
-    ☐ Wall log should have more kind of disadvantage (Beside the reduced HP) : maybe negative beauty @low
-    ☐ Need a low-tech door to go with the Wall log @high
+    Structure:
+      ☐ Wall log should have more kind of disadvantage (Beside the reduced HP) : maybe negative beauty @low
+      ☐ Need a low-tech door to go with the Wall log @high
 
-  Furniture:
-    ☐ Lamp/Hydroponic should use glass @high
+    Furniture:
+      ☐ Lamp/Hydroponic should use glass @high
 
-  Production:
-    ☐ Re-add Tailoring buildings @high
+    Production:
+      ☐ Re-add Tailoring buildings @critical 
+        _Patch need to be redone **more subtly** (no need to completely rewrite the whole building def)_
+
+    Floor:
+      ☐ Plugged in with Vanilla Defs @low
+        ☐ Gravel
+        ☐ Sand
+        ☐ Soil and such
+      _Notes :_ Try to use the `<driesTo>` tag everywhere it make sense
 
 Recipes:
 
-  Production:
-    ☐ RawCotton ==> Cloth @high
-    ☐ RawDevilstrand ==> Devilstrand @high
-    ☐ Try to have stone-cutting recipe to drop sand on the floor and the pawn bringing the cut stones to stockpile (actually it's the other way around) @low
+    Production:
+      ✔ Implement recipe : RawCotton ==> Cloth @critical @done (17-06-15 09:47)
+      ☐ Implement recipe : RawDevilstrand ==> Devilstrand @critical
+      ☐ Implement other cloth recipe @high
+      ☐ Try to have stone-cutting recipe to drop sand on the floor and the pawn bringing the cut stones to stockpile (actually it's the other way around) @low
 
 Animals & Plants:
   ✔ Change Cotton and Devilstrand `harvestedThingDef` @high @done (17-06-14 14:50)             
----------------------------
+------------------------------------------------------
+------------------------------------------------------
