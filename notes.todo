@@ -8,22 +8,22 @@ Buildings:
       ☐ Lamp/Hydroponic should use glass @high
 
     Production:
-      ☐ Re-add Tailoring buildings @critical 
-        _Patch need to be redone **more subtly** (no need to completely rewrite the whole building def)_
+      ✔ Re-add Tailoring buildings @critical @done (17-06-18 06:22)
+        ✔ _Patch need to be redone **more subtly** (no need to completely rewrite the whole building def)_ @critical @done (17-06-18 06:23)
 
     Floor:
       ☐ Plugged in with Vanilla Defs @low
         ☐ Gravel
         ☐ Sand
         ☐ Soil and such
-      _Notes :_ Try to use the `<driesTo>` tag everywhere it make sense
+            _Notes :_ Try to use the `<driesTo>` tag everywhere it make sense
 
 Recipes:
 
     Production:
       ✔ Implement recipe : RawCotton ==> Cloth @critical @done (17-06-15 09:47)
-      ☐ Implement recipe : RawDevilstrand ==> Devilstrand @critical
-      ☐ Implement other cloth recipe @high
+      ✔ Implement recipe : RawDevilstrand ==> Devilstrand @critical @done (17-06-18 06:41)
+      ✔ Implement other cloth recipe @high @done (17-06-18 06:41)
       ☐ Try to have stone-cutting recipe to drop sand on the floor and the pawn bringing the cut stones to stockpile (actually it's the other way around) @low
 
 Animals & Plants:
