@@ -52,4 +52,133 @@
 		</value>
 	</Operation>
 
+<!--==================== HandTailoringBench ===================-->
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "HandTailoringBench"]/label</xpath>
+		<value>
+			<label>tailor's loom</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "HandTailoringBench"]/Description</xpath>
+		<value>
+			<Description>A tailor's table used to spin raw materials into usable cloth.</Description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "HandTailoringBench"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Building/SCProduction/TableLoom3x2</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>(3,2)</drawSize>
+				<damageData>
+					<cornerTL>Damage/Corner</cornerTL>
+					<cornerTR>Damage/Corner</cornerTR>
+					<cornerBL>Damage/Corner</cornerBL>
+					<cornerBR>Damage/Corner</cornerBR>
+				</damageData>
+			</graphicData>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "HandTailoringBench"]/Size</xpath>
+		<value>
+			<Size>(3,2)</Size>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "HandTailoringBench"]/costStuffCount</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "HandTailoringBench"]/stuffCategories</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "HandTailoringBench"]</xpath>
+		<value>
+			<constructEffect>ConstructWood</constructEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "HandTailoringBench"]</xpath>
+		<value>
+			<CostList>
+				<WoodPlank>60</WoodPlank>
+				<SteelBar>30</SteelBar>
+			</CostList>
+		</value>
+	</Operation>
+
+<!--================== ElectricTailoringBench =================-->
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "ElectricTailoringBench"]/label</xpath>
+		<value>
+			<label>tailor's workbench</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "ElectricTailoringBench"]/Description</xpath>
+		<value>
+			<Description>A workbench equipped for clothing production.</Description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "ElectricTailoringBench"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Building/SCProduction/SewingTable2x1</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>(2,1)</drawSize>
+				<damageData>
+					<cornerTL>Damage/Corner</cornerTL>
+					<cornerTR>Damage/Corner</cornerTR>
+					<cornerBL>Damage/Corner</cornerBL>
+					<cornerBR>Damage/Corner</cornerBR>
+				</damageData>
+			</graphicData>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "ElectricTailoringBench"]/Size</xpath>
+		<value>
+			<Size>(2,1)</Size>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "ElectricTailoringBench"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>30</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "ElectricTailoringBench"]/CostList</xpath>
+		<value>
+			<CostList>
+				<SteelBar>10</SteelBar>
+				<WoodPlank>20</WoodPlank>
+				<Component>3</Component>
+			</CostList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "ElectricTailoringBench"]/stuffCategories</xpath>
+		<value>
+			<li>Stony</li>
+		</value>
+	</Operation>
+
+
 </Patch>
