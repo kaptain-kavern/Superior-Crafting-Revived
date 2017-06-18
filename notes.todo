@@ -5,7 +5,10 @@ Buildings:
       ☐ Need a low-tech door to go with the Wall log @high
 
     Furniture:
-      ☐ Lamp/Hydroponic should use glass @high
+      ☐ Lamp should use glass @high
+      ☐ Hydroponic should use glass @low
+      ☐ Re add SC old ones @critical
+      ☐ Tweak vanilla ones (cost and stuff)
 
     Production:
       ✔ Re-add Tailoring buildings @critical @done (17-06-18 06:22)
@@ -28,5 +31,17 @@ Recipes:
 
 Animals & Plants:
   ✔ Change Cotton and Devilstrand `harvestedThingDef` @high @done (17-06-14 14:50)             
+
+General notes :
+  - I'm strongly wondering if I shouldn't say that this mod have other mods like VG or Cupropanda's Powerless or Simon's Glass mod, etc as dependencies **AND** patching their defs like I do for vanilla's ones. @critical
+  - Should I use dll's/Assembly files ?
+  
+Mod Compatibility:
+  - All CuproPanda's mods, esp PowerLess / Exp. Power + Drink + AJO + Quarry
+  - VG
+  - Industrialisation
+  - T's Mods
+  - EPOE
+
 ------------------------------------------------------
 ------------------------------------------------------
