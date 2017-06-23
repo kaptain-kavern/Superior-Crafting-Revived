@@ -1,8 +1,9 @@
 Buildings:
 
     Structure:
-      ☐ Wall log should have more kind of disadvantage (Beside the reduced HP) : maybe negative beauty @low
+      ☐ `Wall log` should have more kind of disadvantage (Beside the reduced HP) : maybe negative beauty @low
       ☐ Need a low-tech door to go with the Wall log @high
+          *Will use POW low tech structures*
 
     Furniture:
       ☐ Lamp should use glass @high
@@ -13,14 +14,10 @@ Buildings:
     Production:
       ✔ Re-add Tailoring buildings @critical @done (17-06-18 06:22)
         ✔ _Patch need to be redone **more subtly** (no need to completely rewrite the whole building def)_ @critical @done (17-06-18 06:23)
+      ☐ Add a very long time consuming recipe for crafting `woodPlanks` at the crafting spot, for the earlier game @low  
 
     Floor:
-      ☐ Plugged in with Vanilla Defs @low
-        ☐ Gravel
-        ☐ Sand
-        ☐ Soil and such
-            _Notes :_ Try to use the `<driesTo>` tag everywhere it make sense
-
+      ☐ Plugged in with **RF - Fertile Field** integration Defs @low
 Recipes:
 
     Production:
@@ -33,15 +30,40 @@ Animals & Plants:
   ✔ Change Cotton and Devilstrand `harvestedThingDef` @high @done (17-06-14 14:50)             
 
 General notes :
-  - I'm strongly wondering if I shouldn't say that this mod have other mods like VG or Cupropanda's Powerless or Simon's Glass mod, etc as dependencies **AND** patching their defs like I do for vanilla's ones. @critical
+  ✔ !!! WILL DO !!! I'm strongly wondering if I shouldn't say that this mod have other mods like VG or Cupropanda's Powerless or Simon's Glass mod, etc as dependencies **AND** patching their defs like I do for vanilla's ones. @critical @done (17-06-23 17:40) !!! WILL DO !!!
   - Should I use dll's/Assembly files ?
   
 Mod Compatibility:
-  - All CuproPanda's mods, esp PowerLess / Exp. Power + Drink + AJO + Quarry
-  - VG
-  - Industrialisation
-  - T's Mods
-  - EPOE
 
+    Powerless :
+      Buildings :
+        ☐ SC smelting furnace doubles with POW forge - **Keep POW forge** @critical
+          ☐ Remove SC Smelting Furnace
+          ☐ Redirect SmeltingBar recipes to POW forge
+          ☐ Change POW forge cost to use SteelBar
+      Recipes /CostList :
+        ☐ Charcoal pits shouldn't use "woody" but "woodlog" as material @high
+      Research :
+
+    RF - Fertile Fields :
+      Buildings :
+      Recipes /CostList :
+      Research :
+
+    Colony Manager :
+      Buildings :
+      Recipes /CostList :
+      Research :
+
+  Notes:
+At first I will focus on integration with :.
+  - **POW** @critical
+  - **RF - FF** @critical
+  - **Colony Manager** @critical
+
+In a second time, I planned to integrate :.
+  - **Glass&Light** @low
+  - **Vegetable Garden** @low 
+  - **RF - FF : Cement** @low
 ------------------------------------------------------
 ------------------------------------------------------
