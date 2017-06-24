@@ -6,7 +6,7 @@ Buildings:
           *Will use POW low tech structures*
 
     Furniture:
-      ☐ Lamp should use glass @high
+      ☐ `Lamp` should use glass @high
       ☐ Hydroponic should use glass @low
       ☐ Re add SC old ones @critical
       ☐ Tweak vanilla ones (cost and stuff)
@@ -14,7 +14,7 @@ Buildings:
     Production:
       ✔ Re-add Tailoring buildings @critical @done (17-06-18 06:22)
         ✔ _Patch need to be redone **more subtly** (no need to completely rewrite the whole building def)_ @critical @done (17-06-18 06:23)
-      ☐ Add a very long time consuming recipe for crafting `woodPlanks` at the crafting spot, for the earlier game @low  
+      ☐ Add a very long time consuming recipe for crafting `woodPlanks` at the `camp crafting table`, for the earlier game @low  
 
     Floor:
       ☐ Plugged in with **RF - Fertile Field** integration Defs @low
@@ -22,8 +22,8 @@ Buildings:
 Recipes:
 
     Production:
-      ✔ Implement recipe : RawCotton ==> Cloth @critical @done (17-06-15 09:47)
-      ✔ Implement recipe : RawDevilstrand ==> Devilstrand @critical @done (17-06-18 06:41)
+      ✔ Implement recipe : `RawCotton` ==> `Cloth` @critical @done (17-06-15 09:47)
+      ✔ Implement recipe : `RawDevilstrand` ==> `Devilstrand` @critical @done (17-06-18 06:41)
       ✔ Implement other cloth recipe @high @done (17-06-18 06:41)
       ☐ Try to have stone-cutting recipe to drop sand on the floor and the pawn bringing the cut stones to stockpile (actually it's the other way around) @low
 ------------------------------------------------------
@@ -38,28 +38,28 @@ Mod Compatibility:
 
     Powerless :
       Buildings :
-        ✔ SC smelting furnace doubles with POW forge - **Keep POW forge** @critical @done (17-06-24 03:50)
-          ✔ Remove SC Smelting Furnace @done (17-06-24 03:42)
-          ✔ Redirect SmeltingBar recipes to POW forge @done (17-06-24 03:43)
-          ✔ Patch POW forge cost to use SteelBar @done (17-06-24 03:50)
-        ☐ Change Shelter Heater accepted fuel to Kindling + fuelCapacity @high
+        ✔ `SC smelting furnace` doubles with `POW forge` - **Keep `POW forge`** @critical @done (17-06-24 03:50)
+          ✔ Remove `SC Smelting Furnace` @done (17-06-24 03:42)
+          ✔ Redirect `SmeltingBar` recipes to `POW forge` @done (17-06-24 03:43)
+          ✔ Patch `POW forge` cost to use `SteelBar` @done (17-06-24 03:50)
+        ☐ Change `Shelter Heater` accepted fuel to `Kindling` + fuelCapacity @high
       Items :
-        ☐ Patch POW_Charcoal category @high
+        ☐ Patch `POW_Charcoal` category @high
       Recipes /CostList :
         ✔ Charcoal pits shouldn't use "woody" but "woodlog" as material @high @done (17-06-24 04:01)
-        ☐ Change Shelter Heater costlist (WoooPlanks + Kindling) @critical
+        ☐ Change `Shelter Heater` costlist (WoooPlanks + Kindling) @critical
       Research :
 
     Additional Joy Objects :
       Buildings :
       Recipes /CostList :
-        ☐ Changing all Chandeliers cost @high
+        ☐ Changing all `Chandelier`s cost @high
       Research :
 
     RF - Fertile Fields :
       Buildings :
       Recipes /CostList :
-        ☐ Changes Compost Bin and Barrel Costlist @high
+        ☐ Changes `Compost Bin` and `Compost Barrel` Costlist @high
       Research :
 
     Colony Manager :
