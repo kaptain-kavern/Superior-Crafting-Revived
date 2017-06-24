@@ -57,7 +57,7 @@
 		</placeWorkers>
   </ThingDef>
 
-  <ThingDef ParentName="BenchBase">
+  <!-- <ThingDef ParentName="BenchBase">
     <DefName>TableFurnace</DefName>
     <label>smelting furnace</label>
     <ThingClass>Building_WorkTable_HeatPush</ThingClass>
@@ -129,7 +129,7 @@
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
-  </ThingDef>
+  </ThingDef> -->
 
   <ThingDef ParentName="BenchBase">
     <DefName>TableGlassworks</DefName>

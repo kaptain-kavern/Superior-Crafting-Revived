@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--================= forge ======================-->
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "POW_Forge"]/costList/Steel</xpath>
+		<value>
+			<SteelBar>20</SteelBar>
+		</value>
+	</Operation>
+
+</Patch>

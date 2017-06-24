@@ -59,7 +59,7 @@
     <workType>Crafting</workType>
     <priorityInType>80</priorityInType>
     <fixedBillGiverDefs>
-      <li>TableFurnace</li>
+      <li>POW_Forge</li>
     </fixedBillGiverDefs>
     <verb>smelt metal</verb>
     <gerund>smelting metal</gerund>

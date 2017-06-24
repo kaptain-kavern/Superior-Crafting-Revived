@@ -132,7 +132,7 @@
 		</products>
 		<workSkill>Crafting</workSkill>
 		<recipeUsers>
-			<li>TableFurnace</li>
+			<li>POW_Forge</li>
 		</recipeUsers>
 		<!-- <researchPrerequisite>xxxxxx</researchPrerequisite> -->
 	</RecipeDef>
