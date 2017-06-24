@@ -2,7 +2,7 @@ Buildings:
 
     Structure:
       ☐ `Wall log` should have more kind of disadvantage (Beside the reduced HP) : maybe negative beauty @low
-      ☐ Need a low-tech door to go with the Wall log @high
+      ✔ Need a low-tech door to go with the Wall log @high @done (17-06-24 03:28)
           *Will use POW low tech structures*
 
     Furniture:
@@ -64,6 +64,6 @@ At first I will focus on integration with :.
 In a second time, I planned to integrate :.
   - **Glass&Light** @low
   - **Vegetable Garden** @low 
-  - **RF - FF : Cement** @low
+  - **RF - FF : Concrete** @low
 ------------------------------------------------------
 ------------------------------------------------------

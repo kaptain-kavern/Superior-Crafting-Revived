@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--================= shelter door ======================-->
+	<Operation Class="PatchOperationRemove"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_ShelterDoor"]/stuffCategories</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_ShelterDoor"]</xpath>
+		<value>
+			<CostList>
+				<WoodLog>5</WoodLog>
+			</CostList>
+		</value>
+	</Operation>
+
+<!--========================= shelter wall =============================-->
+	<Operation Class="PatchOperationRemove"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_WallShelter"]/stuffCategories</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_WallShelter"]</xpath>
+		<value>
+			<CostList>
+				<WoodLog>3</WoodLog>
+			</CostList>
+		</value>
+	</Operation>
+
+</Patch>

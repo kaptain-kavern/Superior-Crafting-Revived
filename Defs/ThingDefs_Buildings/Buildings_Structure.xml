@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase" Name="Wall">
+	<!-- <ThingDef ParentName="BuildingBase" Name="Wall">
 	    <defName>SCWallLog</defName>
 	    <label>log wall</label>
 	    <thingClass>Building</thingClass>
@@ -66,6 +66,6 @@
 	        <multiplier>2</multiplier>
 	      </li>
 	    </damageMultipliers>
-  </ThingDef>
+  </ThingDef> -->
 
 </Defs>
