@@ -42,8 +42,10 @@ Mod Compatibility:
           ✔ Remove SC Smelting Furnace @done (17-06-24 03:42)
           ✔ Redirect SmeltingBar recipes to POW forge @done (17-06-24 03:43)
           ✔ Patch POW forge cost to use SteelBar @done (17-06-24 03:50)
+      Items :
+        ☐ Patch POW_Charcoal category @high
       Recipes /CostList :
-        ☐ Charcoal pits shouldn't use "woody" but "woodlog" as material @high
+        ✔ Charcoal pits shouldn't use "woody" but "woodlog" as material @high @done (17-06-24 04:01)
       Research :
 
     RF - Fertile Fields :
