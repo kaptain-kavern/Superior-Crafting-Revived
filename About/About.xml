@@ -4,5 +4,16 @@
 	<author>Abrexus (A17 update by KapTaiN_KaVerN)</author>
 	<url>https://ludeon.com/forums/index.php?topic=11741.0</url>
 	<targetVersion>0.17.0</targetVersion>
-	<description>-=[WIP A17 updated version]=-=|Superior Crafting|=-</description>
+	<description>-=[WIP A17 updated version]=-=|Superior Crafting|=-
+
+=============================
+========== Warning ==========
+=============================
+You absolutely need to load the following mods BEFORE this one : 
+- POW
+- AJO
+- RF - FF
+- Colony Manager
+- Glass and Light
+</description>
 </ModMetaData>

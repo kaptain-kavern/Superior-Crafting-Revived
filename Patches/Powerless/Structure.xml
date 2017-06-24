@@ -15,6 +15,13 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_ShelterDoor"]/graphicData</xpath>
+		<value>
+			<color>(133,97,67)</color>
+		</value>
+	</Operation>
+
 <!--========================= shelter wall =============================-->
 	<Operation Class="PatchOperationRemove"> 
 		<xpath>/ThingDefs/ThingDef[defName = "POW_WallShelter"]/stuffCategories</xpath>
@@ -26,6 +33,13 @@
 			<CostList>
 				<WoodLog>3</WoodLog>
 			</CostList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_WallShelter"]/graphicData</xpath>
+		<value>
+			<color>(133,97,67)</color>
 		</value>
 	</Operation>
 

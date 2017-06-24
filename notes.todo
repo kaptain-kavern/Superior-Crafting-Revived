@@ -42,15 +42,24 @@ Mod Compatibility:
           ✔ Remove SC Smelting Furnace @done (17-06-24 03:42)
           ✔ Redirect SmeltingBar recipes to POW forge @done (17-06-24 03:43)
           ✔ Patch POW forge cost to use SteelBar @done (17-06-24 03:50)
+        ☐ Change Shelter Heater accepted fuel to Kindling + fuelCapacity @high
       Items :
         ☐ Patch POW_Charcoal category @high
       Recipes /CostList :
         ✔ Charcoal pits shouldn't use "woody" but "woodlog" as material @high @done (17-06-24 04:01)
+        ☐ Change Shelter Heater costlist (WoooPlanks + Kindling) @critical
+      Research :
+
+    Additional Joy Objects :
+      Buildings :
+      Recipes /CostList :
+        ☐ Changing all Chandeliers cost @high
       Research :
 
     RF - Fertile Fields :
       Buildings :
       Recipes /CostList :
+        ☐ Changes Compost Bin and Barrel Costlist @high
       Research :
 
     Colony Manager :
@@ -61,11 +70,12 @@ Mod Compatibility:
   Notes:
 At first I will focus on integration with :.
   - **POW** @critical
+  - **AJO** @critical
   - **RF - FF** @critical
   - **Colony Manager** @critical
+  - **Glass&Light** @low
 
 In a second time, I planned to integrate :.
-  - **Glass&Light** @low
   - **Vegetable Garden** @low 
   - **RF - FF : Concrete** @low
 ------------------------------------------------------
