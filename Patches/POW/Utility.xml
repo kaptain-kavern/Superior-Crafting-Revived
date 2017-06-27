@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--========================= shelter heater =============================-->
+	<Operation Class="PatchOperationRemove"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_ShelterHeater"]/stuffCategories</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_ShelterHeater"]/costStuffCount</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_ShelterHeater"]</xpath>
+		<value>
+			<CostList>
+				<WoodLog>2</WoodLog>
+				<Kindling>50</Kindling>
+			</CostList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_ShelterHeater"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+			<thingDefs>
+				<li>Kindling</li>
+			</thingDefs>
+		</value>
+	</Operation>
+<!--========================= charcoal pit =============================-->
+	<Operation Class="PatchOperationRemove"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "POW_CharcoalPit"]/stuffCategories</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "POW_CharcoalPit"]/costStuffCount</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[DefName = "POW_CharcoalPit"]</xpath>
+		<value>
+			<CostList>
+				<Kindling>50</Kindling>
+			</CostList>
+		</value>
+	</Operation>
+
+</Patch>
