@@ -5,7 +5,7 @@
 		<xpath>/RecipeDefs/RecipeDef[defName = "MakeStoneBlocksAny"]/fixedIngredientFilter</xpath>
 		<value>
 			<products>
-				<Sand>2</Sand>
+				<SandPile>1</SandPile>
 			</products>
 		</value>
 	</Operation>
@@ -13,35 +13,35 @@
 	<Operation Class="PatchOperationInsert"> 
 		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksSandstone"]/products/BlocksSandstone</xpath>
 		<value>
-		    <Sand>2</Sand>
+		    <SandPile>1</SandPile>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationInsert"> 
 		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksGranite"]/products/BlocksGranite</xpath>
 		<value>
-		    <Sand>2</Sand>
+		    <SandPile>1</SandPile>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationInsert"> 
 		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksLimestone"]/products/BlocksLimestone</xpath>
 		<value>
-		    <Sand>2</Sand>
+		    <SandPile>1</SandPile>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationInsert"> 
 		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksSlate"]/products/BlocksSlate</xpath>
 		<value>
-		    <Sand>2</Sand>
+		    <SandPile>1</SandPile>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationInsert"> 
 		<xpath>/Defs/RecipeDef[defName = "MakeStoneBlocksMarble"]/products/BlocksMarble</xpath>
 		<value>
-		    <Sand>2</Sand>
+		    <SandPile>1</SandPile>
 		</value>
 	</Operation>
 </Patch>

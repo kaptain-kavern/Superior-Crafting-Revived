@@ -25,13 +25,21 @@ Recipes:
       ✔ Implement recipe : `RawCotton` ==> `Cloth` @critical @done (17-06-15 09:47)
       ✔ Implement recipe : `RawDevilstrand` ==> `Devilstrand` @critical @done (17-06-18 06:41)
       ✔ Implement other cloth recipe @high @done (17-06-18 06:41)
-      ☐ Try to have stone-cutting recipe to drop sand on the floor and the pawn bringing the cut stones to stockpile (actually it's the other way around) @low
+      ☐ Add a low-tech, unpowered, more inefficient recipe for extracting `steel` from slag chunks @low
+      ☐ Try to have stone-cutting recipe to drop sand on the floor and the pawn bringing the cut stones to stockpile (actually it's the other way around)
+    Weapons:
+      ☐ More subtle and precise weapon's recipes. Like wood + metal for spear/sword and such @low
 ------------------------------------------------------
 Animals & Plants:
-  ✔ Change Cotton and Devilstrand `harvestedThingDef` @high @done (17-06-14 14:50)             
+  ✔ Change Cotton and Devilstrand `harvestedThingDef` @high @done (17-06-14 14:50)    
+------------------------------------------------------
+Items:
+  ☐ switch all SC sand to use FF sand @critical
 ------------------------------------------------------
 General notes :
   ✔ !!! WILL DO !!! I'm strongly wondering if I shouldn't say that this mod have other mods like VG or Cupropanda's Powerless or Simon's Glass mod, etc as dependencies **AND** patching their defs like I do for vanilla's ones. @critical @done (17-06-23 17:40) !!! WILL DO !!!
+  - Add negative Cleanliness to buildings where it is appropriate
+  - Look at adding the smoking effect from POW to more vanilla buildings
   - Should I use dll's/Assembly files ?  
 ------------------------------------------------------
 Mod Compatibility:
@@ -42,24 +50,25 @@ Mod Compatibility:
           ✔ Remove `SC Smelting Furnace` @done (17-06-24 03:42)
           ✔ Redirect `SmeltingBar` recipes to `POW forge` @done (17-06-24 03:43)
           ✔ Patch `POW forge` cost to use `SteelBar` @done (17-06-24 03:50)
-        ☐ Change `Shelter Heater` accepted fuel to `Kindling` + fuelCapacity @high
+        ✔ Change `Shelter Heater` accepted fuel to `Kindling` + fuelCapacity @high @done (17-06-27 06:01)
       Items :
         ☐ Patch `POW_Charcoal` category @high
       Recipes /CostList :
         ✔ Charcoal pits shouldn't use "woody" but "woodlog" as material @high @done (17-06-24 04:01)
-        ☐ Change `Shelter Heater` costlist (WoooPlanks + Kindling) @critical
+        ✔ Change `Shelter Heater` costlist (WoooPlanks + Kindling) @critical @done (17-06-27 05:36)
       Research :
 
     Additional Joy Objects :
       Buildings :
       Recipes /CostList :
-        ☐ Changing all `Chandelier`s cost @high
+        ✔ Changing all `Chandelier`s cost @high @done (17-06-27 06:18)
       Research :
 
     RF - Fertile Fields :
       Buildings :
       Recipes /CostList :
         ☐ Changes `Compost Bin` and `Compost Barrel` Costlist @high
+        ✔ Look at enabling the brick making recipe on more bench (POW Forge, ...) and how to research-lock it if needed @low @done (17-06-27 06:02)
       Research :
 
     Colony Manager :
