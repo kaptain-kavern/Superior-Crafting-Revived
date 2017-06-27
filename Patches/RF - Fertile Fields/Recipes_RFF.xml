@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--================= MakeBricks ======================-->
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/RecipeDefs/RecipeDef[defName = "MakeBricks"]/recipeUsers</xpath>
+		<value>
+			<recipeUsers>
+				<li>POW_Forge</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+
+</Patch>
