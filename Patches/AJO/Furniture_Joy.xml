@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--================= chandeliers ======================-->
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[defName = "ChanPart_1x1_Support"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>5</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[defName = "ChanPart_2x2_Support"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>9</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[defName = "ChanPart_3x3_Support"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>14</costStuffCount>
+		</value>
+	</Operation>
+
+
+</Patch>
