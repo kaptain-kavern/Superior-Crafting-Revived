@@ -11,6 +11,13 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd"> 
+		<xpath>/ThingDefs/ThingDef[defName = "POW_ShelterHeater"]/graphicData</xpath>
+		<value>
+			<color>(133,97,67)</color>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
 		<xpath>/ThingDefs/ThingDef[defName = "POW_ShelterHeater"]</xpath>
 		<value>
 			<CostList>

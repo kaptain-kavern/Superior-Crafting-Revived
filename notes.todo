@@ -25,6 +25,8 @@ Recipes:
       ✔ Implement recipe : `RawCotton` ==> `Cloth` @critical @done (17-06-15 09:47)
       ✔ Implement recipe : `RawDevilstrand` ==> `Devilstrand` @critical @done (17-06-18 06:41)
       ✔ Implement other cloth recipe @high @done (17-06-18 06:41)
+      ☐ Remove apparel-making recipe from Tailor's loom @low
+      ☐ Remove cloth-making recipre from Tailor's bench @low
       ☐ Add a low-tech, unpowered, more inefficient recipe for extracting `steel` from slag chunks @low
       ☐ Try to have stone-cutting recipe to drop sand on the floor and the pawn bringing the cut stones to stockpile (actually it's the other way around)
     Weapons:
@@ -34,7 +36,7 @@ Animals & Plants:
   ✔ Change Cotton and Devilstrand `harvestedThingDef` @high @done (17-06-14 14:50)    
 ------------------------------------------------------
 Items:
-  ☐ switch all SC sand to use FF sand @critical
+  ✔ switch all SC sand to use FF sand @critical @done (17-06-27 08:04)
 ------------------------------------------------------
 General notes :
   ✔ !!! WILL DO !!! I'm strongly wondering if I shouldn't say that this mod have other mods like VG or Cupropanda's Powerless or Simon's Glass mod, etc as dependencies **AND** patching their defs like I do for vanilla's ones. @critical @done (17-06-23 17:40) !!! WILL DO !!!
@@ -67,7 +69,7 @@ Mod Compatibility:
     RF - Fertile Fields :
       Buildings :
       Recipes /CostList :
-        ☐ Changes `Compost Bin` and `Compost Barrel` Costlist @high
+        ✔ Changes `Compost Bin` and `Compost Barrel` Costlist @high @done (17-06-28 02:53)
         ✔ Look at enabling the brick making recipe on more bench (POW Forge, ...) and how to research-lock it if needed @low @done (17-06-27 06:02)
       Research :
 
@@ -81,10 +83,10 @@ At first I will focus on integration with :.
   - **POW** @critical
   - **AJO** @critical
   - **RF - FF** @critical
-  - **Colony Manager** @critical
   - **Glass&Light** @low
 
 In a second time, I planned to integrate :.
+  - **Colony Manager** @low
   - **Vegetable Garden** @low 
   - **RF - FF : Concrete** @low
 ------------------------------------------------------
