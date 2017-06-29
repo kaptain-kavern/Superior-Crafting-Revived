@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--================= CompostBin ======================-->
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[defName = "CompostBin"]/CostList</xpath>
+		<value>
+			<CostList>
+				<WoodPlank>6</WoodPlank>
+				<RawCompost>1</RawCompost>
+			</CostList>
+		</value>
+	</Operation>
+
+
+<!--================= CompostBarrel ======================-->
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/ThingDefs/ThingDef[defName = "CompostBarrel"]/costList</xpath>
+		<value>
+			<costList>
+				<SteelBar>4</SteelBar>
+				<WoodPlank>12</WoodPlank>
+				<Component>1</Component>
+			</costList>
+		</value>
+	</Operation>
+
+</Patch>
